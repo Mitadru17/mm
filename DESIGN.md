@@ -1,5 +1,7 @@
 # Mystic Mountain — Jägerhof reference system
 
+Latest override, November 13: the client requested stronger typography, a more distinctive footer, shared premium buttons and a personalised step-by-step enquiry. Bodoni Moda Variable (normal/italic) and Manrope Variable now replace the earlier Bon Vivant/Cormorant/Ronzino pairing throughout the active application. Preserve the established cream #e9e1d6 and pine #2f4f3e; primary actions now use pine and cream, a 3px corner and a fine arrow divider, with one outline alternative. The oversized MYSTIC closing composition and React Bits enquiry folio are specified in DESIGN-EXTENSIONS.md and docs/enquiry-redesign/plan.md. The historical measured reference below remains the base for unchanged sections.
+
 The November 13 client-polish request adds a fluid hamburger menu sheet, fade-in/out information dialogs, scroll-triggered line reveals and selective serif italics. Keep the existing local type families and cream/pine palette. The client footer contains only hotel information and useful links; motion preferences follow the device setting automatically. See DESIGN-EXTENSIONS.md and docs/client-polish/README.md.
 
 The user's subsequent November 13 hero screenshot supersedes the earlier hero/header composition. Use the arrival hero and shared-heading loader described in DESIGN-EXTENSIONS.md. The floating booking/appearance dock is removed; booking remains available through Enquire and the existing inquiry paths. Other sections retain this system.

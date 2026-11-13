@@ -1,0 +1,14 @@
+# Place — Hotel Mystic Mountain Kausani
+
+Existing client brand: cream #e9e1d6 and pine #2f4f3e retained from DESIGN.md, matching the genuine timber rooms, green hills and terrace photographs. The Taste hotel deal was inspected; its blue palette and EB Garamond pairing are not substituted for the client's established colours and explicit typography redesign. Latest requested extension: locally bundled Bodoni Moda Variable display/italic and Manrope Variable body, three Latin webfonts, one shared 3px action shape. Existing full-screen photo hero, map, carousel and scroll motion remain as expressly requested by the user.
+
+Voice: direct and personal hospitality; you for guest preferences, we for helping plan; short, concrete form instructions; real Kausani/contact nouns; no reply-time or availability promise. The final step opens an email draft or copies details and never claims a reservation or delivery.
+
+- Footer: a closing invitation and genuine terrace photo; large serif name gives it a memorable finish. Shared booking action, verified address/phone/email, gallery/story/portal navigation, back-to-top. Type and photograph supply emphasis; no shader or new 3D.
+- Enquiry: one photograph beside a four-stage controlled React Bits Stepper; dates, company, personal details, review. Preserve dates, guest bounds, room preferences and editable answers. Native HTML constraints plus existing validateStay, then accurate mailto/copy handoff. Stable desktop folio with internal overflow; single column and native dialog scrolling on phone.
+- Buttons: one primary pine/cream rectangular shape and one secondary outline, restrained arrow compartment, hover lift and press response, consistent local sans type. Keep utility icons/menu/map controls appropriate to their function.
+- Type: update shared variables so all active routes, dialogs, menus and map cards receive the same pairing. Preserve responsive scale, paragraph contrast, keyboard focus, and system reduced motion.
+
+Taste skill use: installed as taste-skill@taste-skill version 2.5.1, actual SKILL.md and relevant system/copy/layout/place/gate references inspected. Its static-site starter, placeholder contacts, blanket bans on carousels/maps/scroll reveals and forced section dimensions conflict with the existing client instructions; those rules do not replace authorised features. Do not import a second design/motion runtime or use fabricated .example contacts. The native browser checks complement the Taste checker with the actual stepper interaction and booking flow. Keep all diagnostic limits visible in the delivery notes.
+
+Authentic assets: valley-balcony enquiry photo and terrace footer photo from src/data.ts and existing optimized files. No generated or stock photography. No invented rates, rooms, amenities, reviews, hours or booking outcomes. No new external submission service.

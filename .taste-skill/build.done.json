@@ -1,0 +1,11 @@
+{
+ "page": null,
+ "url": "http://localhost:4174/",
+ "root": null,
+ "kind": "place",
+ "category": "Hotel in Kausani",
+ "primary": "Plan your stay",
+ "rounds": 3,
+ "start": "2026-11-13T00:05:09.952Z",
+ "by": "gate.mjs --start"
+}

@@ -1,0 +1,78 @@
+/* React Bits adaptation; upstream notice: /licenses/react-bits.txt. */
+.stepper {
+  min-width: 0;
+  width: 100%;
+}
+.stepper__track {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 38px;
+}
+.stepper__segment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 0 14px;
+  background: none;
+  color: var(--ink);
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font: 500 12px/1.3 var(--font-body) !important;
+}
+.stepper__segment:disabled {
+  cursor: default;
+  color: #74786e;
+  opacity: 1;
+}
+.stepper__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.stepper__bar-fill {
+  position: absolute;
+  inset: auto 0 -1px;
+  height: 2px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.stepper__segment[data-status="active"] .stepper__bar-fill,
+.stepper__segment[data-status="complete"] .stepper__bar-fill {
+  transform: scaleX(1);
+}
+.stepper__segment:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+.stepper__viewport,
+.stepper__pane {
+  min-width: 0;
+}
+@media (max-width: 639px) {
+  .stepper__track {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .stepper__segment {
+    gap: 4px;
+    font-size: 11px !important;
+  }
+  .stepper__badge {
+    min-width: 17px;
+    font-size: 9px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stepper__bar-fill {
+    transition: none;
+  }
+}

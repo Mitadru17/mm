@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "44px header/footer targets and a working return-to-top action",
+    "Photo-card keyboard ring uses high-contrast pine",
+    "Location address retains full text opacity",
+    "Clipboard failure exposes complete selectable details, with no fake success"
+  ],
+  "errors": []
+}

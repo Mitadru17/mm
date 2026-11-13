@@ -1,0 +1,1158 @@
+[
+  {
+    "check": "flush",
+    "where": "section#stay > a.jh-collage",
+    "msg": "its button sits 0px above the lower edge of section#stay, where the ground changes to section#nature",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "flush"
+    ],
+    "wheres": [
+      "section#stay > a.jh-collage"
+    ]
+  },
+  {
+    "check": "flush",
+    "where": "section#nature > a.jh-collage",
+    "msg": "its first line sits 0px under the top edge of section#nature, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "flush"
+    ],
+    "wheres": [
+      "section#nature > a.jh-collage"
+    ]
+  },
+  {
+    "check": "flush",
+    "where": "section#dine > a.jh-collage",
+    "msg": "its first line sits 0px under the top edge of section#dine, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "flush"
+    ],
+    "wheres": [
+      "section#dine > a.jh-collage"
+    ]
+  },
+  {
+    "check": "flush",
+    "where": "section#explore > a.jh-collage",
+    "msg": "its first line sits 0px under the top edge of section#explore, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "flush"
+    ],
+    "wheres": [
+      "section#explore > a.jh-collage"
+    ]
+  },
+  {
+    "check": "flush",
+    "where": "section#unwind > a.jh-collage",
+    "msg": "its first line sits 0px under the top edge of section#unwind, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "flush"
+    ],
+    "wheres": [
+      "section#unwind > a.jh-collage"
+    ]
+  },
+  {
+    "check": "nav",
+    "where": "div#root > div.jh-site > header.jh-header",
+    "msg": "the nav has no bar, and its pieces sit past the content's edges (81-1389px against 238-1202px)",
+    "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "nav"
+    ],
+    "wheres": [
+      "div#root > div.jh-site > header.jh-header"
+    ]
+  },
+  {
+    "check": "no-visual",
+    "where": "section#main \"EXPERIENCE LIFE AT MYSTIC MOUNTAIN\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "no-visual"
+    ],
+    "wheres": [
+      "section#main \"EXPERIENCE LIFE AT MYSTIC MOUNTAIN\""
+    ]
+  },
+  {
+    "check": "no-visual",
+    "where": "div#root > div.jh-site > main > section.jh-marquee \"mountain air slower days\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "no-visual"
+    ],
+    "wheres": [
+      "div#root > div.jh-site > main > section.jh-marquee \"mountain air slower days\""
+    ]
+  },
+  {
+    "check": "button-styles",
+    "where": "(the page)",
+    "msg": "3 button styles on the page: soft, fill #2f4f3e, outline #2f4f3e x7 (\"Find your mountain stay\"); soft, outline #faf8f4 x1 (\"Explore the 3D map\"); soft, fill #e9e1d6, outline #e9e1d6 x1 (\"Plan your mountain stay\")",
+    "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "button-styles"
+    ],
+    "wheres": [
+      "(the page)"
+    ]
+  },
+  {
+    "check": "cta",
+    "where": "section#main",
+    "msg": "the hero has no button (the nav's does not count)",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "cta"
+    ],
+    "wheres": [
+      "section#main"
+    ]
+  },
+  {
+    "check": "cta",
+    "where": "section#place \"OUR LITTLE CORNER OF KUMAON\"",
+    "msg": "the last section before the footer ends with no button",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "cta"
+    ],
+    "wheres": [
+      "section#place \"OUR LITTLE CORNER OF KUMAON\""
+    ]
+  },
+  {
+    "check": "copy-headline",
+    "where": "h1#arrival-title \"Welcome home to the mountains.\"",
+    "msg": "\"Welcome home to the mountains.\" does not name what is sold (hotel in kausani, hotel, kausani, from flags)",
+    "fix": "put the category noun in the h1 (and who it is for, or where), in 2 to 8 words",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "copy-headline"
+    ],
+    "wheres": [
+      "h1#arrival-title \"Welcome home to the mountains.\""
+    ]
+  },
+  {
+    "check": "copy-fact",
+    "where": "h1#arrival-title \"Welcome home to the mountains.\"",
+    "msg": "the first screen holds no number, price, date, place, platform or genre",
+    "fix": "put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "copy-fact"
+    ],
+    "wheres": [
+      "h1#arrival-title \"Welcome home to the mountains.\""
+    ]
+  },
+  {
+    "check": "copy-headings",
+    "where": "section#experiences > div.jh-experiences-heading > h2 \"Little rituals, slower days.\"",
+    "msg": "\"Little rituals, slower days.\" names no product, part, place or section (10 headings like it; at most one brand line per page) (and 9 more like it: \"A STAY THAT FEELS LIKE Y\", \"A little space. A differ\", \"NATURE\", \"AROUND THE TABLE\", ...)",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "copy-headings"
+    ],
+    "wheres": [
+      "section#experiences > div.jh-experiences-heading > h2 \"Little rituals, slower days.\""
+    ]
+  },
+  {
+    "check": "heading-scale",
+    "where": "section#experiences > div.jh-experiences-heading > h2 \"Little rituals, slower days.\"",
+    "msg": "an h2 at 67.7px, as large as the h1 (52px) or larger",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "heading-scale"
+    ],
+    "wheres": [
+      "section#experiences > div.jh-experiences-heading > h2 \"Little rituals, slower days.\""
+    ]
+  },
+  {
+    "check": "heading-scale",
+    "where": "div.jh-experience-surface > a.jh-experience-card > div.jh-experience-label > h3 \"Mountain mornings\"",
+    "msg": "an h3 at 36px, as large as the smallest h2 (11px) or larger (and 2 more like it: \"Timber & light\", \"Around the table\")",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "heading-scale"
+    ],
+    "wheres": [
+      "div.jh-experience-surface > a.jh-experience-card > div.jh-experience-label > h3 \"Mountain mornings\""
+    ]
+  },
+  {
+    "check": "tilt",
+    "where": "div.jh-experiences-viewport > div.jh-experiences-track > article.jh-experience-slide:nth-of-type(1) > div.jh-experience-surface \"01 / 06 Mountain mornings\"",
+    "msg": "turned in 3D (and 4 more like it: \"03 / 06 Around the table\", \"04 / 06 Out in the open\", \"05 / 06 A quieter corner\", \"06 / 06 Let the outside \")",
+    "fix": "set it straight",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "tilt"
+    ],
+    "wheres": [
+      "div.jh-experiences-viewport > div.jh-experiences-track > article.jh-experience-slide:nth-of-type(1) > div.jh-experience-surface \"01 / 06 Mountain mornings\""
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#main / section#experiences",
+    "msg": "354px between these sections, +883% against the median 36px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#main / section#experiences"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#experiences / section#stay",
+    "msg": "102px between these sections, +451% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#experiences / section#stay"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#stay / section#nature",
+    "msg": "1px between these sections, -95% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#stay / section#nature"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#nature / section#dine",
+    "msg": "0px between these sections, -100% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#nature / section#dine"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#dine / section#explore",
+    "msg": "0px between these sections, -100% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#dine / section#explore"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#explore / section#unwind",
+    "msg": "0px between these sections, -100% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#explore / section#unwind"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#unwind / div#root > div.jh-site > main > section.jh-marquee",
+    "msg": "36px between these sections, +95% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#unwind / div#root > div.jh-site > main > section.jh-marquee"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "div#root > div.jh-site > main > section.jh-marquee / section#faq",
+    "msg": "138px between these sections, +646% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "div#root > div.jh-site > main > section.jh-marquee / section#faq"
+    ]
+  },
+  {
+    "check": "section-gaps",
+    "where": "section#faq / section#place",
+    "msg": "229px between these sections, +1138% against the median 19px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-gaps"
+    ],
+    "wheres": [
+      "section#faq / section#place"
+    ]
+  },
+  {
+    "check": "photo-upscale",
+    "where": "a.jh-collage > div.jh-collage-back > span.image-shell > img \"img: Trees and hillside buildings beside\"",
+    "msg": "surroundings-960.webp: 734x550 shown at 828x1035, blown up 1.88x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "photo-upscale"
+    ],
+    "wheres": [
+      "a.jh-collage > div.jh-collage-back > span.image-shell > img \"img: Trees and hillside buildings beside\""
+    ]
+  },
+  {
+    "check": "photo-upscale",
+    "where": "a.jh-collage > div.jh-collage-front > span.image-shell > img \"img: Curving Baijnath Road and roadside \"",
+    "msg": "arrival-480.webp: 230x172 shown at 216x270, blown up 1.57x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "photo-upscale"
+    ],
+    "wheres": [
+      "a.jh-collage > div.jh-collage-front > span.image-shell > img \"img: Curving Baijnath Road and roadside \""
+    ]
+  },
+  {
+    "check": "effect-kind",
+    "where": "(the page)",
+    "msg": "a place page (--type) moves with the scroll: scroll libraries or timelines (Lenis, ScrollTrigger, ScrollSmoother): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)",
+    "fix": "take the scroll-driven motion off: on a place, shop or service page the page scrolls plainly and the parts sit still",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "effect-kind"
+    ],
+    "wheres": [
+      "(the page)"
+    ]
+  },
+  {
+    "check": "phone-number",
+    "where": "footer#contact > div.signature-footer-details > div:nth-of-type(2) > a:nth-of-type(1) \"+91 89418 76542\"",
+    "msg": "a phone number in international format: \"+91 89418 76542\"; a visitor can dial it and reach a stranger (and 4 more like it: again here, dialog.site-menu > div.site-menu-body > div.site-menu-navigation > div.site-menu-contact, div.site-menu-body > div.site-menu-navigation > div.site-menu-contact > a:nth-of-type(1), ...)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "phone-number"
+    ],
+    "wheres": [
+      "footer#contact > div.signature-footer-details > div:nth-of-type(2) > a:nth-of-type(1) \"+91 89418 76542\""
+    ]
+  },
+  {
+    "check": "section-tile",
+    "where": "div#root > div.jh-site > main > section.jh-marquee \"mountain air slower days\"",
+    "msg": "the section is 604px tall (0.67 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 604px of it and 296px of the next section, its heading \"REAL STAYS. REAL PERSPECTIVES.\" on screen",
+    "fix": "set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-tile"
+    ],
+    "wheres": [
+      "div#root > div.jh-site > main > section.jh-marquee \"mountain air slower days\""
+    ]
+  },
+  {
+    "check": "focus-ring",
+    "where": "[data-page-title]:focus",
+    "msg": "\"[data-page-title]:focus\" in index-CEBa3DVY.css removes the focus outline and sets nothing in its place",
+    "fix": "keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-ring"
+    ],
+    "wheres": [
+      "[data-page-title]:focus"
+    ]
+  },
+  {
+    "check": "focus-ring",
+    "where": ".jh-site h1[tabindex=\"-1\"]:focus",
+    "msg": "\".jh-site h1[tabindex=\"-1\"]:focus\" in index-CEBa3DVY.css removes the focus outline and sets nothing in its place",
+    "fix": "keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-ring"
+    ],
+    "wheres": [
+      ".jh-site h1[tabindex=\"-1\"]:focus"
+    ]
+  },
+  {
+    "check": "focus-ring",
+    "where": ".enquiry-step-heading h2:focus",
+    "msg": "\".enquiry-step-heading h2:focus\" in index-CEBa3DVY.css removes the focus outline and sets nothing in its place",
+    "fix": "keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-ring"
+    ],
+    "wheres": [
+      ".enquiry-step-heading h2:focus"
+    ]
+  },
+  {
+    "check": "focus-visible",
+    "where": "section#stay > div.jh-chapter-copy > div.jh-chapter-description > button.jh-button \"Find your mountain stay\"",
+    "msg": "Tab stop 19, button \"Find your mountain stay\": its focus change is faint: 1.22:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-visible"
+    ],
+    "wheres": [
+      "section#stay > div.jh-chapter-copy > div.jh-chapter-description > button.jh-button \"Find your mountain stay\""
+    ]
+  },
+  {
+    "check": "focus-visible",
+    "where": "section#nature > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button \"Discover the setting\"",
+    "msg": "Tab stop 21, a \"Discover the setting\": its focus change is faint: 1.22:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-visible"
+    ],
+    "wheres": [
+      "section#nature > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button \"Discover the setting\""
+    ]
+  },
+  {
+    "check": "focus-visible",
+    "where": "section#dine > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button \"Explore the dining space\"",
+    "msg": "Tab stop 23, a \"Explore the dining space\": its focus change is faint: 1.22:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-visible"
+    ],
+    "wheres": [
+      "section#dine > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button \"Explore the dining space\""
+    ]
+  },
+  {
+    "check": "focus-visible",
+    "where": "section#explore > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button \"Discover Kausani\"",
+    "msg": "Tab stop 25, a \"Discover Kausani\": its focus change is faint: 1.22:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "focus-visible"
+    ],
+    "wheres": [
+      "section#explore > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button \"Discover Kausani\""
+    ]
+  },
+  {
+    "check": "moment-none",
+    "where": "(the page)",
+    "msg": "a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+    "fix": "deal one (moments.mjs pick --page place --photo) and mount it in its own section",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "moment-none"
+    ],
+    "wheres": [
+      "(the page)"
+    ]
+  },
+  {
+    "check": "hero-screen",
+    "where": "section#main \"EXPERIENCE LIFE AT MYSTIC MOUNTAINFind y\"",
+    "msg": "the hero ends at 1800px on a 900px screen, 900px below the fold: it ends at the fold, 1px either way (SR-1)",
+    "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "hero-screen"
+    ],
+    "wheres": [
+      "section#main \"EXPERIENCE LIFE AT MYSTIC MOUNTAINFind y\""
+    ]
+  },
+  {
+    "check": "section-height",
+    "where": "section#experiences \"EXPERIENCESLittle rituals,slower days.Ta\"",
+    "msg": "the section is 1269px tall (1.4 screens), 369px over one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-height"
+    ],
+    "wheres": [
+      "section#experiences \"EXPERIENCESLittle rituals,slower days.Ta\""
+    ]
+  },
+  {
+    "check": "section-height",
+    "where": "footer#contact \"HOTEL MYSTIC MOUNTAIN · KAUSANISee youin\"",
+    "msg": "the section is 1222px tall (1.4 screens), 322px over one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-height"
+    ],
+    "wheres": [
+      "footer#contact \"HOTEL MYSTIC MOUNTAIN · KAUSANISee youin\""
+    ]
+  },
+  {
+    "check": "section-height",
+    "where": "section#faq \"REAL STAYS. REAL PERSPECTIVES.Before you\"",
+    "msg": "the section is 596px tall (0.7 screens), 304px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 1 more like it: \"mountain airslower days\") (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-height"
+    ],
+    "wheres": [
+      "section#faq \"REAL STAYS. REAL PERSPECTIVES.Before you\""
+    ]
+  },
+  {
+    "check": "section-height",
+    "where": "section#stay \"A STAY THAT FEELS LIKE YOUA little space\"",
+    "msg": "the section starts at 3069px, 369px below the screen grid (3 x 900px): sections start on whole screens (SR-2)",
+    "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-height"
+    ],
+    "wheres": [
+      "section#stay \"A STAY THAT FEELS LIKE YOUA little space\""
+    ]
+  },
+  {
+    "check": "section-height",
+    "where": "section#nature \"NATUREWhere the hills feel like home.The\"",
+    "msg": "the section starts at 3969px, 369px below the screen grid (4 x 900px): sections start on whole screens (SR-2)",
+    "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-height"
+    ],
+    "wheres": [
+      "section#nature \"NATUREWhere the hills feel like home.The\""
+    ]
+  },
+  {
+    "check": "section-height",
+    "where": "section#dine \"AROUND THE TABLEGood company.An open out\"",
+    "msg": "the section starts at 4869px, 369px below the screen grid (5 x 900px): sections start on whole screens (and 6 more like it: \"A LITTLE CURIOSITY GOES \", \"SLOW DOWNSettle in.Switc\", \"mountain airslower days\") (SR-2)",
+    "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-height"
+    ],
+    "wheres": [
+      "section#dine \"AROUND THE TABLEGood company.An open out\""
+    ]
+  },
+  {
+    "check": "section-air",
+    "where": "section#stay / section#nature",
+    "msg": "the content of these two sections overlaps by 0px: 128-480px of air between them (every gap out of the band at 1440px, top to bottom: 100px after \"EXPERIENCESLittle ri\", 0px after \"A STAY THAT FEELS LI\", 0px after \"NATUREWhere the hill\", 0px after \"AROUND THE TABLEGood\", 0px after \"A LITTLE CURIOSITY G\", 36px after \"SLOW DOWNSettle in.S\") (SR-3)",
+    "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-air"
+    ],
+    "wheres": [
+      "section#stay / section#nature"
+    ]
+  },
+  {
+    "check": "section-air",
+    "where": "section#nature / section#dine",
+    "msg": "the content of these two sections overlaps by 0px: 128-480px of air between them (SR-3)",
+    "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-air"
+    ],
+    "wheres": [
+      "section#nature / section#dine"
+    ]
+  },
+  {
+    "check": "section-air",
+    "where": "section#dine / section#explore",
+    "msg": "the content of these two sections overlaps by 0px: 128-480px of air between them (SR-3)",
+    "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-air"
+    ],
+    "wheres": [
+      "section#dine / section#explore"
+    ]
+  },
+  {
+    "check": "section-air",
+    "where": "footer#contact > div.signature-footer-details \"Baijnath Road, opposite Tea Factory, Kau\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-air"
+    ],
+    "wheres": [
+      "footer#contact > div.signature-footer-details \"Baijnath Road, opposite Tea Factory, Kau\""
+    ]
+  },
+  {
+    "check": "section-air",
+    "where": "footer#contact > div.signature-footer-wordmark \"MYSTICMOUNTAIN · KAUSANI\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "section-air"
+    ],
+    "wheres": [
+      "footer#contact > div.signature-footer-wordmark \"MYSTICMOUNTAIN · KAUSANI\""
+    ]
+  },
+  {
+    "check": "one-section",
+    "where": "section#place \"OUR LITTLE CORNER OF KUMAONAll roads lea\"",
+    "msg": "the screen at scroll 8173px (the top of section 9) shows 304px of section 10 and the content of 2 sections, over 24px each beside section 9: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "one-section"
+    ],
+    "wheres": [
+      "section#place \"OUR LITTLE CORNER OF KUMAONAll roads lea\""
+    ]
+  },
+  {
+    "check": "one-section",
+    "where": "section#faq > div.jh-guest-copy > h2.jh-eyebrow \"REAL STAYS. REAL PERSPECTIVES.\"",
+    "msg": "the screen at scroll 7569px (the top of section 8) shows 296px of section 9 and the heading of section 9 whole and the content of 2 sections, over 24px each beside section 8: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "one-section"
+    ],
+    "wheres": [
+      "section#faq > div.jh-guest-copy > h2.jh-eyebrow \"REAL STAYS. REAL PERSPECTIVES.\""
+    ]
+  },
+  {
+    "check": "one-section",
+    "where": "section#experiences \"EXPERIENCESLittle rituals,slower days.Ta\"",
+    "msg": "the screen at scroll 2700px (stride 3) shows 265px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (and 7 more like it: scroll 3600px, scroll 4500px, scroll 5400px) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "one-section"
+    ],
+    "wheres": [
+      "section#experiences \"EXPERIENCESLittle rituals,slower days.Ta\""
+    ]
+  },
+  {
+    "check": "one-heading",
+    "where": "section#main > div > h2.jh-eyebrow \"EXPERIENCE LIFE AT MYSTIC MOUNTAIN\"",
+    "msg": "the hero holds an h2 (1): its heading is the h1, and an h2 opens the next section (SR-5)",
+    "fix": "give each section one h2, first in its .wrap, and the hero only its h1",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "one-heading"
+    ],
+    "wheres": [
+      "section#main > div > h2.jh-eyebrow \"EXPERIENCE LIFE AT MYSTIC MOUNTAIN\""
+    ]
+  },
+  {
+    "check": "one-heading",
+    "where": "section#experiences > div.jh-experiences-heading > h2 \"Little rituals,slower days.\"",
+    "msg": "headings of two sections show whole on one screen at 8 of 200 scroll positions (4%; at scroll 1250, 7400, 7450, 7500px), here with \"our little corner of Kausani\": at most 3% on a desktop (SR-5)",
+    "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "one-heading"
+    ],
+    "wheres": [
+      "section#experiences > div.jh-experiences-heading > h2 \"Little rituals,slower days.\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "section#place \"OUR LITTLE CORNER OF KUMAONAll roads lea\"",
+    "msg": "the content of section 10 runs 360px from the left and 180px from the right (read from its outermost blocks: no .wrap): the page's container starts at 0px; 360 and 180px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "section#place \"OUR LITTLE CORNER OF KUMAONAll roads lea\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "section#main \"EXPERIENCE LIFE AT MYSTIC MOUNTAINFind y\"",
+    "msg": "the content of section 1 runs 115px from the left and 115px from the right (read from its outermost blocks: no .wrap): the page's container starts at 0px (one container, equal margins, 2px either way) (and 10 more like it: \"HOTEL MYSTIC MOUNTAIN · \", \"A STAY THAT FEELS LIKE Y\", \"NATUREWhere the hills fe\") (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "section#main \"EXPERIENCE LIFE AT MYSTIC MOUNTAINFind y\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "div#root \"Skip to contentMENUMYSTICMOUNTAIN · KAUS\"",
+    "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "div#root \"Skip to contentMENUMYSTICMOUNTAIN · KAUS\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "section#stay > div.jh-chapter-copy > h2.jh-eyebrow \"A STAY THAT FEELS LIKE YOU\"",
+    "msg": "the h2 starts 835px right of the container's left: every h1 and h2 starts on it, 2px either way (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "section#stay > div.jh-chapter-copy > h2.jh-eyebrow \"A STAY THAT FEELS LIKE YOU\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "section#dine > div.jh-chapter-copy > h2.jh-eyebrow \"AROUND THE TABLE\"",
+    "msg": "the h2 starts 835px right of the container's left: every h1 and h2 starts on it, 2px either way (and 17 more like it: \"SLOW DOWN\", x -730, x 638) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "section#dine > div.jh-chapter-copy > h2.jh-eyebrow \"AROUND THE TABLE\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "section#main > div > h2.jh-eyebrow \"EXPERIENCE LIFE AT MYSTIC MOUNTAIN\"",
+    "msg": "\"EXPERIENCE LIFE AT MYSTIC MOUNTA\" is set centred across 1210px, over half the 1210px container: text that wide is set left (and 1 more like it: \"Find your room in the mo\") (SR-6)",
+    "fix": "set the text left (text-align: start)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "section#main > div > h2.jh-eyebrow \"EXPERIENCE LIFE AT MYSTIC MOUNTAIN\""
+    ]
+  },
+  {
+    "check": "container-edges",
+    "where": "div > div.jh-intro-stage > p.jh-intro-text > a:nth-of-type(4) \"our little corner of Kausani\"",
+    "msg": "a box over half the container wide runs 371-1174px, not on the container's lines at 115-1325px (SR-6)",
+    "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "container-edges"
+    ],
+    "wheres": [
+      "div > div.jh-intro-stage > p.jh-intro-text > a:nth-of-type(4) \"our little corner of Kausani\""
+    ]
+  },
+  {
+    "check": "row-lines",
+    "where": "section#experiences > div.jh-experiences-viewport > div.jh-experiences-track \"01 / 06Mountain mornings02 / 06Timber & \"",
+    "msg": "a row of 6 items: its last item ends at 2880px, the container's right line at 1424px (2px either way) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "row-lines"
+    ],
+    "wheres": [
+      "section#experiences > div.jh-experiences-viewport > div.jh-experiences-track \"01 / 06Mountain mornings02 / 06Timber & \""
+    ]
+  },
+  {
+    "check": "row-lines",
+    "where": "section#experiences > div.jh-experiences-viewport \"01 / 06Mountain mornings02 / 06Timber & \"",
+    "msg": "a clipped carousel: its window runs 0-1440px, not on the container at 16-1424px (SR-7)",
+    "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "row-lines"
+    ],
+    "wheres": [
+      "section#experiences > div.jh-experiences-viewport \"01 / 06Mountain mornings02 / 06Timber & \""
+    ]
+  },
+  {
+    "check": "split-pair",
+    "where": "footer#contact > div.signature-footer-top \"HOTEL MYSTIC MOUNTAIN · KAUSANISee youin\"",
+    "msg": "the two columns of the split start 43px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+    "fix": "top-align both columns of the split (align-items: start)",
+    "widths": [
+      1440
+    ],
+    "from": "consistency",
+    "ids": [
+      "split-pair"
+    ],
+    "wheres": [
+      "footer#contact > div.signature-footer-top \"HOTEL MYSTIC MOUNTAIN · KAUSANISee youin\""
+    ]
+  },
+  {
+    "check": "collide",
+    "where": "div#root > div.jh-site > header.jh-header \"MENU MYSTIC MOUNTAIN · KAUSANI ENQUIRE\"",
+    "msg": "at the top of the page the fixed bar covers the picture \"img: hero.webp\": nothing scrolls it out from under the bar",
+    "fix": "on a phone nothing lies on anything else: let the section grow with its content (min-height for its screens, never a fixed height; --hm: 2 when it needs two) or cut what it holds; keep pictures and cards off the buttons; pad the page under a fixed bar by the bar's height (top: the first section; end: the footer)",
+    "widths": [
+      390,
+      320
+    ],
+    "from": "consistency",
+    "ids": [
+      "collide"
+    ],
+    "wheres": [
+      "div#root > div.jh-site > header.jh-header \"MENU MYSTIC MOUNTAIN · KAUSANI ENQUIRE\""
+    ]
+  },
+  {
+    "check": "cut-text",
+    "where": "main > section.jh-marquee > div.jh-marquee-top > span \"mountain air\"",
+    "msg": "cut 29px at the right by the overflow of div#root > div.jh-site > main > section.jh-marquee",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "cut-text"
+    ],
+    "wheres": [
+      "main > section.jh-marquee > div.jh-marquee-top > span \"mountain air\""
+    ]
+  },
+  {
+    "check": "cut-text",
+    "where": "main > section.jh-marquee > div.jh-marquee-bottom > span \"slower days\"",
+    "msg": "cut 18px by the left edge of the screen",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "cut-text"
+    ],
+    "wheres": [
+      "main > section.jh-marquee > div.jh-marquee-bottom > span \"slower days\""
+    ]
+  },
+  {
+    "check": "heading-scale",
+    "where": "section#faq > div.jh-guest-copy > h3.jh-display \"Before you make yourself at home.\"",
+    "msg": "h3 headings in 3 sizes, 31px (\"Mountain mornings\") to 44px (x1.42)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+      390
+    ],
+    "from": "consistency",
+    "ids": [
+      "heading-scale"
+    ],
+    "wheres": [
+      "section#faq > div.jh-guest-copy > h3.jh-display \"Before you make yourself at home.\""
+    ]
+  },
+  {
+    "check": "container",
+    "where": "page",
+    "msg": "no .wrap",
+    "fix": "put the content in one .wrap",
+    "widths": [
+      1440,
+      390
+    ],
+    "from": "layout",
+    "ids": [
+      "container"
+    ],
+    "wheres": [
+      "page"
+    ]
+  }
+]

@@ -11,7 +11,7 @@ import { Link, useLocation } from "react-router";
 import { ArrowUpRight, Plus, Minus } from "lucide-react";
 import { hotel, photos, faqs } from "../data";
 import type { Photo } from "../data";
-import { Lightbox, Modal, MountainMark, PhotoImage } from "../ui";
+import { Lightbox, Modal, PhotoImage } from "../ui";
 import { useSiteMotion } from "../motion";
 import { goTo, resetPageScroll, useSmoothExperience } from "../experience";
 import { GalleryActions, TideLink } from "../tidescape/primitives";
@@ -21,6 +21,7 @@ import { useJagerhofMotion } from "./motion";
 import { ExperiencesCarousel } from "./ExperiencesCarousel";
 import { ArrivalHero, shouldShowArrival } from "./ArrivalHero";
 import { SiteMenu } from "./SiteMenu";
+import { SignatureFooter } from "./SignatureFooter";
 import { AnimatePresence } from "motion/react";
 import * as m from "motion/react-m";
 
@@ -69,20 +70,6 @@ function Action({
     <button className={`jh-button ${className}`} onClick={onClick}>
       {inner}
     </button>
-  );
-}
-function Brand() {
-  return (
-    <Link
-      className="jh-brand"
-      to="/"
-      aria-label="Hotel Mystic Mountain Kausani home"
-    >
-      <MountainMark />
-      <span>
-        Mystic Mountain<small>KAUSANI</small>
-      </span>
-    </Link>
   );
 }
 function Header({
@@ -420,55 +407,6 @@ function Location() {
     </>
   );
 }
-function Footer({
-  onBook,
-  entering,
-}: {
-  onBook: () => void;
-  entering: boolean;
-}) {
-  return (
-    <footer id="contact" className="jh-footer" inert={entering}>
-      <div className="jh-footer-cta">
-        <h2 className="jh-footer-title" data-jh-heading>
-          <span>Come</span> stay with us,
-        </h2>
-        <nav aria-label="Plan your visit">
-          <button onClick={onBook}>
-            Plan your stay.
-            <ArrowUpRight />
-          </button>
-          <a href={hotel.maps} target="_blank" rel="noreferrer">
-            Find your way.
-            <ArrowUpRight />
-          </a>
-          <a href={`mailto:${hotel.email}`}>
-            Say hello.
-            <ArrowUpRight />
-          </a>
-        </nav>
-      </div>
-      <div className="jh-footer-bottom" data-jh-reveal>
-        <Brand />
-        <address>
-          {hotel.address}
-          <a href={hotel.phoneHref}>{hotel.phone}</a>
-          <a href={`mailto:${hotel.email}`}>{hotel.email}</a>
-        </address>
-        <div>
-          <Link to="/gallery">The photo gallery</Link>
-          <a href={hotel.booking} target="_blank" rel="noreferrer">
-            Hotel booking portal ↗
-          </a>
-        </div>
-      </div>
-      <div className="jh-colophon">
-        <span>© {new Date().getFullYear()} Hotel Mystic Mountain Kausani</span>
-        <span>Made for slower days.</span>
-      </div>
-    </footer>
-  );
-}
 export default function JagerhofApp() {
   useSmoothExperience(1.15);
   const { pathname } = useLocation();
@@ -573,7 +511,7 @@ export default function JagerhofApp() {
             </Suspense>
           </main>
         )}
-        <Footer onBook={() => setBooking(true)} entering={entering} />
+        <SignatureFooter onBook={() => setBooking(true)} entering={entering} />
         {booking && (
           <Modal
             title="Plan your stay"

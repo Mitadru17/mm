@@ -106,3 +106,8 @@ Selected the installed Embla carousel with original perspective presentation, ra
 
 The menu sheet, hamburger morph, masked heading lines and shared dialog fades use the existing GSAP/Motion runtimes and original semantic components. No new React Bits component or runtime is needed: a generic menu or animated text widget would duplicate the router, native dialog behavior and existing section choreography. BlurText and Magnet remain in supporting pages, with title timing relaxed to 650ms and scroll-copy entrances to 750ms. The active Skiper adaptation is replaced by original EditorialLink; no Skiper source is bundled by the active entry. Source notices remain with the historical component. See docs/client-polish/README.md.
 
+## November13 — personal enquiry and signature footer (current)
+
+Official Stepper-TS-CSS was inspected, saved in .codex/react-bits/reviews and installed with the global helper targeting D:/code/MYSTIC. The rendered component is adapted in src/components/Stepper.tsx and Stepper.css, used by BookingInquiry on both modal and /contact. Controlled step selection, linear progression, numbered/completed indicators and pane choreography remain; native form validation, persistent parent answers, inert leaving content, focus transfer and reduced motion are added. The demo palette, chrome, completion screen, spring-height animation and Hugeicons dependencies are removed; existing Motion and Lucide are reused. Upstream MIT+Commons Clause retained. Four stages end in a real email draft/copy action, not a fabricated booking success. The original footer and typography use GSAP's existing line/reveal choreography; no extra React Bits background or effect was added. See docs/enquiry-redesign.
+
+

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-13T00:28:57.932Z",
+  "results": [
+    {
+      "name": "Footer uses verified contacts, real gallery links and a working enquiry action",
+      "pass": true
+    },
+    {
+      "name": "Dates are required; future steps cannot be skipped before validation",
+      "pass": true
+    },
+    {
+      "name": "Guest controls respect limits and preserve the room preference",
+      "pass": true
+    },
+    {
+      "name": "Personal details validate email and persist through backward navigation",
+      "pass": true
+    },
+    {
+      "name": "Review is personalised and builds an accurate draft; copy works without sending",
+      "pass": true
+    },
+    {
+      "name": "Sitewide type, footer, menu and buttons reflow at 320, 390, 768, 1024 and 1440px",
+      "pass": true
+    },
+    {
+      "name": "Inline contact enquiry preserves deep-linked room preferences",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion retains readable steps and responsive controls",
+      "pass": true
+    },
+    {
+      "name": "Phone touch can finish the enquiry and each step starts at its heading",
+      "pass": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

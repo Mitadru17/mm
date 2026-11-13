@@ -1,5 +1,15 @@
 # Current design extensions — Jägerhof / Mystic Mountain
 
+## Latest override — November 13 footer, type and personal enquiry
+
+Use locally bundled OFL Bodoni Moda Variable for display headings/italics and Manrope Variable for body/navigation/controls on every active route, including the menu, dialogs and map. Three Latin webfonts total about125kB; previous Cormorant/Pinyon imports are removed. Historical Ronzino/local Bon Vivant declarations are no longer the active font variables. Maintain responsive sizing, clear body copy, focus rings and system reduced motion.
+
+Primary buttons share a 52px minimum height, 3px corners, pine fill/cream text, 13px medium Manrope and a small directional arrow separated by a hairline. Secondary outlines share the shape and height. Hover moves by2px, press scales to.985; reduced motion removes travel. Map utility controls and native menu/disclosure semantics remain distinct. No new button or animation runtime.
+
+The closing footer uses an oversized serif invitation, authentic terrace photograph linked to the gallery, a contrasting stay-planning button, verified contact/location links and a large MYSTIC wordmark. The legal row contains only copyright and a working return-to-top action. No UI-library credits or developer controls.
+
+The personal enquiry is a controlled four-stage adaptation of React Bits Stepper-TS-CSS: Dates, Guests, Yours, Review. Native date constraints plus existing validateStay gate progression; guest counters preserve1–12 adults and0–8 children. Existing descriptive room preferences are unchanged. Optional name/email/note persist on back/edit. Review addresses the guest by first name, summarises the stay and offers the existing encoded email draft or copy action. No automatic send, invented availability, price or booking confirmation. Preserve the external booking portal and verified phone. Desktop has a stable photo folio and independently scrollable form panel; phone uses one column and native dialog scrolling. Accessible step names/current state, inert exiting content and heading focus on step changes are mandatory. The required upstream notice remains in public/licenses/react-bits.txt; source and adaptation decisions are in docs/enquiry-redesign.
+
 ## Latest override — November 13 client polish
 
 The native menu dialog opens as a cream sheet from the top, with a 600ms surface reveal, 350ms hamburger-to-close morph and 550ms staggered link entrances. Exit takes 440ms and finishes before internal navigation or the stay planner opens. Preserve native modality, cyclic keyboard focus, Escape dismissal, focus restoration and scroll locking. On phones the photo is omitted and the links remain comfortably sized. No continuous menu animation or new runtime dependency.

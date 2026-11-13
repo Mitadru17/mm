@@ -1,0 +1,1 @@
+const fs=require('fs');const f='src/components/GlassSurface.tsx';let s=fs.readFileSync(f,'utf8').replaceAll('tw:rb-glass-surface','rb-glass-surface').replace('const updateDisplacementMap = () => {','const updateDisplacementMap = () => {\n    if (!refraction) return;');fs.writeFileSync(f,s);

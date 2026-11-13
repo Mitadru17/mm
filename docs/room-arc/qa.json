@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-13T16:07:49.707Z",
+  "results": [
+    {
+      "name": "Visible arc replaces the ring opener; three genuine room stories remain in the existing section order",
+      "pass": true
+    },
+    {
+      "name": "Each selection updates the right-hand details, three photos, story link and honest rate",
+      "pass": true
+    },
+    {
+      "name": "Clicking an exposed arc card selects its room without opening the gallery",
+      "pass": true
+    },
+    {
+      "name": "Arrow controls loop smoothly and keyboard Home/End select rooms",
+      "pass": true
+    },
+    {
+      "name": "Vertical mouse dragging selects a room and prevents a release click",
+      "pass": true
+    },
+    {
+      "name": "Photo action and thumbnails open the existing gallery and restore focus",
+      "pass": true
+    },
+    {
+      "name": "Selected-room enquiry carries its preference and dismisses back to the trigger",
+      "pass": true
+    },
+    {
+      "name": "The arc meets the page edge and room details sit on the open page without a box",
+      "pass": true
+    },
+    {
+      "name": "Official GlassSurface remains on the photo caption without an extra panel or WebGL renderer",
+      "pass": true
+    },
+    {
+      "name": "Wheel scrolling remains native and offscreen card transforms stop",
+      "pass": true
+    },
+    {
+      "name": "Edge-to-edge layout keeps details on the right at 768/929/1024/1440 and stacks on phones",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion settles selection immediately and reduced transparency stays solid",
+      "pass": true
+    },
+    {
+      "name": "Phone horizontal swipe selects a room; vertical touch still scrolls the page",
+      "pass": true
+    },
+    {
+      "name": "Standalone rooms route uses the same arc and carries preference into Contact",
+      "pass": true
+    },
+    {
+      "name": "No uncaught browser errors or failed local assets",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failedAssets": []
+}

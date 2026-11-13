@@ -1,0 +1,1 @@
+const fs=require('fs');const f='src/jagerhof/RoomListings.tsx';let s=fs.readFileSync(f,'utf8');s=s.replace('Room category, layout, view, occupancy and current amenities are confirmed\n          by the hotel when you enquire.','Your exact room, view and current amenities are confirmed with the hotel when you enquire.');fs.writeFileSync(f,s);

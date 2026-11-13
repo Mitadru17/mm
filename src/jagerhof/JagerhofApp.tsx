@@ -9,7 +9,7 @@ import {
 import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router";
 import { ArrowUpRight, Plus } from "lucide-react";
-import { hotel, photos, faqs } from "../data";
+import { hotel, photos, faqs, roomEnquiryPreferences } from "../data";
 import type { Photo } from "../data";
 import { Lightbox, Modal, PhotoImage } from "../ui";
 import { useSiteMotion } from "../motion";
@@ -23,6 +23,7 @@ import { ArrivalHero, shouldShowArrival } from "./ArrivalHero";
 import { SiteMenu } from "./SiteMenu";
 import { SignatureFooter } from "./SignatureFooter";
 
+const RoomListings = lazy(() => import("./RoomListings"));
 const GuestExperiences = lazy(() => import("./GuestExperiences"));
 const LegacyPages = lazy(() => import("../bend/LegacyPages"));
 const BookingInquiry = lazy(() => import("../BookingInquiry"));
@@ -347,6 +348,11 @@ export default function JagerhofApp() {
   );
   const finishArrival = useCallback(() => setEntering(false), []);
   const [booking, setBooking] = useState(false);
+  const [bookingRoom, setBookingRoom] = useState<string | undefined>();
+  const openBooking = useCallback((roomId?: string) => {
+    setBookingRoom(roomId ? roomEnquiryPreferences[roomId] : undefined);
+    setBooking(true);
+  }, []);
   const [lightbox, setLightbox] = useState<{
     items: Photo[];
     index: number;
@@ -410,20 +416,42 @@ export default function JagerhofApp() {
           Skip to content
         </a>
         <SoftCursor />
-        <Header onBook={() => setBooking(true)} entering={entering} />
+        <Header onBook={() => openBooking()} entering={entering} />
         {pathname === "/" ? (
           <>
             <ArrivalHero initialEntry={entering} onReady={finishArrival} />
             <main inert={entering}>
               <Intro />
+              <Suspense
+                fallback={
+                  <div
+                    id="stay"
+                    className="rooms-loading"
+                    aria-label="Opening the room collection"
+                  />
+                }
+              >
+                <RoomListings onEnquire={openBooking} />
+              </Suspense>
+              {chapters
+                .filter((chapter) => ["nature", "dine"].includes(chapter.id))
+                .map((chapter) => (
+                  <PhotoChapter
+                    key={chapter.id}
+                    chapter={chapter}
+                    onBook={() => openBooking()}
+                  />
+                ))}
               <ExperiencesCarousel />
-              {chapters.map((chapter) => (
-                <PhotoChapter
-                  key={chapter.id}
-                  chapter={chapter}
-                  onBook={() => setBooking(true)}
-                />
-              ))}
+              {chapters
+                .filter((chapter) => ["explore", "unwind"].includes(chapter.id))
+                .map((chapter) => (
+                  <PhotoChapter
+                    key={chapter.id}
+                    chapter={chapter}
+                    onBook={() => openBooking()}
+                  />
+                ))}
               <Marquee />
               <GuestSection />
               <Suspense
@@ -454,7 +482,7 @@ export default function JagerhofApp() {
             </Suspense>
           </main>
         )}
-        <SignatureFooter onBook={() => setBooking(true)} entering={entering} />
+        <SignatureFooter onBook={() => openBooking()} entering={entering} />
         {booking && (
           <Modal
             title="Plan your stay"
@@ -464,7 +492,7 @@ export default function JagerhofApp() {
             <Suspense
               fallback={<p role="status">Opening your stay planner…</p>}
             >
-              <BookingInquiry />
+              <BookingInquiry initialRoom={bookingRoom} />
             </Suspense>
           </Modal>
         )}

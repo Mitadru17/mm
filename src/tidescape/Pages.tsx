@@ -1,3 +1,4 @@
+import RoomListings from "../jagerhof/RoomListings";
 import { useParams, useSearchParams } from "react-router";
 import { CalendarDays, Mail, MapPin, Phone } from "lucide-react";
 import { ReactiveDetails } from "./ReactiveDetails";
@@ -6,7 +7,7 @@ import { EditorialLink } from "../components/EditorialLink";
 import { ScrollVelocity } from "../components/react-bits/ScrollVelocity";
 import { LocationSection } from "../map/LocationSection";
 import BookingInquiry from "../BookingInquiry";
-import { faqs, hotel, rooms } from "../data";
+import { faqs, hotel, rooms, roomEnquiryPreferences } from "../data";
 import { activities, journal } from "./data";
 import {
   Activities,
@@ -140,30 +141,19 @@ export function AboutPage() {
 export function SuitesPage() {
   return (
     <>
-      <PageHero
-        title="Find your place in the hills"
-        copy="Explore three photographic room stories. Your exact room category, occupancy, view and amenities will be confirmed by the hotel for your dates."
-      />
-      <section className="ts-suite-list ts-section">
-        {rooms.map((room, index) => (
-          <Reveal className="ts-suite-list-item" key={room.id}>
-            <TideLink to={`/suites/${room.id}`}>
-              <TidePhoto id={room.images[0]} />
-            </TideLink>
-            <div>
-              <h2>
-                0{index + 1}. {room.title}
-              </h2>
-              <p>{room.description}</p>
-              <RoomFeatures index={index} />
-              <ArrowLink to={`/suites/${room.id}`}>
-                Take a closer look
-              </ArrowLink>
-            </div>
-          </Reveal>
-        ))}
+      <section className="room-collection-page-heading">
+        <p className="jh-eyebrow">MYSTIC MOUNTAIN / THE ROOMS</p>
+        <h1 id="room-page-title">
+          Find your place
+          <br />
+          <em>in the hills.</em>
+        </h1>
+        <p>
+          Explore our room photographs, then ask the hotel about room options
+          and prices for your dates.
+        </p>
       </section>
-      <Closing />
+      <RoomListings standalone />
     </>
   );
 }
@@ -438,11 +428,7 @@ export function FAQ() {
 export function ContactPage() {
   const [params] = useSearchParams();
   const requested = params.get("room");
-  const preferences: Record<string, string> = {
-    timber: "A timber room",
-    outlook: "A room with a mountain outlook",
-    unwind: "A room for a family or group",
-  };
+  const preferences = roomEnquiryPreferences;
   return (
     <>
       <section className="ts-contact-page">

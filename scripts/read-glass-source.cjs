@@ -1,0 +1,1 @@
+const fs=require('fs');const r=JSON.parse(fs.readFileSync('.codex/react-bits/reviews/GlassSurface-TS-CSS.json','utf8'));for(const file of r.files) fs.writeFileSync('.codex/react-bits/reviews/'+file.path,file.content);

@@ -1,0 +1,206 @@
+.arc-card-carousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  min-height: 820px;
+  color: var(--pine);
+}
+.acc-stage {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 720px;
+  height: auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  touch-action: pan-y pinch-zoom;
+  cursor: grab;
+  outline-offset: -4px;
+}
+.acc-stage[data-dragging] {
+  cursor: grabbing;
+}
+.jh-site .acc-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  visibility: hidden;
+  background: transparent;
+  border: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  box-shadow: none;
+}
+.acc-card-surface {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.acc-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  pointer-events: none;
+}
+.acc-card[data-front="true"] {
+  border-color: #faf8f4;
+}
+.acc-front-caption {
+  position: absolute;
+  z-index: 1100;
+  pointer-events: none;
+  transition: opacity 0.18s;
+}
+.acc-front-caption .rb-glass-surface {
+  background: #faf8f4cf;
+  color: var(--pine);
+}
+.acc-front-caption .rb-glass-surface__content {
+  justify-content: space-between;
+  padding: 10px 13px;
+  font: 500 12px/1.5 var(--font-body);
+}
+.arc-card-carousel[data-moving] .acc-front-caption {
+  opacity: 0;
+}
+.acc-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 74px;
+  padding: 12px 20px 0 var(--gutter);
+}
+.acc-count {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  font: 500 12px/1.5 var(--font-body);
+  font-variant-numeric: tabular-nums;
+}
+.acc-count i {
+  width: 28px;
+  height: 1px;
+  background: #2f4f3e45;
+}
+.acc-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 400 11px/1.5 var(--font-body);
+  color: #526354;
+}
+.acc-arrows {
+  display: flex;
+  gap: 8px;
+}
+.acc-arrows button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #2f4f3e45;
+  border-radius: 50%;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.acc-arrows button:hover:not(:disabled) {
+  background: #faf8f4;
+  transform: translateY(-2px);
+}
+.acc-arrows button:disabled {
+  opacity: 0.35;
+}
+.arc-card-carousel :is(button, [tabindex]):focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 4px;
+}
+.room-photos-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font: 500 12px/1.5 var(--font-body);
+  border-bottom: 1px solid #2f4f3e40;
+}
+.room-photo-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 20px 0 0;
+}
+.room-photo-thumbnails button {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 1.45;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ffffffb3;
+  padding: 3px;
+  background: #faf8f440;
+}
+.room-photo-thumbnails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.room-photo-thumbnails button:hover img {
+  transform: scale(1.03);
+}
+.room-photo-thumbnails img {
+  transition: transform 0.2s;
+}
+@media (max-width: 767px) {
+  .arc-card-carousel {
+    min-height: 0;
+  }
+  .acc-stage {
+    flex: none;
+    min-height: 0;
+    height: clamp(430px, 125vw, 630px);
+  }
+  .acc-hint {
+    display: none;
+  }
+  .acc-controls {
+    min-height: 66px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arc-card-carousel *,
+  .room-photo-thumbnails * {
+    transition: none !important;
+  }
+}
+html[data-motion-reduced="true"] .arc-card-carousel * {
+  transition: none !important;
+}
+@media (prefers-reduced-transparency: reduce) {
+  .acc-front-caption .rb-glass-surface {
+    background: #f6f2ea;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}

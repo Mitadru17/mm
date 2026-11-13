@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-13T06:31:45.559Z",
+  "results": [
+    {
+      "name": "Room wheel replaces the old stay block and interactive sections are separated",
+      "pass": true
+    },
+    {
+      "name": "All stories show genuine photos, described features and requested rates without fabricated prices",
+      "pass": true
+    },
+    {
+      "name": "The supplied ring opens to the drum; previous/next and Home/End select real photographs",
+      "pass": true
+    },
+    {
+      "name": "All nine images load and only the front photo is a keyboard target",
+      "pass": true
+    },
+    {
+      "name": "Front photograph opens the existing gallery and dismissal restores the trigger",
+      "pass": true
+    },
+    {
+      "name": "Room enquiry carries the selected preference, and generic enquiries reset it",
+      "pass": true
+    },
+    {
+      "name": "GlassSurface is genuinely mounted, namespaced and frosted without a WebGL context",
+      "pass": true
+    },
+    {
+      "name": "Vertical scrolling is not captured, and offscreen wheel frames stop",
+      "pass": true
+    },
+    {
+      "name": "Room route reuses the component and preserves preference in the contact flow",
+      "pass": true
+    },
+    {
+      "name": "Responsive layout has no overlaps/overflow and keeps controls readable at 320/390/768/1024/1440",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion shows a flat viewer and reduced transparency uses a solid readable surface",
+      "pass": true
+    },
+    {
+      "name": "Phone horizontal drag changes photos while vertical touch scrolling remains native",
+      "pass": true
+    },
+    {
+      "name": "No uncaught errors or failed local assets",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

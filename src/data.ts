@@ -160,3 +160,10 @@ export const faqs = [
     "Ask for the cancellation, payment, child and extra-guest terms that apply to your selected room and rate before confirming. Terms on external booking platforms may differ.",
   ],
 ];
+
+/** Existing inquiry preferences, not guaranteed inventory categories. */
+export const roomEnquiryPreferences: Record<string, string> = {
+  timber: "A timber room",
+  outlook: "A room with a mountain outlook",
+  unwind: "A room for a family or group",
+};

@@ -1,0 +1,21 @@
+Arc Card Carousel — user-supplied component adapted for Hotel Mystic Mountain
+
+Source: attachment e3626afe-26b1-487f-a37b-d6c623d950be/Pasted text.txt,
+provided by the project owner on 13 November 2026.
+The supplied source did not specify an independent author or license. No
+broader license is asserted. Demo image data and demo project names are not
+included in this website.
+
+Retained: offsetOf, ringSize and wrapIndex, repeated physical card slots,
+off-left hub, tangent rotation, curved placement and wrapped selection.
+Adapted: local hotel photographs, larger half-page image sizing, native
+click/drag/keyboard controls, a controlled right-hand details panel and
+shared GSAP tween ownership. The reference's looping page-scroll behavior
+is replaced with looping card selection for this embedded room section.
+No independent ticker or new animation engine is installed.
+
+The front caption uses the official React Bits GlassSurface-TS-CSS component,
+separately licensed MIT + Commons Clause. The later seamless-layout correction
+removes the boxed details panel, opens the arc to the left viewport edge and
+blends its top/bottom into the page. Room information is unboxed on the right.
+Its notice is retained in public/licenses/react-bits.txt.

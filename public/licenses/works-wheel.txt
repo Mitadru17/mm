@@ -1,0 +1,18 @@
+Works Wheel — user-supplied component adapted for Hotel Mystic Mountain
+
+Source: attachment 10571dd1-7c53-4d2c-8527-5920a5c004ee/Pasted text.txt,
+provided by the project owner on 13 November 2026.
+The supplied component did not name an independent author/license. No broader
+license is asserted for that source. Its demo artwork URLs referenced crafterui;
+none of those images or portfolio names are used by the hotel.
+
+Retained: the single-turn ring-to-drum model, tangent card placement, perspective,
+leftward bow, culling and eased geometry, with the original STEP/DRUM/LENS/BOW
+relationships. Adapted: room photographs, controlled selection, responsive
+front-card sizing, keyboard controls, native page scrolling, horizontal touch
+gestures, pointer-capture handling, on-demand/offscreen/hidden rendering and
+flat mobile/tablet/reduced-motion presentation.
+
+The installed GlassSurface component is from the official React Bits
+GlassSurface-TS-CSS registry, separately licensed MIT + Commons Clause.
+Its full notice is public/licenses/react-bits.txt.

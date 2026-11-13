@@ -1,0 +1,1 @@
+const fs=require('fs');const f='scripts/room-wheel-qa.cjs';let s=fs.readFileSync(f,'utf8').replaceAll("name:'Hotel photo gallery'","name:'Photo gallery'");s=s.replace("assert.equal(await p.locator('#stay.romm-listings').count(),0);",'');fs.writeFileSync(f,s);

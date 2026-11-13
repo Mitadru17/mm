@@ -1258,3 +1258,61 @@ body {
     font-size: 18px;
   }
 }
+/* November13: measured breathing room and shared reading edges between chapters. */
+.jh-site {
+  --section-rhythm: clamp(76px, 7vw, 112px);
+}
+.jh-site .jh-chapter {
+  margin-block: clamp(34px, 4vw, 64px);
+}
+.jh-site .jh-chapter-copy {
+  padding-inline: var(--gutter);
+}
+.jh-site .jh-chapter-description {
+  padding-left: 0;
+  margin-top: 28px;
+}
+.jh-site .jh-chapter-description p {
+  max-width: 46ch;
+  font: 450 15px/1.85 var(--font-body);
+}
+.jh-site .jh-chapter-copy .jh-display {
+  max-width: 510px;
+}
+.jh-site .jh-guests {
+  max-width: 1440px;
+  padding-block: var(--section-rhythm);
+  gap: clamp(40px, 7vw, 100px);
+}
+.jh-site .jh-guest-copy {
+  padding-left: 0;
+}
+.jh-site .jh-experiences.jh-carousel {
+  padding-block: var(--section-rhythm);
+}
+.jh-site .jh-experiences-heading {
+  margin-bottom: 55px;
+}
+.jh-site .testimonial-globe {
+  padding-top: var(--section-rhythm);
+}
+.rooms-loading {
+  min-height: 1000px;
+}
+@media (max-width: 767px) {
+  .jh-site .jh-chapter {
+    margin-block: 26px;
+  }
+  .jh-site .jh-chapter-copy {
+    padding: 52px var(--gutter);
+  }
+  .jh-site .jh-chapter-description {
+    margin-top: 24px;
+  }
+  .jh-site .jh-experiences-heading {
+    margin-bottom: 35px;
+  }
+  .rooms-loading {
+    min-height: 1500px;
+  }
+}

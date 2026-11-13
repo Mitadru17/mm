@@ -1,0 +1,11 @@
+Nearby Walk — original design and supplied component by Aakash Mehra.
+Reference included in the supplied text: https://aakashmehra.com/ref/nearbywalk
+Source: component text supplied by the user for integration in this project.
+
+Adaptation for Hotel Mystic Mountain Kausani: schematic local landmark drawings;
+the existing sourced location data; optional walking times rather than invented
+estimates; responsive native place controls; pause, visibility and reduced-motion
+handling; scoped brand palettes and prefixed Tailwind integration.
+
+The supplied attribution is preserved in source and this notice. No new license
+for the original component is asserted by this adaptation.

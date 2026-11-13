@@ -1,0 +1,571 @@
+/* Nearby Walk by Aakash Mehra, supplied by the user; scoped hotel adaptation. */
+@property --nw-page {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #e9e1d6;
+}
+@property --nw-bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f6f2ea;
+}
+@property --nw-bg2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f6f2ea;
+}
+[data-nearby-walk] {
+  --nw-play: paused;
+  --nw-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  gap: 22px;
+  padding: 26px;
+  background: var(--nw-page);
+  color: var(--nw-fg);
+  font-family: var(--font-body);
+  transition:
+    --nw-page 0.5s,
+    --nw-bg 0.5s,
+    --nw-bg2 0.5s,
+    color 0.5s;
+}
+[data-nearby-walk][data-running] {
+  --nw-play: running;
+}
+.jh-site [data-nearby-walk] .nw-hint {
+  margin: 0;
+  color: var(--nw-muted);
+  text-align: center;
+  font: 400 12px/1.6 var(--font-body);
+}
+[data-nearby-walk] .nw-card {
+  max-width: 1240px;
+  border-radius: 12px;
+  padding: 30px 2.5% 12px;
+  border: 1px solid color-mix(in srgb, var(--nw-ink) 13%, transparent);
+  background: linear-gradient(var(--nw-bg2), var(--nw-bg) 82%);
+  --mx: -999px;
+  --my: -999px;
+}
+[data-nearby-walk] .nw-scene {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+[data-nearby-walk] .nw-spot {
+  cursor: pointer;
+  outline: none;
+}
+[data-nearby-walk] .nw-hit {
+  fill: transparent;
+  pointer-events: all;
+}
+[data-nearby-walk] .nw-spot > :not(.nw-hit) {
+  pointer-events: none;
+}
+[data-nearby-walk] .nw-spot:focus-visible .nw-hit {
+  stroke: var(--nw-ink);
+  stroke-width: 2;
+  stroke-dasharray: 4 5;
+  rx: 8px;
+}
+[data-nearby-walk] .nw-spot:focus-visible .nw-name {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+[data-nearby-walk] .nw-bob {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+[data-nearby-walk] .nw-km,
+[data-nearby-walk] .nw-walk {
+  transition: opacity 0.25s var(--nw-ease);
+}
+[data-nearby-walk] .nw-km,
+[data-nearby-walk] .nw-spot[data-active] .nw-walk {
+  opacity: 0;
+}
+[data-nearby-walk] .nw-spot[data-active] .nw-km {
+  opacity: 1;
+}
+[data-nearby-walk]
+  :is(
+    .nw-line,
+    .nw-thin,
+    .nw-wall,
+    .nw-stone,
+    .nw-roof,
+    .nw-leaf,
+    .nw-hill,
+    .nw-lit,
+    .nw-win,
+    .nw-door,
+    .nw-ground
+  ) {
+  stroke: var(--nw-ink);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+[data-nearby-walk] :is(path, rect, circle, text) {
+  transition:
+    fill 0.5s,
+    stroke 0.5s;
+}
+[data-nearby-walk] :is(.nw-line, .nw-thin) {
+  fill: none;
+}
+[data-nearby-walk] .nw-thin {
+  stroke-width: 1.1;
+}
+[data-nearby-walk] .nw-wall {
+  fill: var(--nw-wall);
+}
+[data-nearby-walk] .nw-stone {
+  fill: var(--nw-stone);
+}
+[data-nearby-walk] :is(.nw-roof, .nw-door) {
+  fill: var(--nw-roof);
+}
+[data-nearby-walk] .nw-leaf {
+  fill: var(--nw-roof);
+  stroke-width: 1;
+}
+[data-nearby-walk] .nw-hill {
+  fill: var(--nw-hill);
+  stroke: none;
+}
+[data-nearby-walk] .nw-backdrop {
+  fill: var(--nw-hill);
+  opacity: 0.45;
+}
+[data-nearby-walk] .nw-snow {
+  opacity: 0.35;
+}
+[data-nearby-walk] .nw-win {
+  fill: var(--nw-win);
+  stroke-width: 1.1;
+}
+[data-nearby-walk] .nw-lit {
+  fill: var(--nw-sun);
+  stroke-width: 1.1;
+}
+[data-nearby-walk] .nw-ground {
+  fill: none;
+  stroke-dasharray: 1;
+  stroke: var(--nw-ink);
+}
+[data-nearby-walk] .nw-route {
+  fill: none;
+  stroke: var(--nw-ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-dasharray: 2 9;
+  opacity: 0.5;
+}
+[data-nearby-walk] .nw-walker {
+  display: none;
+  fill: var(--nw-pin);
+  stroke: var(--nw-bg);
+  stroke-width: 1.5;
+  offset-rotate: 0deg;
+}
+@supports (offset-path: path("M0 0")) {
+  [data-nearby-walk] .nw-walker {
+    display: block;
+  }
+}
+[data-nearby-walk] .nw-cloud {
+  fill: var(--nw-cloud);
+  stroke: color-mix(in srgb, var(--nw-ink) 35%, transparent);
+  stroke-width: 1;
+}
+[data-nearby-walk] .nw-pin :is(rect, path) {
+  fill: var(--nw-pin);
+}
+[data-nearby-walk] .nw-pin text {
+  fill: var(--nw-pin-text);
+  font-size: 14px;
+  font-weight: 600;
+}
+[data-nearby-walk] text {
+  font-family: var(--font-body);
+}
+[data-nearby-walk] .nw-name {
+  fill: var(--nw-fg);
+  font-size: 16px;
+  font-weight: 500;
+}
+[data-nearby-walk] .nw-dist {
+  fill: var(--nw-muted);
+  font-size: 13px;
+}
+[data-nearby-walk] .nw-fx {
+  display: none;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  [data-nearby-walk] .nw-fx {
+    display: block;
+  }
+}
+[data-nearby-walk] .nw-card[data-lamp] .nw-fx {
+  opacity: 1;
+}
+[data-nearby-walk] .nw-lamp {
+  z-index: 0;
+  background: radial-gradient(
+    220px circle at var(--mx) var(--my),
+    var(--nw-lamp),
+    transparent 70%
+  );
+}
+[data-nearby-walk] .nw-trail {
+  z-index: 2;
+}
+[data-nearby-walk] .nw-dot {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--nw-trail);
+}
+[data-nearby-walk] .nw-place-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 1240px;
+}
+.jh-site [data-nearby-walk] .nw-place-list > button {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  padding: 16px 0;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--nw-ink) 24%, transparent);
+  border-radius: 0;
+  color: var(--nw-fg);
+  background: transparent;
+  font: 500 13px/1.5 var(--font-body);
+  min-height: 70px;
+}
+[data-nearby-walk] .nw-place-list > button > span:nth-child(2) {
+  flex: 1;
+}
+[data-nearby-walk] .nw-place-list small {
+  display: block;
+  font: 400 11px/1.7 var(--font-body);
+  color: var(--nw-muted);
+  margin-top: 4px;
+}
+[data-nearby-walk] .nw-place-index {
+  align-self: start;
+  margin-top: 4px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--nw-muted);
+}
+[data-nearby-walk] .nw-place-list > button[aria-pressed="true"] {
+  border-bottom: 2px solid var(--nw-ink);
+}
+[data-nearby-walk] .nw-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  width: 100%;
+  max-width: 1240px;
+}
+[data-nearby-walk] .nw-themes {
+  align-items: center;
+  gap: 4px;
+}
+[data-nearby-walk] .nw-themes button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 50%;
+}
+[data-nearby-walk] .nw-themes button > span {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #2f4f3e30;
+  transition: transform 0.2s;
+}
+[data-nearby-walk] .nw-themes button[aria-pressed="true"] > span {
+  outline: 1px solid var(--nw-ink);
+  outline-offset: 5px;
+}
+[data-nearby-walk] .nw-theme-name {
+  font: 400 11px/1.5 var(--font-body);
+  color: var(--nw-muted);
+  padding-left: 10px;
+}
+.jh-site [data-nearby-walk] .nw-motion-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 5px;
+  border: 0;
+  background: none;
+  color: var(--nw-muted);
+  min-height: 44px;
+  font: 400 11px/1.5 var(--font-body);
+}
+[data-nearby-walk] button:focus-visible {
+  outline: 2px solid var(--nw-ink);
+  outline-offset: 5px;
+}
+.nearby-location {
+  max-width: 1440px;
+  padding: 85px var(--gutter);
+  margin: auto;
+}
+.nearby-location-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 35px;
+}
+.nearby-location-header h2 {
+  font-size: clamp(38px, 4.2vw, 64px) !important;
+}
+.jh-site .nearby-location-intro {
+  max-width: 490px;
+  margin-top: 20px;
+  font: 400 15px/1.7 var(--font-body);
+}
+.nearby-location-detail {
+  width: 100%;
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  padding: 22px 0 5px;
+  border-top: 1px solid color-mix(in srgb, var(--nw-ink) 18%, transparent);
+}
+.jh-site .nearby-location-detail h3 {
+  font: 400 clamp(23px, 2vw, 31px)/1.25 var(--font-display);
+  color: var(--nw-fg);
+  margin-bottom: 12px;
+}
+.jh-site .nearby-location-detail p {
+  font: 400 13px/1.7 var(--font-body);
+  color: var(--nw-muted);
+}
+.nearby-location-detail .editorial-link {
+  color: var(--nw-fg);
+  margin-top: 10px;
+}
+.jh-site .nearby-location-note {
+  font: 400 11px/1.7 var(--font-body);
+  color: var(--nw-muted);
+  max-width: 480px;
+  align-self: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-nearby-walk][data-armed]:not([data-shown])
+    :is(.nw-rise, .nw-lbl, .nw-route, .nw-walker) {
+    opacity: 0;
+  }
+  [data-nearby-walk][data-armed] .nw-ground {
+    stroke-dashoffset: 1;
+  }
+  [data-nearby-walk][data-shown] .nw-ground {
+    animation: nw-draw 0.9s var(--nw-ease) forwards;
+  }
+  [data-nearby-walk][data-shown] .nw-rise {
+    animation: nw-rise 0.7s var(--nw-ease) var(--d) both;
+  }
+  [data-nearby-walk][data-shown] .nw-lbl {
+    animation: nw-fade 0.5s ease calc(var(--d) + 250ms) both;
+  }
+  [data-nearby-walk][data-shown] .nw-route {
+    animation: nw-flow 2.4s linear infinite;
+  }
+  [data-nearby-walk][data-shown] .nw-walker {
+    animation: nw-walk 16s linear 1.2s infinite both;
+  }
+  [data-nearby-walk][data-shown] .nw-walker-two {
+    animation-delay: -6.8s;
+  }
+  [data-nearby-walk] .nw-tw {
+    animation: nw-twinkle 3.2s ease-in-out infinite alternate;
+  }
+  [data-nearby-walk] .nw-cloud-a {
+    animation: nw-drift 18s ease-in-out infinite alternate;
+  }
+  [data-nearby-walk] .nw-cloud-b {
+    animation: nw-drift 22s ease-in-out -10s infinite alternate-reverse;
+  }
+  [data-nearby-walk][data-running] .nw-spot[data-active] .nw-bob {
+    animation: nw-bounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  [data-nearby-walk]
+    :is(
+      .nw-ground,
+      .nw-rise,
+      .nw-lbl,
+      .nw-route,
+      .nw-walker,
+      .nw-tw,
+      .nw-cloud,
+      .nw-bob
+    ) {
+    animation-play-state: var(--nw-play);
+  }
+  [data-nearby-walk][data-paused] :is(.nw-rise, .nw-lbl) {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  [data-nearby-walk][data-paused] .nw-ground {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes nw-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes nw-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+@keyframes nw-fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes nw-flow {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+@keyframes nw-walk {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+@keyframes nw-twinkle {
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes nw-drift {
+  to {
+    transform: translateX(28px);
+  }
+}
+@keyframes nw-bounce {
+  40% {
+    transform: translateY(-10px);
+  }
+}
+@media (max-width: 767px) {
+  .nearby-location {
+    padding-block: 60px;
+  }
+  .nearby-location-header {
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+  }
+  [data-nearby-walk] .nw-place-list {
+    gap: 12px;
+  }
+}
+@media (max-width: 639px) {
+  [data-nearby-walk] {
+    padding: 18px 14px;
+    gap: 16px;
+  }
+  [data-nearby-walk] .nw-card {
+    padding: 28px 8px 8px;
+    border-radius: 8px;
+  }
+  [data-nearby-walk] .nw-scene {
+    min-height: 110px;
+  }
+  [data-nearby-walk] .nw-lbl {
+    display: none;
+  }
+  [data-nearby-walk] .nw-place-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .jh-site [data-nearby-walk] .nw-place-list > button {
+    min-height: 74px;
+    font-size: 14px;
+  }
+  [data-nearby-walk] .nw-place-list small {
+    font-size: 12px;
+  }
+  [data-nearby-walk] .nw-controls {
+    gap: 4px;
+  }
+  [data-nearby-walk] .nw-themes {
+    gap: 0;
+  }
+  [data-nearby-walk] .nw-theme-name {
+    display: none;
+  }
+  .nearby-location-detail {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-nearby-walk],
+  [data-nearby-walk] * {
+    animation: none !important;
+    transition: none !important;
+  }
+  [data-nearby-walk] .nw-fx {
+    display: none !important;
+  }
+}
+[data-nearby-walk][data-reduced]
+  :is(
+    .nw-ground,
+    .nw-rise,
+    .nw-lbl,
+    .nw-route,
+    .nw-walker,
+    .nw-tw,
+    .nw-cloud,
+    .nw-bob
+  ) {
+  animation: none !important;
+}
+[data-nearby-walk][data-reduced] .nw-ground {
+  stroke-dashoffset: 0;
+}
+[data-nearby-walk][data-reduced] .nw-fx {
+  display: none;
+}

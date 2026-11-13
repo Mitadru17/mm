@@ -5,10 +5,10 @@
   "tsx": true,
   "tailwind": {
     "config": "",
-    "css": "src/jagerhof/styles.css",
+    "css": "src/tailwind.css",
     "baseColor": "stone",
     "cssVariables": false,
-    "prefix": ""
+    "prefix": "tw"
   },
   "iconLibrary": "lucide",
   "aliases": {

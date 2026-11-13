@@ -227,7 +227,7 @@ const chapters: Chapter[] = [
     id: "explore",
     label: "A LITTLE CURIOSITY GOES A LONG WAY",
     title: "Days out. Stories to bring home.",
-    copy: "The Tea Factory is opposite the hotel, while Anasakti Ashram and the Sumitranandan Pant Museum are places to discover around Kausani. Find your bearings on our interactive terrain map.",
+    copy: "The Tea Factory is opposite the hotel, while Anasakti Ashram and the Sumitranandan Pant Museum are places to discover around Kausani. Find your bearings with our illustrated nearby guide.",
     image: "surroundings",
     inset: "arrival",
     button: "Discover Kausani",
@@ -375,7 +375,7 @@ function Location() {
                 aria-controls="jh-map"
                 onClick={() => setMap((v) => !v)}
               >
-                {map ? "Close the 3D map" : "Explore the 3D map"}
+                {map ? "Close nearby guide" : "Explore nearby"}
                 {map ? <Minus size={16} /> : <Plus size={16} />}
               </button>
             </div>
@@ -397,7 +397,7 @@ function Location() {
             }}
           >
             <Suspense
-              fallback={<p role="status">Opening the Kausani terrain map…</p>}
+              fallback={<p role="status">Opening the Kausani nearby guide…</p>}
             >
               <LocationSection />
             </Suspense>

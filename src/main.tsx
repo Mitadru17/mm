@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./metrics";
+import "./tailwind.css";
 import App from "./jagerhof/JagerhofApp";
 import { BrowserRouter } from "react-router";
 import "./tidescape/styles.css";

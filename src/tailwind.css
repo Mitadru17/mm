@@ -1,0 +1,5 @@
+/* Tailwind v4, added for supplied shadcn components. No global Preflight reset. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
+@source "./components/ui";

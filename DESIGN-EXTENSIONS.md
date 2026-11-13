@@ -1,5 +1,15 @@
 # Current design extensions — Jägerhof / Mystic Mountain
 
+## Latest override — November13 illustrated nearby guide
+
+The user's supplied Nearby Walk component supersedes the active MapLibre terrain interface. Render the adapted SVG component at src/components/ui/nearby-walk-menu.tsx through the existing LocationSection entry on home, about and contact. Keep directions and the home disclosure transition; rename its action Explore nearby. The former renderer, models, textures and license records remain historical source and are no longer imported by the active app. No renderer, worker or terrain-provider request is needed by the new guide.
+
+Retain the reference's staggered rising buildings, line draw, animated dotted line, route dots, landmark bounce, metric crossfade, four palettes and optional pointer light/trail. Kausani-specific schematic drawings replace Seoul landmarks and the unverified rooftop camper. Use the existing tea estate, Pant Museum and Anasakti Ashram records. Do not imply architectural accuracy or a surveyed walking route. Compute approximate great-circle distances from the sourced points; for adjacent tea/hotel pins use Close to the hotel instead of a false precise walking distance. The supplied walkMinutes prop is optional; no unverified walking time is shown.
+
+Classic uses current cream/pine and the current Manrope/Bodoni pairing. Night, Sunset and Ink recolour the guide locally. Keep 12px scene corners, fine borders, a readable native place list and a selected-place explanation/source link. At phone width SVG labels are replaced by HTML labels and its tiny landmark controls leave the tab order. Native place/theme/pause controls are at least44px. The hotel remains the highlighted origin. Source attribution is preserved in source and public/licenses/nearby-walk.txt.
+
+Pause settles entrance states and stops loops; offscreen/hidden scenes sleep. Respect live system/manual reduced motion. Separate stable hit areas from bouncing drawings. The pointer loop is event-driven, sleeps when settled and is absent for touch/reduced motion. No new animation engine. Tailwind4 is configured with tw: prefixed utilities and no Preflight, alongside existing CSS; the shadcn UI alias resolves to src/components/ui. See docs/nearby-walk/README.md for setup and verification.
+
 ## Latest override — November 13 footer, type and personal enquiry
 
 Use locally bundled OFL Bodoni Moda Variable for display headings/italics and Manrope Variable for body/navigation/controls on every active route, including the menu, dialogs and map. Three Latin webfonts total about125kB; previous Cormorant/Pinyon imports are removed. Historical Ronzino/local Bon Vivant declarations are no longer the active font variables. Maintain responsive sizing, clear body copy, focus rings and system reduced motion.

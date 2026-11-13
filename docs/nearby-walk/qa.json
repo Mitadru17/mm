@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-13T02:13:26.302Z",
+  "results": [
+    {
+      "name": "The nearby guide replaces the terrain, with three real Kausani places",
+      "pass": true
+    },
+    {
+      "name": "Landmarks reveal on entry and hover swaps their metric and detail",
+      "pass": true
+    },
+    {
+      "name": "SVG landmarks and HTML alternatives work with keyboard input",
+      "pass": true
+    },
+    {
+      "name": "All four themes crossfade locally without recolouring the hotel site",
+      "pass": true
+    },
+    {
+      "name": "Pause settles entrances and stops movement; offscreen animation sleeps",
+      "pass": true
+    },
+    {
+      "name": "System reduced motion keeps a complete static drawing, including live changes",
+      "pass": true
+    },
+    {
+      "name": "Narrow phone, phone, tablet and desktop have readable controls and no overflow",
+      "pass": true
+    },
+    {
+      "name": "The homepage guide closes with its exit animation and the enquiry still works",
+      "pass": true
+    },
+    {
+      "name": "The contact route uses the same guide and never loads terrain resources",
+      "pass": true
+    },
+    {
+      "name": "Touch selects places, switches themes and keeps the pointer effect off",
+      "pass": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "terrainRequests": []
+}

@@ -1,0 +1,58 @@
+
+perf /localhost:4174/ @ 1440px
+  WARN  host CPU load (before/after)               39/59 %        busy host: timing verdicts capped at WARN, rerun when idle
+  FAIL  total transfer                             6673.8 KiB     html 1.2K  css 41.2K  js 245.9K  font 144.9K  img 2676.2K  media 3562.6K  other 1.7K
+  PASS  requests                                   41             24 by load
+  FAIL  images bytes                               2676.2 KiB     23 files
+  PASS  largest image                              309.7 KiB      images/valley-portrait-960.webp
+  WARN  JS parsed                                  692.4 KiB      7 files, 245.9K gz
+  PASS  CSS                                        41.2 KiB       4 files
+  PASS  font families                              2              Manrope Variable, Newsreader Variable
+  PASS  font files                                 3              144.9K
+  PASS  font bytes                                 144.9 KiB      
+  FAIL  images without width+height                15             timber-room-960.webp, room-view-960.webp, room-warm-960.webp
+  FAIL  below-fold images not lazy                 18             timber-room-960.webp, room-view-960.webp, room-warm-960.webp
+  FAIL  oversized images (natural > 2.2x shown)    9              timber-room-960.webp 720px for 271; valley-portrait-960.webp 720px for 271; dining-960.webp 720px for 271
+  WARN  upscaled images (natural < 0.75x shown)    4              room-view-960.webp 604px for 832; room-warm-960.webp 604px for 852; room-view-960.webp 604px for 852
+  PASS  WebGL live at load                         0              
+  PASS  WebGL live at bottom                       0              
+  PASS  WebGL peak live                            1              1 contexts made in all
+  PASS  long tasks (WebGL off)                     3              runs 3, 3..3, max 304ms
+  PASS  blocking time (WebGL off)                  281 ms         runs 3, 221..363 ms; at load 281ms
+  PASS  FCP (CPU, relative)                        540 ms         runs 3, 468..548
+  PASS  LCP (CPU, relative)                        540 ms         runs 3, 468..548, span
+  PASS  layout shift                               0.003          runs 3, 0.003..0.003; at load 0.003
+  INFO    info: one load with WebGL on the CPU     535 ms         5 long tasks; SwiftShader runs shaders on the CPU, not a verdict, and shader compile on a real GPU is not measured
+  PASS  modules loaded, never mounted              0              
+  PASS  broken requests                            0              
+  PASS  page height                                13.6 screens   DOM 1052 nodes
+
+perf /localhost:4174/ @ 390px
+  WARN  host CPU load (before/after)               39/59 %        busy host: timing verdicts capped at WARN, rerun when idle
+  WARN  total transfer                             2787.9 KiB     html 1.2K  css 41.2K  js 245.9K  font 144.9K  img 1051.6K  media 1301.8K  other 1.2K
+  PASS  requests                                   36             23 by load
+  PASS  images bytes                               1051.6 KiB     19 files
+  PASS  largest image                              101.7 KiB      images/valley-portrait-480.webp
+  WARN  JS parsed                                  692.4 KiB      7 files, 245.9K gz
+  PASS  CSS                                        41.2 KiB       4 files
+  PASS  font families                              2              Manrope Variable, Newsreader Variable
+  PASS  font files                                 3              144.9K
+  PASS  font bytes                                 144.9 KiB      
+  FAIL  images without width+height                15             timber-room-480.webp, room-view-480.webp, room-warm-480.webp
+  FAIL  below-fold images not lazy                 18             timber-room-480.webp, room-view-480.webp, room-warm-480.webp
+  FAIL  oversized images (natural > 2.2x shown)    10             hero-video-poster.webp 1600px for 390; timber-room-480.webp 389px for 104; valley-portrait-480.webp 389px for 104
+  WARN  upscaled images (natural < 0.75x shown)    4              room-view-480.webp 331px for 462; room-warm-480.webp 331px for 473; room-view-480.webp 331px for 473
+  PASS  WebGL live at load                         0              
+  PASS  WebGL live at bottom                       0              
+  PASS  WebGL peak live                            1              1 contexts made in all
+  PASS  long tasks (WebGL off)                     2              runs 3, 2..3, max 247ms
+  PASS  blocking time (WebGL off)                  207 ms         runs 3, 201..259 ms; at load 207ms
+  PASS  FCP (CPU, relative)                        428 ms         runs 3, 424..432
+  PASS  LCP (CPU, relative)                        428 ms         runs 3, 424..432, span
+  PASS  layout shift                               0.000          runs 3, 0.000..0.000; at load 0.000
+  INFO    info: one load with WebGL on the CPU     315 ms         4 long tasks; SwiftShader runs shaders on the CPU, not a verdict, and shader compile on a real GPU is not measured
+  PASS  modules loaded, never mounted              0              
+  PASS  broken requests                            0              
+  PASS  page height                                14.8 screens   DOM 1052 nodes
+
+SUMMARY /localhost:4174/: 8 FAIL, 7 WARN  -> FAIL

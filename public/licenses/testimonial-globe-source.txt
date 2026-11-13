@@ -1,0 +1,17 @@
+TestimonialGlobe — owner-supplied source and hotel adaptation
+
+Sources: owner-supplied TestimonialGlobe attachments, including the latest
+185ed0fa-b4b2-4c6b-9c8b-c8744cec6777/Pasted text.txt,13 November2026.
+The supplied source did not name an independent author/license; no broader
+license is asserted. Demo SaaS reviews, portraits, country counters and data
+are not redistributed as hotel facts.
+
+Retained/adapted: COBE Cartesian projection, drag friction, viewport-based
+renderer, retry/fallback behavior, portrait pin arrangement, short-way turns,
+two-row globe/heading/card composition, projected leader and220ms card swaps.
+The actual hotel marker, authentic sourced excerpts, illustrated guest-position
+disclosures, local CC0 avatars, native navigation and hotel typography are the
+project adaptation. No perpetual idle rotation or fake aggregate is displayed.
+
+COBE by Shu Ding is MIT; public/licenses/cobe.txt retains its notice.
+Guest illustrations are separately documented in public/licenses/guest-avatars.txt.

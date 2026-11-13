@@ -1,0 +1,328 @@
+{
+ "page": "http://localhost:4174/",
+ "partial": false,
+ "results": [
+  {
+   "w": 1440,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "39/59 %",
+     "verdict": "WARN",
+     "note": "busy host: timing verdicts capped at WARN, rerun when idle"
+    },
+    {
+     "name": "total transfer",
+     "value": "6673.8 KiB",
+     "verdict": "FAIL",
+     "note": "html 1.2K  css 41.2K  js 245.9K  font 144.9K  img 2676.2K  media 3562.6K  other 1.7K"
+    },
+    {
+     "name": "requests",
+     "value": 41,
+     "verdict": "PASS",
+     "note": "24 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "2676.2 KiB",
+     "verdict": "FAIL",
+     "note": "23 files"
+    },
+    {
+     "name": "largest image",
+     "value": "309.7 KiB",
+     "verdict": "PASS",
+     "note": "images/valley-portrait-960.webp"
+    },
+    {
+     "name": "JS parsed",
+     "value": "692.4 KiB",
+     "verdict": "WARN",
+     "note": "7 files, 245.9K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "41.2 KiB",
+     "verdict": "PASS",
+     "note": "4 files"
+    },
+    {
+     "name": "font families",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "Manrope Variable, Newsreader Variable"
+    },
+    {
+     "name": "font files",
+     "value": 3,
+     "verdict": "PASS",
+     "note": "144.9K"
+    },
+    {
+     "name": "font bytes",
+     "value": "144.9 KiB",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "images without width+height",
+     "value": 15,
+     "verdict": "FAIL",
+     "note": "timber-room-960.webp, room-view-960.webp, room-warm-960.webp"
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 18,
+     "verdict": "FAIL",
+     "note": "timber-room-960.webp, room-view-960.webp, room-warm-960.webp"
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 9,
+     "verdict": "FAIL",
+     "note": "timber-room-960.webp 720px for 271; valley-portrait-960.webp 720px for 271; dining-960.webp 720px for 271"
+    },
+    {
+     "name": "upscaled images (natural < 0.75x shown)",
+     "value": 4,
+     "verdict": "WARN",
+     "note": "room-view-960.webp 604px for 832; room-warm-960.webp 604px for 852; room-view-960.webp 604px for 852"
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 1,
+     "verdict": "PASS",
+     "note": "1 contexts made in all"
+    },
+    {
+     "name": "long tasks (WebGL off)",
+     "value": 3,
+     "verdict": "PASS",
+     "note": "runs 3, 3..3, max 304ms"
+    },
+    {
+     "name": "blocking time (WebGL off)",
+     "value": "281 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 221..363 ms; at load 281ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "540 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 468..548"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "540 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 468..548, span"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.003",
+     "verdict": "PASS",
+     "note": "runs 3, 0.003..0.003; at load 0.003"
+    },
+    {
+     "name": "  info: one load with WebGL on the CPU",
+     "value": "535 ms",
+     "verdict": "INFO",
+     "note": "5 long tasks; SwiftShader runs shaders on the CPU, not a verdict, and shader compile on a real GPU is not measured"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "13.6 screens",
+     "verdict": "PASS",
+     "note": "DOM 1052 nodes"
+    }
+   ]
+  },
+  {
+   "w": 390,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "39/59 %",
+     "verdict": "WARN",
+     "note": "busy host: timing verdicts capped at WARN, rerun when idle"
+    },
+    {
+     "name": "total transfer",
+     "value": "2787.9 KiB",
+     "verdict": "WARN",
+     "note": "html 1.2K  css 41.2K  js 245.9K  font 144.9K  img 1051.6K  media 1301.8K  other 1.2K"
+    },
+    {
+     "name": "requests",
+     "value": 36,
+     "verdict": "PASS",
+     "note": "23 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "1051.6 KiB",
+     "verdict": "PASS",
+     "note": "19 files"
+    },
+    {
+     "name": "largest image",
+     "value": "101.7 KiB",
+     "verdict": "PASS",
+     "note": "images/valley-portrait-480.webp"
+    },
+    {
+     "name": "JS parsed",
+     "value": "692.4 KiB",
+     "verdict": "WARN",
+     "note": "7 files, 245.9K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "41.2 KiB",
+     "verdict": "PASS",
+     "note": "4 files"
+    },
+    {
+     "name": "font families",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "Manrope Variable, Newsreader Variable"
+    },
+    {
+     "name": "font files",
+     "value": 3,
+     "verdict": "PASS",
+     "note": "144.9K"
+    },
+    {
+     "name": "font bytes",
+     "value": "144.9 KiB",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "images without width+height",
+     "value": 15,
+     "verdict": "FAIL",
+     "note": "timber-room-480.webp, room-view-480.webp, room-warm-480.webp"
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 18,
+     "verdict": "FAIL",
+     "note": "timber-room-480.webp, room-view-480.webp, room-warm-480.webp"
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 10,
+     "verdict": "FAIL",
+     "note": "hero-video-poster.webp 1600px for 390; timber-room-480.webp 389px for 104; valley-portrait-480.webp 389px for 104"
+    },
+    {
+     "name": "upscaled images (natural < 0.75x shown)",
+     "value": 4,
+     "verdict": "WARN",
+     "note": "room-view-480.webp 331px for 462; room-warm-480.webp 331px for 473; room-view-480.webp 331px for 473"
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 1,
+     "verdict": "PASS",
+     "note": "1 contexts made in all"
+    },
+    {
+     "name": "long tasks (WebGL off)",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "runs 3, 2..3, max 247ms"
+    },
+    {
+     "name": "blocking time (WebGL off)",
+     "value": "207 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 201..259 ms; at load 207ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "428 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 424..432"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "428 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 424..432, span"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 3, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "  info: one load with WebGL on the CPU",
+     "value": "315 ms",
+     "verdict": "INFO",
+     "note": "4 long tasks; SwiftShader runs shaders on the CPU, not a verdict, and shader compile on a real GPU is not measured"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "14.8 screens",
+     "verdict": "PASS",
+     "note": "DOM 1052 nodes"
+    }
+   ]
+  }
+ ]
+}

@@ -98,6 +98,7 @@ export default function ArcCardCarousel({
   );
   const [ownIndex, setOwnIndex] = useState(0),
     [moving, setMoving] = useState(false),
+    [near, setNear] = useState(false),
     [ready, setReady] = useState(false);
   const index = value ?? ownIndex;
   const root = useRef<HTMLDivElement>(null),
@@ -233,6 +234,7 @@ export default function ArcCardCarousel({
     const observer = new IntersectionObserver(
       ([entry]) => {
         inView.current = entry.isIntersecting;
+        if (entry.isIntersecting) setNear(true);
         if (!entry.isIntersecting) {
           tween.current?.progress(1).kill();
           setMoving(false);
@@ -395,7 +397,7 @@ export default function ArcCardCarousel({
                 sizes="(max-width:767px) 85vw, 42vw"
                 alt={item.alt ?? ""}
                 draggable={false}
-                loading="lazy"
+                loading={near ? "eager" : "lazy"}
                 decoding="async"
               />
             </span>

@@ -3,15 +3,17 @@
  * Retains its COBE renderer, Cartesian HTML-pin projection, on-demand render
  * loop, drag friction, quote navigation and WebGL fallback pattern.
  * Adaptation: verified HOTEL pin plus explicitly illustrative guest-name pins;
- * no claimed guest hometowns/portraits, country counters or autoplay.
+ * CC0 illustrated avatars with an explicit disclosure; no claimed guest
+ * hometowns/portraits, invented country counters or autoplay.
  * COBE © Shu Ding, MIT; notice retained in node_modules/cobe/LICENSE.
  */
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { ReactNode } from "react";
-import { ArrowLeft, ArrowRight, ArrowUpRight, Star } from "lucide-react";
-import { AnimatePresence } from "motion/react";
+import type { ReactNode, RefObject } from "react";
+import { flushSync } from "react-dom";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Star, Quote } from "lucide-react";
+import { AnimatePresence, useIsPresent } from "motion/react";
 import * as m from "motion/react-m";
 import { useSiteMotion } from "@/motion";
 import "./testimonial-globe.css";
@@ -23,6 +25,8 @@ export interface GlobeTestimonial {
   rating: 5;
   source: "Google" | "Tripadvisor";
   href: string;
+  /** Decorative illustration only; never represented as a verified guest photo. */
+  avatar?: string;
 }
 export interface TestimonialGlobeProps {
   items: GlobeTestimonial[];
@@ -77,14 +81,80 @@ function illustratedPlacements(items: GlobeTestimonial[]) {
   });
 }
 
+function ReviewCard({
+  item,
+  reduced,
+}: {
+  item: GlobeTestimonial;
+  reduced: boolean;
+}) {
+  const present = useIsPresent();
+  return (
+    <m.figure
+      aria-hidden={!present || undefined}
+      inert={!present}
+      className="tg-quote"
+      key={item.id}
+      initial={{ opacity: 0, y: reduced ? 0 : 14 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{
+        opacity: 0,
+        y: reduced ? 0 : 12,
+        scale: reduced ? 1 : 0.98,
+      }}
+      transition={{
+        duration: reduced ? 0 : 0.22,
+        ease: [0.2, 0.8, 0.2, 1],
+      }}
+    >
+      <div className="tg-quote-top">
+        <Quote size={24} className="tg-quote-mark" aria-hidden="true" />
+        <span className="tg-stars" role="img" aria-label="Rated 5 out of 5">
+          {[0, 1, 2, 3, 4].map((i) => (
+            <Star key={i} size={14} fill="currentColor" aria-hidden="true" />
+          ))}
+        </span>
+      </div>
+      <blockquote>
+        <p>“{item.quote}”</p>
+      </blockquote>
+      <figcaption>
+        <span
+          className="tg-review-avatar"
+          title="Illustrated avatar, not the reviewer’s photograph"
+          aria-hidden="true"
+        >
+          <img src={item.avatar} alt="" width={44} height={44} loading="lazy" />
+        </span>
+        <span>
+          <strong>{item.name}</strong>
+          <small>{item.source} · review excerpt</small>
+        </span>
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Read ${item.name}'s review on ${item.source}`}
+        >
+          <ArrowUpRight size={19} aria-hidden="true" />
+        </a>
+      </figcaption>
+    </m.figure>
+  );
+}
+
 function HotelGlobe({
   items,
   active,
   onSelect,
+  leader,
+  quoteAnchor,
 }: {
   items: GlobeTestimonial[];
   active: number;
   onSelect: (index: number) => void;
+  leader: RefObject<SVGSVGElement | null>;
+  quoteAnchor: RefObject<HTMLDivElement | null>;
 }) {
   const reduced = useSiteMotion();
   const placements = useMemo(() => illustratedPlacements(items), [items]);
@@ -114,6 +184,8 @@ function HotelGlobe({
     void document.fonts.ready.then(() => measureLabels.current());
   }, []);
   const previousActive = useRef(active);
+  const activeIndex = useRef(active);
+  activeIndex.current = active;
   const turnTo = useCallback(
     (longitude: number) => {
       const state = live.current;
@@ -133,6 +205,7 @@ function HotelGlobe({
     if (previousActive.current !== active && placements[active])
       turnTo(placements[active].location[1]);
     previousActive.current = active;
+    kick.current();
   }, [active, placements, turnTo]);
 
   useEffect(() => {
@@ -164,9 +237,12 @@ function HotelGlobe({
         let frameId = 0;
         let last = 0;
         let width = el.clientWidth;
+        let connector = { x: 0, y: 0, endX: 0, endY: 0, enabled: false };
         let hotelHalfWidth = (pin.current?.offsetWidth ?? 150) / 2;
         let labelHalves = guestPins.current.map(
-          (node) => (node?.offsetWidth ?? 140) / 2,
+          (node) =>
+            ((node?.querySelector(".tg-pin-name") as HTMLElement | null)
+              ?.offsetWidth ?? 140) / 2,
         );
         const dpr = Math.min(devicePixelRatio || 1, 1.5);
         try {
@@ -177,10 +253,10 @@ function HotelGlobe({
             phi: state.phi,
             theta: THETA,
             dark: 0,
-            diffuse: 1.4,
+            diffuse: 1.25,
             mapSamples: 14000,
-            mapBrightness: 3.5,
-            baseColor: [0.65, 0.69, 0.6],
+            mapBrightness: 2.8,
+            baseColor: [0.75, 0.79, 0.69],
             markerColor: [0.78, 0.42, 0.24],
             glowColor: [0.91, 0.88, 0.84],
             markers: [
@@ -233,24 +309,58 @@ function HotelGlobe({
             if (!el) return;
             const projected = project(point, state.phi);
             const front = projected.depth > 0.12;
-            const half = labelHalves[index] ?? 70;
+            const half = 24;
+            const nameHalf = labelHalves[index] ?? 70;
             const x = Math.max(
               half + 4,
               Math.min(width - half - 4, projected.x * width),
             );
-            let y = projected.y * width;
-            // Label callouts may move a little so names never cover the hotel.
-            if (
+            const y = projected.y * width;
+            const nameX = Math.max(
+              nameHalf + 4,
+              Math.min(width - nameHalf - 4, x),
+            );
+            const collides =
               hotelFront &&
-              Math.abs(x - hotelX) < half + hotelHalf + 8 &&
-              Math.abs(y - hotelY) < 54
-            )
-              y = hotelY + (y >= hotelY ? 62 : -62);
+              Math.abs(nameX - hotelX) < nameHalf + hotelHalf + 10 &&
+              Math.abs(y + 48 - hotelY) < 50;
+            el.style.setProperty(
+              "--pin-label-top",
+              collides ? (y < hotelY ? "-46px" : "76px") : "58px",
+            );
+            el.style.setProperty("--pin-label-x", `${nameX - x}px`);
             el.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`;
             el.style.opacity = front ? "1" : "0";
+            el.style.setProperty(
+              "--pin-scale",
+              String(
+                0.72 + 0.28 * Math.min(1, Math.max(0, projected.depth) / 0.65),
+              ),
+            );
             el.style.visibility = front ? "visible" : "hidden";
             el.tabIndex = front ? 0 : -1;
           });
+          const selected = placements[activeIndex.current];
+          const svg = leader.current;
+          if (svg && selected) {
+            const p = project(selected.point, state.phi);
+            svg.style.opacity = connector.enabled && p.depth > 0.12 ? "1" : "0";
+            const x = connector.x + p.x * width + 24,
+              y = connector.y + p.y * width;
+            svg.querySelector("line")?.setAttribute("x1", String(x));
+            svg.querySelector("line")?.setAttribute("y1", String(y));
+            svg
+              .querySelector("line")
+              ?.setAttribute("x2", String(connector.endX));
+            svg
+              .querySelector("line")
+              ?.setAttribute("y2", String(connector.endY));
+            const circles = svg.querySelectorAll("circle");
+            circles[0]?.setAttribute("cx", String(x));
+            circles[0]?.setAttribute("cy", String(y));
+            circles[1]?.setAttribute("cx", String(connector.endX));
+            circles[1]?.setAttribute("cy", String(connector.endY));
+          }
           if (state.turn || (!state.dragging && state.velocity))
             frameId = requestAnimationFrame(frame);
           else last = 0;
@@ -263,13 +373,31 @@ function HotelGlobe({
           width = el.clientWidth;
           hotelHalfWidth = (pin.current?.offsetWidth ?? 150) / 2;
           labelHalves = guestPins.current.map(
-            (node) => (node?.offsetWidth ?? 140) / 2,
+            (node) =>
+              ((node?.querySelector(".tg-pin-name") as HTMLElement | null)
+                ?.offsetWidth ?? 140) / 2,
           );
+          const svg = leader.current,
+            target = quoteAnchor.current;
+          if (svg?.parentElement && target && scene.current) {
+            const outer = svg.parentElement.getBoundingClientRect(),
+              globeBox = scene.current.getBoundingClientRect(),
+              card = target.getBoundingClientRect();
+            svg.setAttribute("viewBox", `0 0 ${outer.width} ${outer.height}`);
+            connector = {
+              x: globeBox.left - outer.left,
+              y: globeBox.top - outer.top,
+              endX: card.left - outer.left + 1,
+              endY: card.top - outer.top + 45,
+              enabled: outer.width >= 700,
+            };
+          }
           kick.current();
         };
         measureLabels.current = measure;
         const observer = new ResizeObserver(measure);
         observer.observe(el);
+        if (quoteAnchor.current) observer.observe(quoteAnchor.current);
         const visibility = () => {
           if (document.hidden) {
             cancelAnimationFrame(frameId);
@@ -301,6 +429,7 @@ function HotelGlobe({
           measureLabels.current = () => {};
           state.velocity = 0;
           state.dragging = false;
+          if (leader.current) leader.current.style.opacity = "0";
           globe?.destroy();
           el.replaceChildren();
         };
@@ -312,7 +441,7 @@ function HotelGlobe({
       disposed = true;
       destroy();
     };
-  }, [visible, reduced, version, placements]);
+  }, [visible, reduced, version, placements, leader, quoteAnchor]);
 
   const home = () => {
     turnTo(HOTEL[1]);
@@ -403,22 +532,66 @@ function HotelGlobe({
             className="tg-guest-pin"
             type="button"
             data-active={index === active || undefined}
-            aria-label={`Read review by ${guest.name}; illustrative globe position`}
+            aria-label={`Read review by ${guest.name}; illustrative avatar and globe position`}
             aria-pressed={index === active}
-            title={`${guest.name} — illustrative position, not a verified hometown`}
+            title={`${guest.name} — illustrated avatar and position, not a verified portrait or hometown`}
             onPointerDown={(e) => e.stopPropagation()}
+            onPointerEnter={(e) => {
+              if (e.pointerType === "touch" || live.current.dragging) return;
+              // Preview the source component's hovered review without moving
+              // the sphere underneath the pointer. A click still centres it.
+              previousActive.current = index;
+              activeIndex.current = index;
+              flushSync(() => onSelect(index));
+              kick.current();
+            }}
+            onFocus={(e) => {
+              if (!e.currentTarget.matches(":focus-visible")) return;
+              if (
+                project(placements[index].point, live.current.phi).depth >= 0.55
+              )
+                previousActive.current = index;
+              onSelect(index);
+            }}
+            onKeyDown={(e) => {
+              if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(e.key))
+                return;
+              e.preventDefault();
+              const next =
+                e.key === "Home"
+                  ? 0
+                  : e.key === "End"
+                    ? items.length - 1
+                    : (index +
+                        (e.key === "ArrowRight" ? 1 : -1) +
+                        items.length) %
+                      items.length;
+              quoteAnchor.current?.parentElement?.focus({
+                preventScroll: true,
+              });
+              onSelect(next);
+            }}
             onClick={() => {
               turnTo(placements[index].location[1]);
               onSelect(index);
             }}
           >
-            <i aria-hidden="true" />
-            <span>{guest.name}</span>
+            <span className="tg-pin-face" aria-hidden="true">
+              <img
+                src={guest.avatar}
+                alt=""
+                width={48}
+                height={48}
+                loading="lazy"
+                draggable={false}
+              />
+            </span>
+            <span className="tg-pin-name">{guest.name}</span>
           </button>
         ))}
       </div>
       <div className="tg-place-caption">
-        <span>Guest pin positions are illustrative.</span>
+        <span>Avatars and guest pin positions are illustrative.</span>
         <button
           type="button"
           onClick={home}
@@ -446,6 +619,8 @@ export function TestimonialGlobe({
   const reduced = useSiteMotion();
   const [index, setIndex] = useState(0);
   const swipe = useRef<{ x: number; y: number } | null>(null);
+  const leader = useRef<SVGSVGElement>(null);
+  const quoteAnchor = useRef<HTMLDivElement>(null);
   const item = items[index % items.length];
   if (!item) return null;
   const select = (next: number) =>
@@ -456,20 +631,23 @@ export function TestimonialGlobe({
       id="guest-experiences"
       aria-labelledby="guest-experiences-heading"
     >
-      <m.div
-        className="tg-introduction"
-        initial={reduced ? false : { opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: reduced ? 0 : 0.65, ease: [0.22, 1, 0.36, 1] }}
-      >
-        <p className="jh-eyebrow">GUEST EXPERIENCES</p>
-        <h2 id="guest-experiences-heading">{heading}</h2>
-        <p>A few words from guests who have stayed with us.</p>
-        {action}
-      </m.div>
       <div className="tg-stage">
-        <HotelGlobe items={items} active={index} onSelect={select} />
+        <header className="tg-introduction">
+          <p className="jh-eyebrow">GUEST EXPERIENCES</p>
+          <h2 id="guest-experiences-heading">{heading}</h2>
+          <p>A few words from guests who have stayed with us.</p>
+          <div className="tg-review-summary">
+            <span>{items.length} selected reviews</span>
+            {action}
+          </div>
+        </header>
+        <HotelGlobe
+          items={items}
+          active={index}
+          onSelect={select}
+          leader={leader}
+          quoteAnchor={quoteAnchor}
+        />
         <div
           className="tg-review-region"
           role="region"
@@ -477,11 +655,17 @@ export function TestimonialGlobe({
           aria-label="Selected five-star guest review excerpts"
           onKeyDown={(e) => {
             if (
-              (e.key === "ArrowRight" || e.key === "ArrowLeft") &&
+              ["ArrowRight", "ArrowLeft", "Home", "End"].includes(e.key) &&
               e.target === e.currentTarget
             ) {
               e.preventDefault();
-              select(index + (e.key === "ArrowRight" ? 1 : -1));
+              select(
+                e.key === "Home"
+                  ? 0
+                  : e.key === "End"
+                    ? items.length - 1
+                    : index + (e.key === "ArrowRight" ? 1 : -1),
+              );
             }
           }}
           tabIndex={0}
@@ -501,59 +685,14 @@ export function TestimonialGlobe({
               select(index + (dx < 0 ? 1 : -1));
           }}
         >
-          <div className="tg-card-stack" aria-live="polite" aria-atomic="true">
-            <AnimatePresence initial={false} mode="wait">
-              <m.figure
-                className="tg-quote"
-                key={item.id}
-                initial={{ opacity: 0, y: reduced ? 0 : 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: reduced ? 0 : -6 }}
-                transition={{ duration: reduced ? 0 : 0.2 }}
-              >
-                <div className="tg-quote-top">
-                  <span
-                    className="tg-stars"
-                    role="img"
-                    aria-label="Rated 5 out of 5"
-                  >
-                    {[0, 1, 2, 3, 4].map((i) => (
-                      <Star
-                        key={i}
-                        size={14}
-                        fill="currentColor"
-                        aria-hidden="true"
-                      />
-                    ))}
-                  </span>
-                  <span>{item.source} · excerpt</span>
-                </div>
-                <blockquote>
-                  <p>“{item.quote}”</p>
-                </blockquote>
-                <figcaption>
-                  <span className="tg-initials" aria-hidden="true">
-                    {item.name
-                      .split(/\s+/)
-                      .map((n) => n[0])
-                      .slice(0, 2)
-                      .join("")
-                      .toUpperCase()}
-                  </span>
-                  <span>
-                    <strong>{item.name}</strong>
-                    <small>Stayed in Kausani</small>
-                  </span>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Read ${item.name}'s review on ${item.source}`}
-                  >
-                    <ArrowUpRight size={19} aria-hidden="true" />
-                  </a>
-                </figcaption>
-              </m.figure>
+          <div
+            ref={quoteAnchor}
+            className="tg-card-stack"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            <AnimatePresence initial={false}>
+              <ReviewCard key={item.id} item={item} reduced={reduced} />
             </AnimatePresence>
           </div>
           <div className="tg-navigation">
@@ -565,19 +704,6 @@ export function TestimonialGlobe({
               <i />
               {String(items.length).padStart(2, "0")}
             </span>
-            <div className="tg-dots" aria-label="Choose a review">
-              {items.map((review, i) => (
-                <button
-                  key={review.id}
-                  type="button"
-                  onClick={() => select(i)}
-                  aria-label={`Show review by ${review.name}`}
-                  aria-current={i === index ? "true" : undefined}
-                >
-                  <span />
-                </button>
-              ))}
-            </div>
             <div className="tg-arrows">
               <button
                 type="button"
@@ -600,6 +726,11 @@ export function TestimonialGlobe({
             complete experience.
           </p>
         </div>
+        <svg ref={leader} className="tg-leader" aria-hidden="true">
+          <line />
+          <circle r="2.5" />
+          <circle r="3" />
+        </svg>
       </div>
     </section>
   );

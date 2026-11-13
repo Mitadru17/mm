@@ -1,0 +1,308 @@
+gate: checking http://localhost:4174/ (place); this takes a few minutes on a CPU Chrome
+gate: 101 FAIL open
+  FAIL empty-visual     div.acc-stage > button.acc-card:nth-of-type(6) > span.acc-card-surface > img "room-warm-96  [1440]
+       the picture room-warm-960.webp never loaded: its frame shows empty
+       fix: make the visual draw at every width: a picture that loads, an effect that renders, or its still fallback; never an empty frame
+  FAIL empty-visual     div.acc-stage > button.acc-card:nth-of-type(8) > span.acc-card-surface > img "room-view-96  [1440]
+       the picture room-view-960.webp never loaded: its frame shows empty
+       fix: make the visual draw at every width: a picture that loads, an effect that renders, or its still fallback; never an empty frame
+  FAIL flush            section#nature > a.jh-collage  [1440, 390]
+       its first line sits 0px under the top edge of section#nature, where the ground changes
+       fix: give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)
+  FAIL flush            section#explore > a.jh-collage  [1440, 390]
+       its first line sits 0px under the top edge of section#explore, where the ground changes
+       fix: give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)
+  FAIL nav              div#root > div.jh-site > header.jh-header  [1440]
+       the nav has no bar, and its pieces sit past the content's edges (81-1389px against 52-1340px)
+       fix: make the nav one bar from the content's left edge to its right edge, with every link and action inside it
+  FAIL spill            div.acc-stage > button.acc-card:nth-of-type(11) > span.acc-card-surface > img "img: Bedroo  [1440, 390]
+       runs 272px past the bottom edge of the panel it sits on (div.acc-stage > button.acc-card:nth-of-type(1) > span.acc-card-surface > img)
+       fix: keep the box inside the panel it starts on: shrink it, or grow the panel to hold it
+  FAIL spill            div.acc-stage > button.acc-card:nth-of-type(12) > span.acc-card-surface > img "img: Warm-c  [1440, 390]
+       runs 451px past the bottom edge of the panel it sits on (div.acc-stage > button.acc-card:nth-of-type(2) > span.acc-card-surface > img)
+       fix: keep the box inside the panel it starts on: shrink it, or grow the panel to hold it
+  FAIL spill            div.arc-card-carousel > div.acc-stage > div.acc-front-caption > div.rb-glass-surface.rb-gl  [1440, 390]
+       runs 99px past the right edge of the panel it sits on (div.acc-stage > button.acc-card:nth-of-type(11) > span.acc-card-surface > img)
+       fix: keep the box inside the panel it starts on: shrink it, or grow the panel to hold it
+  FAIL spill            section#guest-experiences > div.tg-stage > svg.tg-leader  [1440]
+       runs 642px past the right edge of the panel it sits on (div.tg-globe > div.tg-canvas > div > canvas)
+       fix: keep the box inside the panel it starts on: shrink it, or grow the panel to hold it
+  FAIL cut-text         main > section.jh-marquee > div.jh-marquee-top > span "mountain air"  [1440]
+       cut 49px by the right edge of the screen
+       fix: give the text room: no overflow clipping a line, no line past its box
+  FAIL cut-text         footer#contact > div.tpf-z.tpf-brand > a.tpf-word > span "MYSTIC"  [1440, 390]
+       cut 34px at the top by the overflow of footer#contact > div.tpf-z.tpf-brand > a.tpf-word
+       fix: give the text room: no overflow clipping a line, no line past its box
+  FAIL scroll-reveal    section#stay > div.rooms-layout > div.rooms-story > header.rooms-heading "YOUR STAY, A LIT  [1440, 390]
+       starts an animation (0.7 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#stay > div.rooms-layout > div.rooms-story > div.room-detail-scene "ROOM PHOTOGRAPH  [1440, 390]
+       starts an animation (0.7 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#stay > div.rooms-layout > div.rooms-visual "Timber & light 01 03 Drag to explore"  [1440]
+       starts an animation (0.8 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#guest-experiences > div.tg-stage > div.tg-geography > div.tg-globe "Kausani Mystic  [1440, 390]
+       starts "opacity" (0.3 s) the moment it is scrolled into view (an IntersectionObserver) on svg.tg-globe-fallback
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#guest-experiences > div.tg-stage > div.tg-introduction "GUEST EXPERIENCES In our g  [1440, 390]
+       starts an animation (0.7 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    div#location-heading > h2.ts-title > span.rb-blur-text "Around Mystic Mountain. Around Mys  [1440, 390]
+       starts an animation (0.7 s) the moment it is scrolled into view (an IntersectionObserver) on span.rb-blur-word:nth-of-type(1)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    section#location > section.nearby-walk > div.nw-card "Kausani Tea Estate Close to the hote  [1440, 390]
+       starts "nw-rise" (0.7 s) the moment it is scrolled into view (an IntersectionObserver) on g.nw-rise
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact "hotelmysticmount@gmail.com See you in th"  [1440]
+       starts "filter" (0.7 s) the moment it is scrolled into view (an IntersectionObserver) on div.tpf-row.tpf-h
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL no-visual        section#main "EXPERIENCE LIFE AT MYSTIC MOUNTAIN"  [1440, 390]
+       no picture, effect or mock in this section; a feature section needs a visual
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  FAIL no-visual        div#root > div.jh-site > main > section.jh-marquee "mountain air slower days"  [1440, 390]
+       pictures, effects and mocks cover 5% of this section; a feature section needs a visual (about 25% or more)
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  FAIL button-styles    (the page)  [1440, 390]
+       3 button styles on the page: soft, fill #2f4f3e, outline #2f4f3e x6 ("Enquire about this stay"); pill, fill #faf8f4 x1 ("Plan your mountain stay"); pill, fill #d5d1c5 x1 ("Email us")
+       fix: one primary and one secondary button: one shape, one height per size, one label size
+  FAIL cta              section#main  [1440, 390]
+       the hero has no button (the nav's does not count)
+       fix: add the action: a button in the hero, one on every priced item, one in the closing section
+  FAIL copy-fact        h1#arrival-title "Wake up in Kausani."  [1440]
+       the first screen holds no number, price, date, place, platform or genre
+       fix: put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim
+  FAIL copy-headings    section#nature > div.jh-chapter-copy > h2.jh-eyebrow "NATURE"  [1440]
+       "NATURE" names no product, part, place or section (9 headings like it; at most one brand line per page) (and 8 more like it: "AROUND THE TABLE", "Good company. An open ou", "Little rituals, slower d", "A LITTLE CURIOSITY
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  FAIL heading-scale    div.room-detail-scene > article.room-detail > div.room-detail-copy > h3 "Timber & mountain  [1440, 390]
+       an h3 at 40.3px, as large as the smallest h2 (11px) or larger (and 2 more like it: "Where the hills feel lik", "Good company. An open ou")
+       fix: size headings by level: the h1 largest, one size per level, each level below the one above
+  FAIL heading-scale    section#experiences > div.jh-experiences-heading > h2 "Little rituals, slower days."  [1440, 390]
+       h2 headings in 5 sizes, 11px ("EXPERIENCE LIFE AT MYSTI") to 67.7px (x6.15)
+       fix: size headings by level: the h1 largest, one size per level, each level below the one above
+  FAIL heading-scale    h3#nature-title "Where the hills feel like home."  [1440]
+       h3 headings in 3 sizes, 28.8px ("Kausani Tea Estate") to 53.1px (x1.84)
+       fix: size headings by level: the h1 largest, one size per level, each level below the one above
+  FAIL stagger          footer#contact > nav.tpf-z.tpf-col:nth-of-type(2) > ul "+91 89418 76542 Email the hotel Fi  [1440, 390]
+       3 rows start at 3 different left offsets (+0, +12, +22px)
+       fix: start every row of the list on one left edge
+  FAIL off-grid         section.nearby-walk > div.nw-place-list > button:nth-of-type(1) > span:nth-of-type(2) "Kau  [1440, 390]
+       left edge at 123.5px, 23.5px off a common edge of its section at 100px (5 elements, like span.nw-place-index); 1 more in this section off the grid too (small at 123.5px)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL centre-axis      section#main > div > div.jh-intro-stage > p.jh-intro-text "Find your room in the mountains  [1440]
+       centred on the screen (720px), but the content column around it runs 52-1340px, whose middle is 696px: 24px off the column's axis (and 1 more in this section: "EXPERIENCE LIFE AT M")
+       fix: centre the block on its container (margin-inline: auto), or set it on the left grid
+  FAIL centre-axis      section#experiences > div.jh-experiences-heading > p.jh-experiences-intro "Take in the hil  [1440]
+       centred on the screen (720px), but the content column around it runs 52-1340px, whose middle is 696px: 24px off the column's axis
+       fix: centre the block on its container (margin-inline: auto), or set it on the left grid
+  FAIL centre-axis      section#location > section.nearby-walk > p.nw-hint "Hover a landmark, or choose a place be  [1440]
+       centred on the screen (720px), but the content column around it runs 52-1340px, whose middle is 696px: 24px off the column's axis
+       fix: centre the block on its container (margin-inline: auto), or set it on the left grid
+  FAIL tilt             div.rooms-visual > div.arc-card-carousel > div.acc-stage > button.acc-card:nth-of-type(2)  [1440, 390]
+       rotated -18.0° (and 1 more like it: button.acc-card:nth-of-type(3))
+       fix: set it straight
+  FAIL tilt             div.rooms-visual > div.arc-card-carousel > div.acc-stage > button.acc-card:nth-of-type(11)  [1440, 390]
+       rotated 36.0° (and 3 more like it: button.acc-card:nth-of-type(12), span.tpf-shadow, span.tpf-tilt)
+       fix: set it straight
+  FAIL tilt             div.jh-experiences-viewport > div.jh-experiences-track > article.jh-experience-slide:nth-o  [1440, 390]
+       turned in 3D (and 4 more like it: "03 / 06 Around the table", "04 / 06 Out in the open", "05 / 06 A quieter corner", "06 / 06 Let the outside ")
+       fix: set it straight
+  FAIL contrast         div.jh-site > header.jh-header > button.arrival-menu-trigger > span:nth-of-type(2) "MENU"  [1440, 390]
+       body text over a effect reads at 3.5:1 at its worst tenth (needs 4.5:1) (and 3 more like it: "MOUNTAIN · KAUSANI", "ENQUIRE", "A HOTEL IN THE KUMAON HI")
+       fix: put the text on a calm part of the picture, or on a solid panel
+  FAIL text-contrast    div.room-detail-scene > article.room-detail > div.room-detail-copy > p.room-description "W  [1440, 390]
+       body text in #405647 on #e9e1d6 reads 6.14:1 (needs 7:1)
+       fix: body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels
+  FAIL section-gaps     section#main / section#stay  [1440, 390]
+       334px between these sections, +109% against the median 160px of gaps at a change of ground
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL photo-upscale    div.acc-stage > button.acc-card:nth-of-type(2) > span.acc-card-surface > img "img: Bedroom  [1440, 390]
+       room-view-960.webp: 604x806 shown at 832x647, blown up 1.38x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    div.acc-stage > button.acc-card:nth-of-type(3) > span.acc-card-surface > img "img: Warm-co  [1440, 390]
+       room-warm-960.webp: 604x806 shown at 852x788, blown up 1.41x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    div.acc-stage > button.acc-card:nth-of-type(11) > span.acc-card-surface > img "img: Bedroo  [1440, 390]
+       room-view-960.webp: 604x806 shown at 852x788, blown up 1.41x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    div.acc-stage > button.acc-card:nth-of-type(12) > span.acc-card-surface > img "img: Warm-c  [1440, 390]
+       room-warm-960.webp: 604x806 shown at 832x647, blown up 1.38x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    a.jh-collage > div.jh-collage-back > span.image-shell > img "img: Trees and hillside build  [1440, 390]
+       surroundings-960.webp: 734x550 shown at 828x1035, blown up 1.88x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL photo-upscale    a.jh-collage > div.jh-collage-front > span.image-shell > img "img: Curving Baijnath Road a  [1440, 390]
+       arrival-480.webp: 230x172 shown at 216x270, blown up 1.57x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL effects-fit      (the page)  [1440]
+       a place page asks for 6 WebGL contexts (div, div.tg-canvas): shader effects are for tech, software, AI and gaming pages
+       fix: take the WebGL effects off this page: lead with its photographs, flat colour and type (effects are for tech, software, AI and gaming pages)
+  FAIL effect-kind      (the page)  [1440]
+       a place page (--type) moves with the scroll: scroll libraries or timelines (Lenis, ScrollTrigger, ScrollSmoother): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop o
+       fix: take the scroll-driven motion off: on a place, shop or service page the page scrolls plainly and the parts sit still
+  FAIL coordinates      div.tg-stage > div.tg-introduction > div.tg-review-summary > a.editorial-link "29.8564845!  [1440]
+       a link holds map coordinates, in a link (www.google.com): "29.8564845!4d79.6040235"; they point at one building on a map
+       fix: drop the coordinates: Get directions opens an OpenStreetMap search for the street and the district
+  FAIL phone-number     footer#contact > nav.tpf-z.tpf-col:nth-of-type(2) > ul > li:nth-of-type(1) "+91 89418 7654  [1440]
+       a phone number in international format: "+91 89418 76542"; a visitor can dial it and reach a stranger (and 4 more like it: nav.tpf-z.tpf-col:nth-of-type(2) > ul > li:nth-of-type(1) > a, dialog.site-menu > div.site-menu-b
+       fix: drop the number and its tel: link (a "Request a call" form may stand in), unless the brief gives the number
+  FAIL section-tile     div#root > div.jh-site > main > section.jh-marquee "mountain air slower days"  [1440, 390]
+       the section is 604px tall (0.67 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 604px of it and 296px of the next section, its heading "A FEW USEFUL DETAILS." on screen
+       fix: set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb
+  FAIL focus-ring       [data-page-title]:focus  [1440]
+       "[data-page-title]:focus" in index-9j9lZuuT.css removes the focus outline and sets nothing in its place
+       fix: keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it
+  FAIL focus-ring       .jh-site h1[tabindex="-1"]:focus  [1440]
+       ".jh-site h1[tabindex="-1"]:focus" in index-9j9lZuuT.css removes the focus outline and sets nothing in its place
+       fix: keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it
+  FAIL focus-ring       .enquiry-step-heading h2:focus  [1440]
+       ".enquiry-step-heading h2:focus" in index-9j9lZuuT.css removes the focus outline and sets nothing in its place
+       fix: keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it
+  FAIL focus-visible    section#nature > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button "Discover   [1440]
+       Tab stop 26, a "Discover the setting": its focus change is faint: 1.22:1 against the ground, 3:1 needed
+       fix: keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus
+  FAIL focus-visible    section#dine > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button "Explore the  [1440]
+       Tab stop 28, a "Explore the dining space": its focus change is faint: 1.22:1 against the ground, 3:1 needed
+       fix: keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus
+  FAIL focus-visible    section#explore > div.jh-chapter-copy > div.jh-chapter-description > a.jh-button "Discover  [1440]
+       Tab stop 39, a "Discover Kausani": its focus change is faint: 1.22:1 against the ground, 3:1 needed
+       fix: keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus
+  FAIL moment-none      (the page)  [1440]
+       a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)
+       fix: deal one (moments.mjs pick --page place --photo) and mount it in its own section
+  FAIL hero-screen      section#main "EXPERIENCE LIFE AT MYSTIC MOUNTAINFind y"  [1440]
+       the hero ends at 1800px on a 900px screen, 900px below the fold: it ends at the fold, 1px either way (SR-1)
+       fix: make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter
+  FAIL section-height   section#faq "A FEW USEFUL DETAILS.Before you makeyour"  [1440]
+       the section is 558px tall (0.6 screens), 342px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height   section#stay "Timber & light0103Drag to exploreYOUR ST"  [1440]
+       the section is 1235px tall (1.4 screens), 335px over one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height   section#experiences "EXPERIENCESLittle rituals,slower days.Ta"  [1440]
+       the section is 1206px tall (1.3 screens), 306px over one screen (900px): every section after the hero is one screen or two, 2px either way (and 4 more like it: "mountain airslower days", "AroundMystic Mountain.Ar", "GUES
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height   section#dine "AROUND THE TABLEGood company.An open out"  [1440]
+       the section starts at 4050px, 450px below the screen grid (4 x 900px): sections start on whole screens (SR-2)
+       fix: make every section above it exactly one or two screens tall, so this one starts on a whole screen
+  FAIL section-height   section#nature "NATUREWhere the hills feel like home.The"  [1440]
+       the section's content does not fit it: its lowest content ends 900px below its top, past 828px (the section less 72px of bottom padding) (SR-2)
+       fix: fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups
+  FAIL section-height   div#root > div.jh-site > main  [1440]
+       the page is 13.6 screens long (12281px on a 900px screen): a place page runs 3 to 6 screens (over 7 FAIL) (SR-2)
+       fix: keep a place page at 3 to 6 screens: merge a short block into the section above, or cut a section
+  FAIL section-air      section#nature / section#dine  [1440]
+       58px of air between the content of these two sections: 128-480px (64-600px WARN) (every gap out of the band at 1440px, top to bottom: 58px after "NATUREWhere the hill", 58px after "A LITTLE CURIOSITY G") (SR-3)
+       fix: keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)
+  FAIL section-air      section#explore / section#unwind  [1440]
+       58px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)
+       fix: keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)
+  FAIL section-air      section#location > section.nearby-walk > div.nearby-location-detail "Kausani Tea EstateDis  [1440]
+       a top border across 93% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)
+       fix: take the rule out: sections and their parts are parted by their ground and the air between them
+  FAIL one-section      footer#contact "hotelmysticmount@gmail.comSee you in the"  [1440]
+       the screen at scroll 10800px (stride 12) shows 359px of section 12 and the content of 2 sections, over 24px each beside section 11: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      section#dine "AROUND THE TABLEGood company.An open out"  [1440]
+       the screen at scroll 4500px (stride 5) shows 343px of section 4 and the content of 2 sections, over 24px each beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      h2#guest-experiences-heading "In our guests’own words."  [1440]
+       the screen at scroll 8790px (the top of section 9) shows 342px of section 10 and the heading of section 10 whole and the content of 2 sections, over 24px each beside section 9: a screen shows one section (another may pee
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      div#place "AroundMystic Mountain.AroundMystic Mount"  [1440]
+       a <div> sits directly in <main>: every part of <main> is a <section> (SR-4)
+       fix: put every block of <main> in a <section>, and give a band its own section instead of a ground inside one
+  FAIL one-heading      section#main > div > h2.jh-eyebrow "EXPERIENCE LIFE AT MYSTIC MOUNTAIN"  [1440]
+       the hero holds an h2 (1): its heading is the h1, and an h2 opens the next section (SR-5)
+       fix: give each section one h2, first in its .wrap, and the hero only its h1
+  FAIL one-heading      h2#stay-title "A room to return to.A view to remember."  [1440]
+       headings of two sections show whole on one screen at 10 of 228 scroll positions (4.4%; at scroll 1200, 1250, 8050, 8100px), here with "our little corner of Kausani": at most 3% on a desktop (SR-5)
+       fix: make the sections one screen tall so their headings sit a screen apart and two never share one
+  FAIL container-edges  footer#contact "hotelmysticmount@gmail.comSee you in the"  [1440]
+       the content of section 12 runs 130px from the left and 130px from the right (read from its outermost blocks: no .wrap): the page's container starts at 0px; the margin is 64-120px at 1440px (one container, equal margins, 
+       fix: use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone
+  FAIL container-edges  section#main "EXPERIENCE LIFE AT MYSTIC MOUNTAINFind y"  [1440]
+       the content of section 1 runs 115px from the left and 115px from the right (read from its outermost blocks: no .wrap): the page's container starts at 0px (one container, equal margins, 2px either way) (and 11 more like i
+       fix: use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone
+  FAIL container-edges  div#root "Skip to contentMENUMYSTICMOUNTAIN · KAUS"  [1440]
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  section#location "AroundMystic Mountain.AroundMystic Mount"  [1440]
+       a box runs 0-1440px, outside the container lines of section 11 at 51-1389px: full width is for background layers and grounds only (and 1 more like it: "Back to top") (SR-6)
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  main > section.jh-marquee > div.jh-marquee-top > span "mountain air"  [1440]
+       1 text block starts on a left line at x 1138, 1138px from the container's left: text starts on the container's left, or on one split line (x 610, 732, 854) (and 22 more like it: "AROUND THE TABLE", "SLOW DOWN", x 761) (S
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL container-edges  section#main > div > h2.jh-eyebrow "EXPERIENCE LIFE AT MYSTIC MOUNTAIN"  [1440]
+       "EXPERIENCE LIFE AT MYSTIC MOUNTA" is set centred across 1210px, over half the 1210px container: text that wide is set left (and 1 more like it: "Find your room in the mo") (SR-6)
+       fix: set the text left (text-align: start)
+  FAIL container-edges  div > div.jh-intro-stage > p.jh-intro-text > a:nth-of-type(4) "our little corner of Kausan  [1440]
+       a box over half the container wide runs 366-1169px, not on the container's lines at 115-1325px (and 2 more like it: footer#contact > svg.tpf-stage, "AroundMystic Mountain.Ar") (SR-6)
+       fix: run the picture or box from the container's left line to its right line, or put it in a row or a split
+  FAIL row-lines        section#experiences > div.jh-experiences-viewport > div.jh-experiences-track "01 / 06Mount  [1440]
+       a row of 6 items: its last item ends at 2880px, the container's right line at 1424px (2px either way) (SR-7)
+       fix: start the row's first item on the container's left line and end its last on the right line, every item one height
+  FAIL row-lines        section#experiences > div.jh-experiences-viewport "01 / 06Mountain mornings02 / 06Timber &  [1440]
+       a clipped carousel: its window runs 0-1440px, not on the container at 16-1424px (SR-7)
+       fix: show every item inside the container, or stack them: no sideways scroller, no half-cut carousel
+  FAIL row-lines        div#root > div.jh-site > main > section.jh-marquee "mountain airslower days"  [1440]
+       a clipped carousel: 2 items cut at rest (SR-7)
+       fix: show every item inside the container, or stack them: no sideways scroller, no half-cut carousel
+  FAIL split-pair       section#location > section.nearby-walk > div.nearby-location-detail "Kausani Tea EstateDis  [1440]
+       the two columns of the split start 40px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)
+       fix: top-align both columns of the split (align-items: start)
+  FAIL split-pair       section#stay > div.rooms-layout "Timber & light0103Drag to exploreYOUR ST"  [1440]
+       the two columns of the split start 16px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)
+       fix: top-align both columns of the split (align-items: start)
+  FAIL empty-visual     div.acc-stage > button.acc-card:nth-of-type(6) > span.acc-card-surface > img "room-warm-48  [390]
+       the picture room-warm-480.webp never loaded: its frame shows empty
+       fix: make the visual draw at every width: a picture that loads, an effect that renders, or its still fallback; never an empty frame
+  FAIL empty-visual     div.acc-stage > button.acc-card:nth-of-type(8) > span.acc-card-surface > img "room-view-48  [390]
+       the picture room-view-480.webp never loaded: its frame shows empty
+       fix: make the visual draw at every width: a picture that loads, an effect that renders, or its still fallback; never an empty frame
+  FAIL flush            section#dine > a.jh-collage  [390]
+       its button sits 0px above the lower edge of section#dine, where the ground changes to section#experiences
+       fix: give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)
+  FAIL flush            section#unwind > a.jh-collage  [390]
+       its button sits 0px above the lower edge of section#unwind, where the ground changes to section.jh-marquee
+       fix: give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)
+  FAIL spill            div.acc-stage > button.acc-card:nth-of-type(2) > span.acc-card-surface > img "img: Bedroom  [390]
+       runs 121px past the top edge of the panel it sits on (div.acc-stage > button.acc-card:nth-of-type(1) > span.acc-card-surface > img)
+       fix: keep the box inside the panel it starts on: shrink it, or grow the panel to hold it
+  FAIL collide          div#root > div.jh-site > header.jh-header "MENU MYSTIC MOUNTAIN · KAUSANI ENQUIRE"  [390, 320]
+       at the top of the page the fixed bar covers the picture "img: hero-video-poster.webp": nothing scrolls it out from under the bar
+       fix: on a phone nothing lies on anything else: let the section grow with its content (min-height for its screens, never a fixed height; --hm: 2 when it needs two) or cut what it holds; keep pictures and cards off the buttons;
+  FAIL scroll-reveal    section#stay > div.rooms-layout > div.rooms-visual "Timber & light 01 03"  [390]
+       starts an animation (0.8 s) the moment it is scrolled into view (an IntersectionObserver)
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL scroll-reveal    footer#contact "See you in the hills. Plan your mountain"  [390]
+       starts "filter" (0.7 s) the moment it is scrolled into view (an IntersectionObserver) on div.tpf-row.tpf-h
+       fix: show it at rest: no fade, rise or unmask when it is scrolled into view
+  FAIL heading-scale    section#faq > div.jh-guest-copy > h3.jh-display "Before you make yourself at home."  [390]
+       h3 headings in 5 sizes, 23px ("Kausani Tea Estate") to 44px (x1.91)
+       fix: size headings by level: the h1 largest, one size per level, each level below the one above
+  FAIL off-grid         section#faq > div.jh-guest-copy > h2.jh-eyebrow "A FEW USEFUL DETAILS."  [390]
+       left edge at 24px, 4px off the page margin at 20px (41 elements); 6 more in this section off the grid too (p at 24px, summary at 24px, summary at 24px, summary at 24px, ...)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         footer#contact > nav.tpf-z.tpf-col:nth-of-type(1) > h3 "EXPLORE"  [390]
+       left edge at 27.5px, 7.5px off the page margin at 20px (41 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         nav.tpf-z.tpf-col:nth-of-type(1) > ul > li:nth-of-type(1) > a "Our story"  [390]
+       left edge at 27.5px, 7.5px off the page margin at 20px (41 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         nav.tpf-z.tpf-col:nth-of-type(1) > ul > li:nth-of-type(2) > a "The rooms"  [390]
+       left edge at 27.5px, 7.5px off the page margin at 20px (41 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         nav.tpf-z.tpf-col:nth-of-type(1) > ul > li:nth-of-type(3) > a "Photo journal"  [390]
+       left edge at 27.5px, 7.5px off the page margin at 20px (41 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         footer#contact > nav.tpf-z.tpf-col:nth-of-type(1) > a.tpf-big "discover."  [390]
+       left edge at 27.5px, 7.5px off the page margin at 20px (41 elements)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL container        page  [1440, 390]
+       no .wrap
+       fix: put the content in one .wrap
+  40 WARN (not blocking), first: text-only section#faq "A FEW USEFUL DETAILS."; copy-headings div.jh-experience-surface > a.jh-experie; copy-buttons section#nature > div.jh-chapter-copy > d; copy-actions (the page); heading-scale section#main > div > div.jh-intro-stage 
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 101 (round 1 of 3)

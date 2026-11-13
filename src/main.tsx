@@ -15,6 +15,7 @@ import "./jagerhof/experiences-carousel.css";
 import "./jagerhof/arrival-hero.css";
 import "./jagerhof/polish.css";
 import "./jagerhof/signature.css";
+import "./jagerhof/cinematic-hero.css";
 import { MotionRoot } from "./motion";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

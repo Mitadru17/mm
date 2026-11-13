@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-13T16:59:33.291Z",
+  "results": [
+    {
+      "name": "A single shared heading transitions from the loader into the real video hero",
+      "pass": true
+    },
+    {
+      "name": "Muted inline H.264 playback advances with native looping enabled",
+      "pass": true
+    },
+    {
+      "name": "Film pause/resume works and the loop crosses its seam without stopping",
+      "pass": true
+    },
+    {
+      "name": "Skip and Escape both release the loader and restore access/focus",
+      "pass": true
+    },
+    {
+      "name": "The hero fills the screen and all text/controls fit at 320/390/768/1024/1440",
+      "pass": true
+    },
+    {
+      "name": "Hero room action and existing header enquiry remain functional",
+      "pass": true
+    },
+    {
+      "name": "Testimonials use real excerpts, local illustrated avatars and the correct Maps destination",
+      "pass": true
+    },
+    {
+      "name": "The supplied split composition, portrait pins and projected leader render",
+      "pass": true
+    },
+    {
+      "name": "Review navigation overlaps cards smoothly while excluding the leaving card from focus",
+      "pass": true
+    },
+    {
+      "name": "Hover previews a portrait's review without moving the globe; Home restores the first review",
+      "pass": true
+    },
+    {
+      "name": "Dragging/recentring the globe works; offscreen video and WebGL stop",
+      "pass": true
+    },
+    {
+      "name": "Fresh phone loads the portrait encode and supports real touch playback/quote swiping",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion skips the loader and rests on the genuine poster without fetching a film",
+      "pass": true
+    },
+    {
+      "name": "Video failure keeps the poster and never traps entry",
+      "pass": true
+    },
+    {
+      "name": "Review section stays responsive and guest names never cover the hotel marker",
+      "pass": true
+    },
+    {
+      "name": "No uncaught errors or broken local assets in normal use",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

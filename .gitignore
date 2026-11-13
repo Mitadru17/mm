@@ -3,5 +3,6 @@ dist/
 *.tsbuildinfo
 *.log
 .codex/*.log
+.taste-skill/chrome-*
 .env*
 !.env.example

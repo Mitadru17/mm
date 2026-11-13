@@ -1,0 +1,13 @@
+Decorative guest avatars — NOT verified photographs of the named reviewers.
+
+Style: Notionists by Zoish, remixed by DiceBear.
+Source: https://www.dicebear.com/styles/notionists/
+Artist: https://bio.link/heyzoish
+Dedication: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+Official license inventory: https://www.dicebear.com/licenses/
+
+Four locally saved, seeded static SVG illustrations were generated through
+the official DiceBear 10.x API on 13 November 2026. They are decorative,
+randomised stand-ins, not inferred likenesses, identities or guest portraits.
+No runtime request to DiceBear is required. The website visibly discloses
+illustrative avatars and globe pin positions; review texts remain sourced.

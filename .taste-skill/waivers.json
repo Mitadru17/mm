@@ -1,0 +1,7 @@
+[
+  {"check":"copy-fact","target":"h1#arrival-title","reason":"Kausani is the verified hotel city, explicitly printed in the hero headline and address. It is a real place fact; no invented number or price is needed."},
+  {"check":"collide","target":"div#root > div.jh-site > header.jh-header","reason":"The owner requests an immersive full-bleed film with a transparent fixed header over the background. This is intentional backdrop layering; controls and foreground content do not overlap."},
+  {"check":"coordinates","target":"tg-review-summary > a.editorial-link","reason":"The owner explicitly requires Read all reviews to open the verified hotel's Google Maps reviews. Its exact property coordinates identify that review destination; replacing it with an OpenStreetMap street search breaks the task."},
+  {"check":"spill","target":"svg.tg-leader","reason":"The supplied testimonial design explicitly connects a globe portrait to the review card across columns. The leader belongs to the entire stage, not to the canvas panel identified by the checker."},
+  {"check":"cta","target":"section#main","reason":"This is the retained narrative introduction with real text links, not the hero. The actual arrival-hero has the Explore our rooms action and the real header enquiry, as verified in the browser."}
+]

@@ -125,3 +125,7 @@ Nearby Walk remains the supplied component; site usage now hides theme/pause con
 ## Later November13 correction — guest names and readability
 
 The user requested named pins at random globe locations and clearer typography. Active display font is now locally bundled OFL Newsreader Variable; Manrope carries body and MYSTIC wordmarks. This supersedes the Bodoni typography described above. No new React Bits component was needed: supplied globe selection/projection is extended in place, with explicit “illustrative” location labels, a distinct real hotel marker and bounded850ms turns. No review text/rating/source was changed, and no hometown is asserted. Labels are clamped for readable narrow screens and never cover the hotel label. See docs/guest-experiences/guest-pins-qa.json.
+
+## November13 — supplied Pushpin Tear Footer
+
+The user supplied the complete Pushpin Tear Footer source and requested its composition. It is installed/adapted in src/components/ui; SignatureFooter now configures it with hotel data. Its procedural SVG ridge, fibre rim, flaps, glossy pin, intro/re-pin and printed wordmark are retained. A new React Bits footer/effect was rejected because it would duplicate the supplied source; no registry/dependency install was needed. The newsletter slot becomes the existing booking enquiry action; no demo signup or availability claims. Current colours/type, SPA navigation, Lenis back-to-top, viewport/visibility gating and live reduced motion are added. Source provenance is in public/licenses/pushpin-tear-footer.txt and docs/tear-footer.

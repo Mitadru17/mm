@@ -62,3 +62,7 @@ COBE2.0.1 is MIT and justified by the explicitly supplied globe composition: 12.
 ## November13 readability and guest-pin update
 
 The latest DESIGN.md override replaces Bodoni Moda with Newsreader Variable, and uses Manrope for both MYSTIC wordmarks. The guest globe now has four named review-selection pins with explicitly illustrative randomised placements, plus the distinct actual hotel marker. No reviewer hometowns are claimed. The location disclosure stays visible beneath the globe and in accessible pin labels. Source records are unchanged; selection-driven turns reuse the existing on-demand COBE loop with reduced-motion support.
+
+## November13 — supplied torn-paper footer
+
+Latest footer layout is the supplied Pushpin Tear Footer, replacing the earlier photographic invitation. It retains its seeded SVG tear, flap geometry, pin drop/stab, hover response, re-pin and printed MYSTIC wordmark. Current cream/pine/rust tokens and Newsreader/Manrope fonts apply. The demo newsletter is replaced by the existing enquiry action; no signup or availability outcome is fabricated. The original photo remains in the gallery/site content, not the new footer. Verified local routes, email, phone, directions and booking URL are preserved. Source/provenance, responsive fixes and QA are in docs/tear-footer.

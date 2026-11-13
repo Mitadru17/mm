@@ -1,0 +1,1 @@
+const fs=require('fs');const f='scripts/integrate-tear-footer.cjs';let s=fs.readFileSync(f,'utf8');s=s.replace("'Pasted text.txt','utf8')","'Pasted text.txt','utf8')");s=s.replace("Pasted text.txt','utf8');const start", "Pasted text.txt','utf8').replace(/\\r\\n/g,'\\n');const start");fs.writeFileSync(f,s);

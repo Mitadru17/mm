@@ -1,0 +1,20 @@
+Pushpin Tear Footer — user-supplied source, adapted for Hotel Mystic Mountain
+
+Source: attachment 153cc1a0-4cb7-4896-9da6-ad5efd64fdb4/Pasted text.txt,
+provided by the project owner on 13 November 2026.
+Original default branding identifies kedhareswer and the 21st.dev profile
+https://21st.dev/@kedhareswer ; source code also references
+https://github.com/kedhareswer/21stdev-my-components .
+
+No independent license declaration was included in the supplied component.
+No separate upstream license is asserted by this adaptation.
+
+Retained: seedable tear geometry, ridge/flap interpolation, SVG paper/fibre
+rim, glossy procedural pushpin, finite entrance and re-pin choreography,
+copy-email action, local clock, link columns and printed brand composition.
+
+Adaptation: Mystic Mountain brand/contact/navigation data, cream/pine/rust
+colours, Newsreader/Manrope typography, enquiry action instead of newsletter,
+SPA links, Lenis-aware return-to-top, touch target/contrast fixes, live system
+and site reduced motion, hidden/offscreen suspension and honest form behavior.
+The site's footer does not claim newsletter signup or room availability.

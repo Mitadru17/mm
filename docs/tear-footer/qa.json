@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-13T04:46:55.745Z",
+  "results": [
+    {
+      "name": "Supplied torn-paper composition uses only real hotel contacts and working destinations",
+      "pass": true
+    },
+    {
+      "name": "Intro resolves to a real torn ridge and a readable pine-on-cream paper",
+      "pass": true
+    },
+    {
+      "name": "Clicking the glossy pin re-tears the paper and settles",
+      "pass": true
+    },
+    {
+      "name": "Keyboard can re-pin and copied-email feedback reflects actual clipboard content",
+      "pass": true
+    },
+    {
+      "name": "Footer opens the existing enquiry and restores focus without claiming a booking",
+      "pass": true
+    },
+    {
+      "name": "Back to top uses the existing scroll runtime and restores navigation focus",
+      "pass": true
+    },
+    {
+      "name": "Offscreen torn-paper SVG stops updating",
+      "pass": true
+    },
+    {
+      "name": "Phone/tablet/desktop layout preserves links and readable controls at 320,390,768,1024,1440",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion settles immediately and pin interaction remains functional",
+      "pass": true
+    },
+    {
+      "name": "Phone touch can re-pin and open/close the enquiry",
+      "pass": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

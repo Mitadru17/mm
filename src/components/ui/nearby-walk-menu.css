@@ -569,3 +569,10 @@
 [data-nearby-walk][data-reduced] .nw-fx {
   display: none;
 }
+/* Client presentation: a finite entrance needs no pause controls. */
+[data-nearby-walk]:not([data-ambient]) :is(.nw-tw, .nw-cloud, .nw-route) {
+  animation: none;
+}
+[data-nearby-walk]:not([data-ambient]) .nw-walker {
+  display: none;
+}

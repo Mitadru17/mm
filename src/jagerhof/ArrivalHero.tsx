@@ -76,12 +76,12 @@ export function ArrivalHero({
       document.fonts.ready,
       image.current!.decode().catch(() => {}),
       new Promise((resolve) => {
-        minimum = setTimeout(resolve, 650);
+        minimum = setTimeout(resolve, 1450);
       }),
     ]);
     // A failed/slow image must never hold the site behind the loader.
     const limit = new Promise((resolve) => {
-      deadline = setTimeout(resolve, 3200);
+      deadline = setTimeout(resolve, 3600);
     });
     void Promise.race([assets, limit]).then(() => {
       if (disposed) return;
@@ -111,7 +111,7 @@ export function ArrivalHero({
           {
             x: 0,
             y: 0,
-            duration: 1.65,
+            duration: 1.8,
             ease: "power3.inOut",
           },
           0,
@@ -119,17 +119,17 @@ export function ArrivalHero({
         .fromTo(
           ".arrival-veil",
           { opacity: 1 },
-          { opacity: 0, duration: 1.45, ease: "power2.inOut" },
+          { opacity: 0, duration: 1.6, ease: "power2.inOut" },
           0.12,
         )
         .fromTo(
           image.current,
           { scale: 1.055 },
-          { scale: 1, duration: 1.85, ease: "power2.out" },
+          { scale: 1, duration: 2.05, ease: "power2.out" },
           0,
         )
         .to(".arrival-loading-meta", { autoAlpha: 0, duration: 0.3 }, 0)
-        .to(".arrival-skip", { autoAlpha: 0, duration: 0.18 }, 1.65);
+        .to(".arrival-skip", { autoAlpha: 0, duration: 0.18 }, 1.85);
       const frame = new URLSearchParams(location.search).get("entry-frame");
       if (frame !== null && Number.isFinite(Number(frame)))
         timeline.pause(Math.max(0, Number(frame)));
@@ -174,8 +174,19 @@ export function ArrivalHero({
       {busy && (
         <>
           <div className="arrival-loading-meta">
+            <svg
+              className="arrival-mountain-line"
+              viewBox="0 0 160 50"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                pathLength="1"
+                d="M2 44H28L58 6L86 44H108L131 16L158 44M45 23L58 27L67 20M118 32L131 35L139 27M76 44L96 17L117 44"
+              />
+            </svg>
             <span className="arrival-loading-rule" aria-hidden="true" />
-            <p role="status">Preparing your mountain view</p>
+            <p role="status">A little closer to the mountains</p>
             <span>Kausani, Uttarakhand</span>
           </div>
           <button className="arrival-skip" onClick={finish}>

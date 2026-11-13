@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-13T03:47:39.281Z",
+  "results": [
+    {
+      "name": "Closing order is reviews, always-visible nearby guide, footer, without old chapter or controls",
+      "pass": true
+    },
+    {
+      "name": "All four source-attributed five-star excerpts work through buttons and keyboard",
+      "pass": true
+    },
+    {
+      "name": "Globe renders, drags and recentres a single hotel pin; no guest-location inference",
+      "pass": true
+    },
+    {
+      "name": "Offscreen WebGL work is destroyed and guide has no perpetual ambient animation",
+      "pass": true
+    },
+    {
+      "name": "Nearby places respond to hover, keyboard and show their real source link",
+      "pass": true
+    },
+    {
+      "name": "Closing content, type and navigation fit narrow phone, tablet and desktop",
+      "pass": true
+    },
+    {
+      "name": "Touch review swipe and nearby place selection work alongside vertical scrolling",
+      "pass": true
+    },
+    {
+      "name": "WebGL unavailable retains a visible globe illustration and functional reviews",
+      "pass": true
+    },
+    {
+      "name": "Loader holds longer, shares one hero heading and releases smoothly within a bounded time",
+      "pass": true
+    },
+    {
+      "name": "Escape skips intro, failed/slow hero cannot block entry, and reduced motion bypasses loader",
+      "pass": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

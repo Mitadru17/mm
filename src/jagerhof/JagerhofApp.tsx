@@ -8,12 +8,12 @@ import {
 } from "react";
 import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router";
-import { ArrowUpRight, Plus, Minus } from "lucide-react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import { hotel, photos, faqs } from "../data";
 import type { Photo } from "../data";
 import { Lightbox, Modal, PhotoImage } from "../ui";
 import { useSiteMotion } from "../motion";
-import { goTo, resetPageScroll, useSmoothExperience } from "../experience";
+import { resetPageScroll, useSmoothExperience } from "../experience";
 import { GalleryActions, TideLink } from "../tidescape/primitives";
 import { SoftCursor } from "../components/SoftCursor";
 import { ScrollTrigger } from "../bend/animation";
@@ -22,9 +22,8 @@ import { ExperiencesCarousel } from "./ExperiencesCarousel";
 import { ArrivalHero, shouldShowArrival } from "./ArrivalHero";
 import { SiteMenu } from "./SiteMenu";
 import { SignatureFooter } from "./SignatureFooter";
-import { AnimatePresence } from "motion/react";
-import * as m from "motion/react-m";
 
+const GuestExperiences = lazy(() => import("./GuestExperiences"));
 const LegacyPages = lazy(() => import("../bend/LegacyPages"));
 const BookingInquiry = lazy(() => import("../BookingInquiry"));
 const LocationSection = lazy(() =>
@@ -317,17 +316,13 @@ function GuestSection() {
   return (
     <section id="faq" className="jh-guests">
       <div className="jh-guest-copy" data-jh-reveal>
-        <h2 className="jh-eyebrow">REAL STAYS. REAL PERSPECTIVES.</h2>
+        <h2 className="jh-eyebrow">A FEW USEFUL DETAILS.</h2>
         <h3 className="jh-display" data-jh-heading>
           Before you make
           <br />
           yourself at home.
         </h3>
-        <p>
-          Read guest experiences on MakeMyTrip, or find a few useful answers
-          before you plan your own stay.
-        </p>
-        <Action to={hotel.reviews}>Read guest experiences</Action>
+        <p>Find a few useful answers before you plan your own stay.</p>
       </div>
       <div className="jh-faq" data-jh-reveal>
         {faqs.map(([question, answer]) => (
@@ -341,70 +336,6 @@ function GuestSection() {
         ))}
       </div>
     </section>
-  );
-}
-function Location() {
-  const [map, setMap] = useState(false);
-  const reduced = useSiteMotion();
-  useEffect(() => {
-    if (!map) return;
-    const frame = requestAnimationFrame(() => goTo("jh-map"));
-    return () => cancelAnimationFrame(frame);
-  }, [map]);
-  return (
-    <>
-      <section id="place" className="jh-grow">
-        <div className="jh-grow-visual">
-          <div className="jh-grow-photo">
-            <Image id="valley-portrait" sizes="100vw" />
-          </div>
-          <div className="jh-grow-shade" />
-          <div className="jh-grow-copy">
-            <h2 className="jh-eyebrow">OUR LITTLE CORNER OF KUMAON</h2>
-            <h3 className="jh-display">
-              All roads lead
-              <br />
-              to a slower day.
-            </h3>
-            <p>{hotel.address}</p>
-            <div>
-              <Action to={hotel.maps}>Get directions</Action>
-              <button
-                className="jh-outline"
-                aria-expanded={map}
-                aria-controls="jh-map"
-                onClick={() => setMap((v) => !v)}
-              >
-                {map ? "Close nearby guide" : "Explore nearby"}
-                {map ? <Minus size={16} /> : <Plus size={16} />}
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <AnimatePresence initial={false}>
-        {map && (
-          <m.div
-            key="location-map"
-            id="jh-map"
-            className="jh-map"
-            initial={{ opacity: 0, y: reduced ? 0 : 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: reduced ? 0 : 8 }}
-            transition={{
-              duration: reduced ? 0.15 : 0.4,
-              ease: [0.16, 1, 0.3, 1],
-            }}
-          >
-            <Suspense
-              fallback={<p role="status">Opening the Kausani nearby guide…</p>}
-            >
-              <LocationSection />
-            </Suspense>
-          </m.div>
-        )}
-      </AnimatePresence>
-    </>
   );
 }
 export default function JagerhofApp() {
@@ -495,7 +426,19 @@ export default function JagerhofApp() {
               ))}
               <Marquee />
               <GuestSection />
-              <Location />
+              <Suspense
+                fallback={
+                  <div
+                    className="closing-section-placeholder"
+                    aria-label="Guest experiences and nearby places"
+                  />
+                }
+              >
+                <GuestExperiences />
+                <div id="place">
+                  <LocationSection />
+                </div>
+              </Suspense>
             </main>
           </>
         ) : (

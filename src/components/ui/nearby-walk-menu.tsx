@@ -39,6 +39,8 @@ export type NearbyWalkProps = {
   defaultTheme?: NearbyWalkTheme;
   onThemeChange?: (theme: NearbyWalkTheme) => void;
   showThemes?: boolean;
+  /** Finite entrance only, with no ambient loops or motion control. */
+  ambientMotion?: boolean;
   cursorEffect?: boolean;
   onSelect?: (id: string) => void;
   children?: ReactNode;
@@ -162,6 +164,7 @@ export function NearbyWalk({
   defaultTheme = "classic",
   onThemeChange,
   showThemes = true,
+  ambientMotion = true,
   cursorEffect = true,
   onSelect,
   children,
@@ -328,6 +331,7 @@ export function NearbyWalk({
       data-armed={armed || undefined}
       data-shown={shown || undefined}
       data-running={running || undefined}
+      data-ambient={ambientMotion || undefined}
       data-paused={paused || undefined}
       data-reduced={reduced || undefined}
       data-theme={current}
@@ -533,43 +537,45 @@ export function NearbyWalk({
           </button>
         ))}
       </div>
-      <div className="nw-controls">
-        {showThemes && (
-          <div
-            className="nw-themes tw:flex tw:justify-center"
-            role="group"
-            aria-label="Illustration colour theme"
-          >
-            {ids.map((id) => (
-              <button
-                key={id}
-                type="button"
-                aria-label={`Theme: ${THEMES[id].label}`}
-                aria-pressed={current === id}
-                title={THEMES[id].label}
-                onClick={() => pick(id)}
-              >
-                <span style={{ background: THEMES[id].dot }} />
-              </button>
-            ))}
-            <span className="nw-theme-name" aria-hidden="true">
-              {THEMES[current].label}
-            </span>
-          </div>
-        )}
-        {!reduced && (
-          <button
-            type="button"
-            className="nw-motion-toggle"
-            aria-label={paused ? "Play illustration" : "Pause illustration"}
-            aria-pressed={paused}
-            onClick={() => setPaused((value) => !value)}
-          >
-            {paused ? <Play size={13} /> : <Pause size={13} />}
-            <span>{paused ? "Play" : "Pause"}</span>
-          </button>
-        )}
-      </div>
+      {(showThemes || (ambientMotion && !reduced)) && (
+        <div className="nw-controls">
+          {showThemes && (
+            <div
+              className="nw-themes tw:flex tw:justify-center"
+              role="group"
+              aria-label="Illustration colour theme"
+            >
+              {ids.map((id) => (
+                <button
+                  key={id}
+                  type="button"
+                  aria-label={`Theme: ${THEMES[id].label}`}
+                  aria-pressed={current === id}
+                  title={THEMES[id].label}
+                  onClick={() => pick(id)}
+                >
+                  <span style={{ background: THEMES[id].dot }} />
+                </button>
+              ))}
+              <span className="nw-theme-name" aria-hidden="true">
+                {THEMES[current].label}
+              </span>
+            </div>
+          )}
+          {ambientMotion && !reduced && (
+            <button
+              type="button"
+              className="nw-motion-toggle"
+              aria-label={paused ? "Play illustration" : "Pause illustration"}
+              aria-pressed={paused}
+              onClick={() => setPaused((value) => !value)}
+            >
+              {paused ? <Play size={13} /> : <Pause size={13} />}
+              <span>{paused ? "Play" : "Pause"}</span>
+            </button>
+          )}
+        </div>
+      )}
       {children}
     </section>
   );

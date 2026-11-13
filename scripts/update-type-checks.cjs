@@ -1,0 +1,1 @@
+const fs=require('fs');for(const file of ['scripts/closing-qa.cjs','scripts/enquiry-redesign-qa.cjs']){let s=fs.readFileSync(file,'utf8');s=s.replaceAll('/Bodoni/','/Newsreader/');fs.writeFileSync(file,s)}

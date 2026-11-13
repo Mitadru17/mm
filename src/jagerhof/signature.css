@@ -8,24 +8,24 @@
     format("woff2");
 }
 @font-face {
-  font-family: "Bodoni Moda Variable";
+  font-family: "Newsreader Variable";
   font-style: normal;
-  font-weight: 400 900;
+  font-weight: 200 800;
   font-display: swap;
-  src: url("@fontsource-variable/bodoni-moda/files/bodoni-moda-latin-standard-normal.woff2")
+  src: url("@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2")
     format("woff2");
 }
 @font-face {
-  font-family: "Bodoni Moda Variable";
+  font-family: "Newsreader Variable";
   font-style: italic;
-  font-weight: 400 900;
+  font-weight: 200 800;
   font-display: swap;
-  src: url("@fontsource-variable/bodoni-moda/files/bodoni-moda-latin-standard-italic.woff2")
+  src: url("@fontsource-variable/newsreader/files/newsreader-latin-wght-italic.woff2")
     format("woff2");
 }
 :root {
   --font-body: "Manrope Variable", Arial, sans-serif;
-  --font-display: "Bodoni Moda Variable", Georgia, serif;
+  --font-display: "Newsreader Variable", Georgia, serif;
   --font: var(--font-body);
   --_text-style---font-family: var(--font-body);
   --_typography---font--primary-family: var(--font-body);
@@ -1023,8 +1023,238 @@ body {
     transform: none;
   }
 }
-@media(max-width:639px) { .signature-footer-details { grid-template-columns: 1.35fr .65fr; } }
-@media(max-width:359px) { .signature-footer-details { grid-template-columns: 1fr; } }
+@media (max-width: 639px) {
+  .signature-footer-details {
+    grid-template-columns: 1.35fr 0.65fr;
+  }
+}
+@media (max-width: 359px) {
+  .signature-footer-details {
+    grid-template-columns: 1fr;
+  }
+}
 /* A dark ring stays visible around light photo cards on the cream page. */
-.jh-site .jh-experience-card:focus-visible { outline: 3px solid var(--pine); outline-offset: 5px; }
-.jh-site .jh-grow-copy>p { opacity: 1; color: #faf8f4; }
+.jh-site .jh-experience-card:focus-visible {
+  outline: 3px solid var(--pine);
+  outline-offset: 5px;
+}
+.jh-site .jh-grow-copy > p {
+  opacity: 1;
+  color: #faf8f4;
+}
+/* November 13 closing sequence: guest voices, nearby guide, invitation. */
+:root {
+  --type-display: clamp(40px, 4.2vw, 64px);
+  --type-body: clamp(15px, 0.3vw + 13px, 17px);
+  --section-rhythm: clamp(64px, 7.5vw, 112px);
+}
+body {
+  text-rendering: optimizeLegibility;
+}
+.jh-site .jh-display {
+  font-size: var(--type-display);
+  font-weight: 400;
+  letter-spacing: -0.028em !important;
+  line-height: 1.14 !important;
+  text-wrap: balance;
+}
+.jh-site
+  :is(.jh-intro p, .jh-chapter-copy > p, .jh-guest-copy > p, .jh-page-body p) {
+  font-size: var(--type-body);
+  line-height: 1.8;
+  max-width: 48ch;
+}
+.jh-site :is(.jh-eyebrow, .signature-kicker) {
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+.jh-site
+  :is(
+    .jh-experiences-heading,
+    .jh-menu-link,
+    .ts-page-title h1,
+    .ts-story-title
+  ) {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  font-weight: 400;
+}
+.jh-site .arrival-copy h1 {
+  letter-spacing: -0.025em;
+  line-height: 1.13;
+}
+.jh-site .signature-footer h2 {
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+.jh-site .signature-footer-invitation > h2 {
+  margin-bottom: 30px;
+}
+.jh-site .nearby-location {
+  padding-top: 75px;
+  padding-bottom: var(--section-rhythm);
+  border-top: 1px solid #2f4f3e25;
+}
+.jh-site .nearby-location-header h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.028em;
+  line-height: 1.14;
+}
+.jh-site .nearby-location-intro {
+  font-size: var(--type-body);
+  line-height: 1.8;
+}
+.jh-site [data-nearby-walk] {
+  padding-inline: 0;
+}
+.jh-site .nearby-location-detail {
+  padding-top: 28px;
+}
+.jh-site .nearby-location-detail p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.jh-site .nearby-location-detail .nearby-location-note {
+  font-size: 12px;
+}
+.closing-section-placeholder {
+  min-height: 100svh;
+}
+.arrival-mountain-line {
+  width: 100px;
+  height: 34px;
+  margin-bottom: 9px;
+  stroke: #e9e1d6b3;
+  stroke-width: 0.8;
+}
+.arrival-mountain-line path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: arrival-mountain-draw 1.35s cubic-bezier(0.22, 1, 0.36, 1) 0.1s
+    forwards;
+}
+.arrival-loading-rule {
+  width: 110px;
+  position: relative;
+  overflow: hidden;
+  background: #e9e1d630;
+}
+.arrival-loading-rule:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e9e1d6b3;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: arrival-rule-in 1.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.arrival-loading-meta {
+  bottom: 75px;
+  gap: 13px;
+}
+.jh-site .arrival-loading-meta p {
+  letter-spacing: 0.05em;
+  font-size: 11px;
+}
+@keyframes arrival-mountain-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes arrival-rule-in {
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 767px) {
+  .jh-site .nearby-location {
+    padding-block: 55px 65px;
+  }
+  .jh-site .jh-display {
+    font-size: clamp(36px, 7vw, 48px);
+  }
+  .jh-site .nearby-location-header h2 {
+    font-size: 40px !important;
+  }
+  .jh-site :is(.jh-chapter-copy > p, .jh-guest-copy > p) {
+    font-size: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arrival-mountain-line path,
+  .arrival-loading-rule:after {
+    animation: none;
+  }
+}
+.jh-site .nearby-location-header h2 {
+  color: var(--pine) !important;
+}
+#guest-experiences,
+#place,
+#location {
+  scroll-margin-top: 100px;
+}
+@media (max-width: 767px) {
+  #guest-experiences,
+  #place,
+  #location {
+    scroll-margin-top: 80px;
+  }
+}
+/* Readability refinement: sturdy screen serif and a clear brand wordmark. */
+.jh-site .arrival-wordmark > span {
+  font-family: var(--font-body);
+  font-size: clamp(20px, 1.75vw, 28px);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.15;
+}
+.jh-site .arrival-wordmark > small {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+.jh-site .signature-footer-wordmark {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+.jh-site
+  :is(
+    .jh-display,
+    .arrival-copy h1,
+    .tg-introduction h2,
+    .tg-quote blockquote p,
+    .nearby-location-header h2,
+    .signature-footer h2
+  ) {
+  font-weight: 450;
+}
+.jh-site
+  :is(
+    .jh-intro p,
+    .jh-chapter-copy > p,
+    .jh-guest-copy > p,
+    .nearby-location-intro
+  ) {
+  font-weight: 450;
+}
+@media (max-width: 639px) {
+  .jh-site .arrival-wordmark > span {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+  }
+  .jh-site .arrival-wordmark > small {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+}
+@media (max-width: 359px) {
+  .jh-site .arrival-wordmark > span {
+    font-size: 18px;
+  }
+}

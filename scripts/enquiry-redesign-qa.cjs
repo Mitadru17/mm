@@ -68,7 +68,7 @@ const assert=require('node:assert/strict'), fs=require('node:fs');
     await page.setViewportSize({width,height:width<640?844:1000});
     await page.goto('http://localhost:4174/#stay',{waitUntil:'networkidle'});await page.waitForTimeout(1400);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`overflow at ${width}`);
-    assert.match(await page.locator('#stay-title').evaluate(e=>getComputedStyle(e).fontFamily),/Bodoni/);
+    assert.match(await page.locator('#stay-title').evaluate(e=>getComputedStyle(e).fontFamily),/Newsreader/);
     await page.getByRole('button',{name:'Open navigation',exact:true}).click();await page.locator('.site-menu[data-phase=open]').waitFor();
     assert.equal(await page.locator('.site-menu').evaluate(e=>e.scrollWidth>e.clientWidth+1),false);
     await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('.site-menu').open);

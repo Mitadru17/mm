@@ -1,0 +1,145 @@
+[
+  {
+    "tag": "SECTION",
+    "class": "hero_home_wrap u-section u-theme-dark u-min-height-screen",
+    "text": "DeinZuhause,\nIn der Natur.\nAm Tisch.\nIn unseren Zimmern.\nBei uns.",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 1000
+    }
+  },
+  {
+    "tag": "H1",
+    "class": "hero_home_title u-text-style-display",
+    "text": "DeinZuhause,",
+    "rect": {
+      "x": 152.484375,
+      "y": 301.375,
+      "w": 1135.03125,
+      "h": 161.828125
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "intro_wrap u-section u-min-height-screen",
+    "text": "ERLEBE DAS LEBEN IM JÄGERHOF\n\nFinde dein Zimmer in den Bergen, genieße, was unsere Küche im Rhythmus der Jahreszeiten schafft, und lass unsere Geschichte zu einem Teil deiner werde",
+    "rect": {
+      "x": 0,
+      "y": 1000,
+      "w": 1440,
+      "h": 1000
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "slider_main_wrap u-section",
+    "text": "Anreise & Lage\nAnreise & Lage\nDEIN KLEINES FAMILIÄRES HOTEL IN DEN BERGEN\n\nDer Jägerhof liegt in den Bergen auf 1.400 m Meereshöhe und bietet eine einzigartige Lage zwischen Ruhe, ",
+    "rect": {
+      "x": 0,
+      "y": 2000,
+      "w": 1440,
+      "h": 958.0625
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "layout_2-col_wrap u-section",
+    "text": "ANGEBOTE UND THEMENWOCHEN\nErlebnisse, die Deinen Aufenthalt besonders machen\n\nOb entspannte Genussmomente, aktive Tage in der Natur oder besondere Themenwochen, jedes Angebot ist d",
+    "rect": {
+      "x": 0,
+      "y": 2958.0625,
+      "w": 1440,
+      "h": 906.25
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "layout_2-col_wrap u-section",
+    "text": "NATUR\nWo Natur zur Heimat wird\n\nEingebettet in die sanften Hügel und die klare Bergluft Südtirols lädt der Jägerhof Dich dazu ein, die Natur mit allen Sinnen zu erleben.\n\nEcht, urs",
+    "rect": {
+      "x": 0,
+      "y": 3864.3125,
+      "w": 1440,
+      "h": 906.25
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "layout_2-col_wrap u-section",
+    "text": "GENUSS\nEhrlich, Regional, Nachhaltig\n\nIm Jägerhof schmeckt man Südtirol, von herzhaften Almgerichten bis zu feinen regionalen Spezialitäten. Mit Liebe zubereitet, aus besten Zutate",
+    "rect": {
+      "x": 0,
+      "y": 4770.5625,
+      "w": 1440,
+      "h": 906.25
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "layout_2-col_wrap u-section",
+    "text": "HIER WIRD'S NICHT LANGWEILIG\nAktivitäten & Ausflugsziele\n\nOb Sommer oder Winter, hier warten unzählige Möglichkeiten auf Dich: Bergwanderungen oder geführte Schneeschuhtouren für a",
+    "rect": {
+      "x": 0,
+      "y": 5676.8125,
+      "w": 1440,
+      "h": 906.25
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "layout_2-col_wrap u-section",
+    "text": "WOHLFÜHLEN\nEntspannen, Abschalten, Genießen\n\nAuf 200 m² lädt unsere Saunalandschaft dazu ein, zur Ruhe zu kommen, die Muskulatur zu entspannen und etwas Gutes für die Atemwege zu t",
+    "rect": {
+      "x": 0,
+      "y": 6583.0625,
+      "w": 1440,
+      "h": 906.25
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "title_marquee_wrap u-section",
+    "text": "reine Natur\npurer Genuss",
+    "rect": {
+      "x": 0,
+      "y": 7489.3125,
+      "w": 1440,
+      "h": 690.390625
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "reviews_wrap u-section",
+    "text": "GÄSTESTIMMEN\n\nWas unsere Gäste sagen\n\nEchte Erlebnisse und ehrliche Worte. Erfahre, wie unsere Gäste ihren Aufenthalt im Jägerhof erlebt haben. Authentische Eindrücke, die mehr sag",
+    "rect": {
+      "x": 0,
+      "y": 8179.703125,
+      "w": 1440,
+      "h": 901.953125
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "card_grow_wrap u-section",
+    "text": "VERANTWORTUNG AUS ÜBERZEUGUNG\n\nUnser Plädoyer für Nachhaltigkeit\n\nWir leben, was wir lieben und das mit Verantwortung. Im Jägerhof setzen wir auf regionale Produkte, kurze Transpor",
+    "rect": {
+      "x": 0,
+      "y": 9081.65625,
+      "w": 1440,
+      "h": 1000
+    }
+  },
+  {
+    "tag": "SECTION",
+    "class": "cta_wrap u-section",
+    "text": "Come stay with us,\nZimmer buchen.\nRoute anzeigen.\nKontakt aufnehmen.",
+    "rect": {
+      "x": 0,
+      "y": 10081.65625,
+      "w": 1440,
+      "h": 548
+    }
+  }
+]

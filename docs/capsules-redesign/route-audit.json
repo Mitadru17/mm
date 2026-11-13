@@ -1,0 +1,418 @@
+{
+  "desktopAndPhone": [
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "MysticMountain",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "Discover the Mystic Mountain story",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/about",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "Find your place in the hills",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/suites",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "01. Timber & mountain light",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/suites/timber",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "02. Let the outside in",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/suites/outlook",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "03. A softer place to land",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/suites/unwind",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "A little comfort, a different outlook",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/services",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "A little closer to Kumaon",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/activities",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "Photographs of Hotel Mystic Mountain Kausani",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/gallery",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "Stories & mountain notes",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/news",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "A slower day in Kausani",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/news/a-slower-day-in-kausani",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "Timber & mountain light",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/news/timber-and-mountain-light",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "The road to Mystic Mountain",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/news/the-road-to-mystic",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "background": "rgb(24, 23, 23)",
+      "brokenImages": [],
+      "fonts": [
+        "\"Host Grotesk\", sans-serif"
+      ],
+      "h1": "Plan a staywith us",
+      "maxTransition": 0.15,
+      "overflow": 0,
+      "path": "/contact",
+      "tallActions": [],
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/about",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/suites",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/suites/timber",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/suites/outlook",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/suites/unwind",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/services",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/activities",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/gallery",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/news",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/news/a-slower-day-in-kausani",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/news/timber-and-mountain-light",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/news/the-road-to-mystic",
+      "tallActions": [],
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "font": "\"Host Grotesk\", sans-serif",
+      "overflow": 0,
+      "path": "/contact",
+      "tallActions": [],
+      "width": 390
+    }
+  ],
+  "additionalBreakpoints": [
+    {
+      "nav": [
+        {
+          "left": 22.5,
+          "right": 172.234375,
+          "text": "Mystic Mountain"
+        },
+        {
+          "left": 189.6875,
+          "right": 282.5,
+          "text": "Menu"
+        }
+      ],
+      "overflow": 0,
+      "path": "/",
+      "tallActions": [],
+      "width": 320
+    },
+    {
+      "nav": [
+        {
+          "left": 22.5,
+          "right": 172.234375,
+          "text": "Mystic Mountain"
+        },
+        {
+          "left": 189.6875,
+          "right": 282.5,
+          "text": "Menu"
+        }
+      ],
+      "overflow": 0,
+      "path": "/contact",
+      "tallActions": [],
+      "width": 320
+    },
+    {
+      "nav": [
+        {
+          "left": 37.5,
+          "right": 232.1875,
+          "text": "Mystic Mountain"
+        },
+        {
+          "left": 615.1875,
+          "right": 715.5,
+          "text": "Menu"
+        }
+      ],
+      "overflow": 0,
+      "path": "/",
+      "tallActions": [],
+      "width": 768
+    },
+    {
+      "nav": [
+        {
+          "left": 37.5,
+          "right": 232.1875,
+          "text": "Mystic Mountain"
+        },
+        {
+          "left": 615.1875,
+          "right": 715.5,
+          "text": "Menu"
+        }
+      ],
+      "overflow": 0,
+      "path": "/contact",
+      "tallActions": [],
+      "width": 768
+    },
+    {
+      "nav": [
+        {
+          "left": 37.5,
+          "right": 232.1875,
+          "text": "Mystic Mountain"
+        },
+        {
+          "left": 327.984375,
+          "right": 729,
+          "text": "AboutRooms ServicesActivitiesGalleryJournal"
+        },
+        {
+          "left": 824.796875,
+          "right": 971.5,
+          "text": "Reserve"
+        }
+      ],
+      "overflow": 0,
+      "path": "/",
+      "tallActions": [],
+      "width": 1024
+    },
+    {
+      "nav": [
+        {
+          "left": 37.5,
+          "right": 232.1875,
+          "text": "Mystic Mountain"
+        },
+        {
+          "left": 327.984375,
+          "right": 729,
+          "text": "AboutRooms ServicesActivitiesGalleryJournal"
+        },
+        {
+          "left": 824.796875,
+          "right": 971.5,
+          "text": "Reserve"
+        }
+      ],
+      "overflow": 0,
+      "path": "/contact",
+      "tallActions": [],
+      "width": 1024
+    }
+  ]
+}

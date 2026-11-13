@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-11",
+  "environment": "In-app Chromium; local production Vite preview; no throttling; reused browser session, caching allowed",
+  "viewports": [
+    {
+      "brokenAnchors": [],
+      "clientWidth": 753,
+      "metrics": "{\"lcpMs\":188,\"cls\":0,\"maxInteractionMs\":0}",
+      "missingAlt": 0,
+      "scrollWidth": 753,
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "clientWidth": 1425,
+      "metrics": "{\"lcpMs\":148,\"cls\":0,\"maxInteractionMs\":0}",
+      "scrollWidth": 1425,
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    {
+      "clientWidth": 1265,
+      "metrics": "{\"lcpMs\":196,\"cls\":0.002265908309768939,\"maxInteractionMs\":0}",
+      "scrollWidth": 1265,
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "clientWidth": 1905,
+      "metrics": "{\"lcpMs\":164,\"cls\":0,\"maxInteractionMs\":0}",
+      "scrollWidth": 1905,
+      "viewport": {
+        "height": 1080,
+        "width": 1920
+      }
+    },
+    {
+      "clientWidth": 345,
+      "hero": "http://localhost:4174/images/balcony-480.webp",
+      "metrics": "{\"lcpMs\":96,\"cls\":0.0005978409476902174,\"maxInteractionMs\":0}",
+      "scrollWidth": 345,
+      "viewport": {
+        "height": 800,
+        "width": 360
+      }
+    },
+    {
+      "clientWidth": 375,
+      "hero": "http://localhost:4174/images/balcony-480.webp",
+      "metrics": "{\"lcpMs\":176,\"cls\":0.0002415169362959802,\"maxInteractionMs\":0}",
+      "scrollWidth": 375,
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    }
+  ],
+  "finalChecks": {
+    "brokenLoadedImages": [],
+    "metrics": "{\"lcpMs\":176,\"cls\":0.0002415169362959802,\"maxInteractionMs\":40}",
+    "missingAlt": 0,
+    "missingAnchors": [],
+    "overflow": false
+  },
+  "console": []
+}

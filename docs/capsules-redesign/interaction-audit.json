@@ -1,0 +1,198 @@
+[
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/about",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites/timber",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites/outlook",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites/unwind",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/services",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/activities",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/gallery",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news/a-slower-day-in-kausani",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news/timber-and-mountain-light",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news/the-road-to-mystic",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/contact",
+    "width": 390
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/about",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites/timber",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites/outlook",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/suites/unwind",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/services",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/activities",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/gallery",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news/a-slower-day-in-kausani",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news/timber-and-mountain-light",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/news/the-road-to-mystic",
+    "width": 1440
+  },
+  {
+    "font": "\"Host Grotesk\", sans-serif",
+    "maxTransition": 0.15,
+    "overflow": 0,
+    "route": "/contact",
+    "width": 1440
+  }
+]

@@ -1,0 +1,1118 @@
+[
+  {
+    "selector": ".editorial-heading",
+    "size": "clamp(52px, 5.3vw, 84px)"
+  },
+  {
+    "selector": ".section-intro > p:last-child:not(.eyebrow)",
+    "size": "16px"
+  },
+  {
+    "selector": ".button",
+    "size": "11px"
+  },
+  {
+    "selector": ".fine-print",
+    "size": "11px"
+  },
+  {
+    "selector": ".header-left,\n.header-right",
+    "size": "10px"
+  },
+  {
+    "selector": ".header-place",
+    "size": "8px"
+  },
+  {
+    "selector": ".hero-side-label",
+    "size": "7px"
+  },
+  {
+    "selector": ".hero-choice > p",
+    "size": "10px"
+  },
+  {
+    "selector": ".scene-switch > button",
+    "size": "9px"
+  },
+  {
+    "selector": ".hero-discover",
+    "size": "8px"
+  },
+  {
+    "selector": ".hero-bottom-location",
+    "size": "7px"
+  },
+  {
+    "selector": ".image-error",
+    "size": "12px"
+  },
+  {
+    "selector": ".arrival-side figcaption",
+    "size": "7px"
+  },
+  {
+    "selector": ".image-caption",
+    "size": "7px"
+  },
+  {
+    "selector": ".about-copy > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".about-copy > .editorial-heading",
+    "size": "clamp(50px, 5.2vw, 81px)"
+  },
+  {
+    "selector": ".ornament .star",
+    "size": "12px"
+  },
+  {
+    "selector": ".about-copy > p:not(.eyebrow)",
+    "size": "16px"
+  },
+  {
+    "selector": ".room-theatre-top > .eyebrow",
+    "size": "9px"
+  },
+  {
+    "selector": ".room-theatre-top .editorial-heading",
+    "size": "70px"
+  },
+  {
+    "selector": ".room-tabs > button",
+    "size": "10px"
+  },
+  {
+    "selector": ".theatre-arrows > button",
+    "size": "8px"
+  },
+  {
+    "selector": ".room-information h3",
+    "size": "36px"
+  },
+  {
+    "selector": ".room-information > p",
+    "size": "12px"
+  },
+  {
+    "selector": ".room-information > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".feature-pills > span",
+    "size": "10px"
+  },
+  {
+    "selector": ".room-information .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".round-cta span",
+    "size": "8px"
+  },
+  {
+    "selector": ".room-disclaimer",
+    "size": "8px"
+  },
+  {
+    "selector": ".experience-count",
+    "size": "8px"
+  },
+  {
+    "selector": ".experience-card .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".experience-card h3",
+    "size": "35px"
+  },
+  {
+    "selector": ".experience-card p:last-child",
+    "size": "13px"
+  },
+  {
+    "selector": ".rail-controls > span",
+    "size": "9px"
+  },
+  {
+    "selector": ".destination-note",
+    "size": "9px"
+  },
+  {
+    "selector": ".dining-main > figcaption",
+    "size": "8px"
+  },
+  {
+    "selector": ".dining-main > figcaption > span",
+    "size": "7px"
+  },
+  {
+    "selector": ".dining-copy > p",
+    "size": "16px"
+  },
+  {
+    "selector": ".art-explore",
+    "size": "8px"
+  },
+  {
+    "selector": ".art-caption",
+    "size": "7px"
+  },
+  {
+    "selector": ".mountain-story-copy > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".mountain-story-copy > .editorial-heading",
+    "size": "62px"
+  },
+  {
+    "selector": ".mountain-story-copy > p:not(.eyebrow)",
+    "size": "14px"
+  },
+  {
+    "selector": ".gallery-filters button",
+    "size": "10px"
+  },
+  {
+    "selector": ".gallery-overlay",
+    "size": "11px"
+  },
+  {
+    "selector": ".gallery-bottom > span",
+    "size": "7px"
+  },
+  {
+    "selector": ".gallery-bottom .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".location-copy > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".location-copy > .editorial-heading",
+    "size": "70px"
+  },
+  {
+    "selector": ".location-copy > p:not(.eyebrow)",
+    "size": "14px"
+  },
+  {
+    "selector": ".location-copy address",
+    "size": "12px"
+  },
+  {
+    "selector": ".location-phone",
+    "size": "13px"
+  },
+  {
+    "selector": ".practical > div > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".practical .editorial-heading",
+    "size": "60px"
+  },
+  {
+    "selector": ".practical > div > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".practical .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".faq-list summary",
+    "size": "12px"
+  },
+  {
+    "selector": ".faq-list details > p",
+    "size": "12px"
+  },
+  {
+    "selector": ".booking-intro .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".booking-form label > span",
+    "size": "9px"
+  },
+  {
+    "selector": ".booking-form input,\n.booking-form select,\n.booking-form textarea,\n.preference-label select",
+    "size": "12px"
+  },
+  {
+    "selector": ".booking-form > .button",
+    "size": "10px"
+  },
+  {
+    "selector": ".booking-note",
+    "size": "9px"
+  },
+  {
+    "selector": ".form-error",
+    "size": "12px"
+  },
+  {
+    "selector": ".closing-copy > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".closing-copy > p:not(.eyebrow)",
+    "size": "15px"
+  },
+  {
+    "selector": ".marquee > div > span",
+    "size": "9px"
+  },
+  {
+    "selector": ".marquee .star",
+    "size": "15px"
+  },
+  {
+    "selector": ".footer-content .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".footer-contact h3",
+    "size": "37px"
+  },
+  {
+    "selector": ".footer-contact > a",
+    "size": "12px"
+  },
+  {
+    "selector": ".footer-clock > p:not(.eyebrow)",
+    "size": "10px"
+  },
+  {
+    "selector": ".footer-clock > a",
+    "size": "8px"
+  },
+  {
+    "selector": ".footer-content nav > a,\n.footer-plan > a",
+    "size": "11px"
+  },
+  {
+    "selector": ".footer-plan address",
+    "size": "10px"
+  },
+  {
+    "selector": ".footer-bottom",
+    "size": "8px"
+  },
+  {
+    "selector": ".footer-bottom > span:nth-child(2)",
+    "size": "7px"
+  },
+  {
+    "selector": ".footer-bottom > a",
+    "size": "7px"
+  },
+  {
+    "selector": ".room-photo-controls",
+    "size": "11px"
+  },
+  {
+    "selector": ".room-modal-copy > .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".room-modal-copy h2",
+    "size": "54px"
+  },
+  {
+    "selector": ".room-modal-copy > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".room-modal-copy ul",
+    "size": "12px"
+  },
+  {
+    "selector": ".room-modal-copy > .fine-print",
+    "size": "10px"
+  },
+  {
+    "selector": ".room-modal-copy .button",
+    "size": "11px"
+  },
+  {
+    "selector": ".lightbox-top",
+    "size": "8px"
+  },
+  {
+    "selector": ".lightbox-caption",
+    "size": "12px"
+  },
+  {
+    "selector": ".lightbox-caption > span:last-child",
+    "size": "10px"
+  },
+  {
+    "selector": ".inquiry-modal .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".inquiry-modal h2",
+    "size": "61px"
+  },
+  {
+    "selector": ".inquiry-modal p",
+    "size": "12px"
+  },
+  {
+    "selector": ".preference-label",
+    "size": "11px"
+  },
+  {
+    "selector": ".inquiry-modal .fine-print",
+    "size": "10px"
+  },
+  {
+    "selector": ".art-modal .eyebrow",
+    "size": "8px"
+  },
+  {
+    "selector": ".art-modal h2",
+    "size": "51px"
+  },
+  {
+    "selector": ".art-modal p:last-child",
+    "size": "11px"
+  },
+  {
+    "selector": ".hero h1",
+    "size": "220px"
+  },
+  {
+    "selector": ".mountain-story-copy > .editorial-heading",
+    "size": "76px"
+  },
+  {
+    "selector": ".header-left,\n  .header-right",
+    "size": "8px"
+  },
+  {
+    "selector": ".hero h1",
+    "size": "15vw"
+  },
+  {
+    "selector": ".collage-script",
+    "size": "78px"
+  },
+  {
+    "selector": ".room-theatre-top .editorial-heading",
+    "size": "64px"
+  },
+  {
+    "selector": ".mountain-story-copy > .editorial-heading",
+    "size": "57px"
+  },
+  {
+    "selector": ".location-copy > .editorial-heading",
+    "size": "63px"
+  },
+  {
+    "selector": ".practical .editorial-heading",
+    "size": "54px"
+  },
+  {
+    "selector": ".footer-contact h3",
+    "size": "31px"
+  },
+  {
+    "selector": ".footer-contact > .footer-email",
+    "size": "19px"
+  },
+  {
+    "selector": ".footer-content .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".mobile-book",
+    "size": "8px"
+  },
+  {
+    "selector": ".mobile-nav > span",
+    "size": "8px"
+  },
+  {
+    "selector": ".hero h1",
+    "size": "15vw"
+  },
+  {
+    "selector": ".hero-side-label",
+    "size": "6px"
+  },
+  {
+    "selector": ".collage-script",
+    "size": "67px"
+  },
+  {
+    "selector": ".arrival-side figcaption",
+    "size": "5px"
+  },
+  {
+    "selector": ".about-copy > .editorial-heading",
+    "size": "63px"
+  },
+  {
+    "selector": ".about-copy > p:not(.eyebrow)",
+    "size": "15px"
+  },
+  {
+    "selector": ".room-theatre-top .editorial-heading",
+    "size": "59px"
+  },
+  {
+    "selector": ".room-tabs > button",
+    "size": "8px"
+  },
+  {
+    "selector": ".room-information h3",
+    "size": "35px"
+  },
+  {
+    "selector": ".room-bottom > .round-cta span",
+    "size": "6px"
+  },
+  {
+    "selector": ".room-disclaimer",
+    "size": "7px"
+  },
+  {
+    "selector": ".room-photo-index",
+    "size": "40px"
+  },
+  {
+    "selector": ".experience-card h3",
+    "size": "32px"
+  },
+  {
+    "selector": ".experience-card p:last-child",
+    "size": "12px"
+  },
+  {
+    "selector": ".section-intro .editorial-heading",
+    "size": "61px"
+  },
+  {
+    "selector": ".section-intro > p:last-child:not(.eyebrow)",
+    "size": "14px"
+  },
+  {
+    "selector": ".dining-copy > p",
+    "size": "14px"
+  },
+  {
+    "selector": ".art-explore",
+    "size": "6px"
+  },
+  {
+    "selector": ".art-caption",
+    "size": "5px"
+  },
+  {
+    "selector": ".mountain-story-copy > .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".mountain-story-copy > .editorial-heading",
+    "size": "48px"
+  },
+  {
+    "selector": ".mountain-story-copy > p:not(.eyebrow)",
+    "size": "12px"
+  },
+  {
+    "selector": ".mountain-story-copy .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".gallery-overlay",
+    "size": "9px"
+  },
+  {
+    "selector": ".location-copy > .editorial-heading",
+    "size": "57px"
+  },
+  {
+    "selector": ".location-copy > p:not(.eyebrow)",
+    "size": "12px"
+  },
+  {
+    "selector": ".location-copy address",
+    "size": "11px"
+  },
+  {
+    "selector": ".location-copy .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".location-pin > span",
+    "size": "11px"
+  },
+  {
+    "selector": ".location-pin small",
+    "size": "5px"
+  },
+  {
+    "selector": ".practical .editorial-heading",
+    "size": "49px"
+  },
+  {
+    "selector": ".practical > div > p:not(.eyebrow)",
+    "size": "12px"
+  },
+  {
+    "selector": ".faq-list summary",
+    "size": "11px"
+  },
+  {
+    "selector": ".faq-list details > p",
+    "size": "11px"
+  },
+  {
+    "selector": ".booking-intro > .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".booking-intro > span:last-child",
+    "size": "17px"
+  },
+  {
+    "selector": ".closing-copy h2",
+    "size": "88px"
+  },
+  {
+    "selector": ".closing-copy > .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".closing-copy > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".footer-contact h3",
+    "size": "35px"
+  },
+  {
+    "selector": ".footer-contact > .footer-email",
+    "size": "23px"
+  },
+  {
+    "selector": ".footer-content nav > a",
+    "size": "11px"
+  },
+  {
+    "selector": ".footer-wordmark",
+    "size": "14vw"
+  },
+  {
+    "selector": ".room-modal-copy h2",
+    "size": "46px"
+  },
+  {
+    "selector": ".room-modal-copy > p:not(.eyebrow)",
+    "size": "12px"
+  },
+  {
+    "selector": ".mobile-book",
+    "size": "7px"
+  },
+  {
+    "selector": ".mobile-nav > a",
+    "size": "34px"
+  },
+  {
+    "selector": ".hero h1",
+    "size": "23vw"
+  },
+  {
+    "selector": ".hero-choice > p",
+    "size": "7px"
+  },
+  {
+    "selector": ".scene-switch > button",
+    "size": "7px"
+  },
+  {
+    "selector": ".hero-discover",
+    "size": "7px"
+  },
+  {
+    "selector": ".image-caption",
+    "size": "5px"
+  },
+  {
+    "selector": ".collage-script",
+    "size": "53px"
+  },
+  {
+    "selector": ".about-copy > .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".about-copy > .editorial-heading",
+    "size": "48px"
+  },
+  {
+    "selector": ".about-copy > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".about-copy .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".room-theatre-top > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".room-theatre-top .editorial-heading",
+    "size": "47px"
+  },
+  {
+    "selector": ".room-tabs > button",
+    "size": "6px"
+  },
+  {
+    "selector": ".theatre-arrows > button",
+    "size": "6px"
+  },
+  {
+    "selector": ".room-information h3",
+    "size": "35px"
+  },
+  {
+    "selector": ".room-information > p",
+    "size": "12px"
+  },
+  {
+    "selector": ".room-information > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".feature-pills > span",
+    "size": "9px"
+  },
+  {
+    "selector": ".room-information .underline-link",
+    "size": "7px"
+  },
+  {
+    "selector": ".room-bottom > .round-cta span",
+    "size": "5px"
+  },
+  {
+    "selector": ".room-photo-index",
+    "size": "34px"
+  },
+  {
+    "selector": ".room-disclaimer",
+    "size": "6px"
+  },
+  {
+    "selector": ".section-intro > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".section-intro .editorial-heading",
+    "size": "52px"
+  },
+  {
+    "selector": ".section-intro > p:last-child:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".experience-card .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".experience-card h3",
+    "size": "32px"
+  },
+  {
+    "selector": ".experience-card p:last-child",
+    "size": "12px"
+  },
+  {
+    "selector": ".experience-count",
+    "size": "7px"
+  },
+  {
+    "selector": ".rail-controls > span",
+    "size": "8px"
+  },
+  {
+    "selector": ".destination-note",
+    "size": "8px"
+  },
+  {
+    "selector": ".dining-main > figcaption",
+    "size": "7px"
+  },
+  {
+    "selector": ".dining-main > figcaption > span",
+    "size": "5px"
+  },
+  {
+    "selector": ".dining-copy > p",
+    "size": "13px"
+  },
+  {
+    "selector": ".dining-copy .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".art-explore",
+    "size": "7px"
+  },
+  {
+    "selector": ".art-caption",
+    "size": "5px"
+  },
+  {
+    "selector": ".mountain-story-copy > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".mountain-story-copy > .editorial-heading",
+    "size": "49px"
+  },
+  {
+    "selector": ".mountain-story-copy > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".mountain-story-copy .underline-link",
+    "size": "8px"
+  },
+  {
+    "selector": ".gallery-filters button",
+    "size": "9px"
+  },
+  {
+    "selector": ".gallery-overlay",
+    "size": "8px"
+  },
+  {
+    "selector": ".gallery-bottom > span",
+    "size": "5px"
+  },
+  {
+    "selector": ".gallery-bottom > .underline-link",
+    "size": "6px"
+  },
+  {
+    "selector": ".location-pin > span",
+    "size": "12px"
+  },
+  {
+    "selector": ".location-pin small",
+    "size": "5px"
+  },
+  {
+    "selector": ".location-copy > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".location-copy > .editorial-heading",
+    "size": "60px"
+  },
+  {
+    "selector": ".location-copy > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".location-copy address",
+    "size": "11px"
+  },
+  {
+    "selector": ".location-copy .underline-link",
+    "size": "9px"
+  },
+  {
+    "selector": ".location-phone",
+    "size": "13px"
+  },
+  {
+    "selector": ".practical .editorial-heading",
+    "size": "51px"
+  },
+  {
+    "selector": ".practical > div > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".practical > div > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".practical .underline-link",
+    "size": "7px"
+  },
+  {
+    "selector": ".faq-list summary",
+    "size": "12px"
+  },
+  {
+    "selector": ".faq-list details > p",
+    "size": "12px"
+  },
+  {
+    "selector": ".booking-intro > .eyebrow",
+    "size": "5px"
+  },
+  {
+    "selector": ".booking-intro > span:last-child",
+    "size": "16px"
+  },
+  {
+    "selector": ".booking-form label > span",
+    "size": "6px"
+  },
+  {
+    "selector": ".booking-form input,\n  .booking-form select",
+    "size": "11px"
+  },
+  {
+    "selector": ".guest-fields label > span",
+    "size": "5px"
+  },
+  {
+    "selector": ".guest-fields select",
+    "size": "9px"
+  },
+  {
+    "selector": ".booking-form > .button",
+    "size": "8px"
+  },
+  {
+    "selector": ".booking-note",
+    "size": "6px"
+  },
+  {
+    "selector": ".closing-copy > .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".closing-copy h2",
+    "size": "76px"
+  },
+  {
+    "selector": ".closing-copy > p:not(.eyebrow)",
+    "size": "12px"
+  },
+  {
+    "selector": ".closing-copy > .round-cta span",
+    "size": "6px"
+  },
+  {
+    "selector": ".marquee > div > span",
+    "size": "7px"
+  },
+  {
+    "selector": ".marquee .star",
+    "size": "12px"
+  },
+  {
+    "selector": ".footer-content .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".footer-contact h3",
+    "size": "36px"
+  },
+  {
+    "selector": ".footer-contact > .footer-email",
+    "size": "24px"
+  },
+  {
+    "selector": ".footer-contact > a",
+    "size": "12px"
+  },
+  {
+    "selector": ".footer-clock > span",
+    "size": "33px"
+  },
+  {
+    "selector": ".footer-clock > p:not(.eyebrow)",
+    "size": "9px"
+  },
+  {
+    "selector": ".footer-content nav > a",
+    "size": "11px"
+  },
+  {
+    "selector": ".footer-plan > address",
+    "size": "10px"
+  },
+  {
+    "selector": ".footer-plan > a",
+    "size": "10px"
+  },
+  {
+    "selector": ".footer-wordmark",
+    "size": "14vw"
+  },
+  {
+    "selector": ".footer-bottom",
+    "size": "6px"
+  },
+  {
+    "selector": ".footer-bottom > a",
+    "size": "6px"
+  },
+  {
+    "selector": ".room-modal-copy > .eyebrow",
+    "size": "7px"
+  },
+  {
+    "selector": ".room-modal-copy h2",
+    "size": "47px"
+  },
+  {
+    "selector": ".room-modal-copy > p:not(.eyebrow)",
+    "size": "13px"
+  },
+  {
+    "selector": ".room-modal-copy ul",
+    "size": "12px"
+  },
+  {
+    "selector": ".lightbox-top",
+    "size": "6px"
+  },
+  {
+    "selector": ".lightbox-caption",
+    "size": "10px"
+  },
+  {
+    "selector": ".lightbox-caption > span:last-child",
+    "size": "8px"
+  },
+  {
+    "selector": ".inquiry-modal h2",
+    "size": "49px"
+  },
+  {
+    "selector": ".inquiry-modal .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".inquiry-modal p",
+    "size": "12px"
+  },
+  {
+    "selector": ".inquiry-preview",
+    "size": "10px"
+  },
+  {
+    "selector": ".inquiry-actions .button",
+    "size": "10px"
+  },
+  {
+    "selector": ".inquiry-modal .fine-print",
+    "size": "10px"
+  },
+  {
+    "selector": ".preference-label select",
+    "size": "11px"
+  },
+  {
+    "selector": ".art-modal .eyebrow",
+    "size": "6px"
+  },
+  {
+    "selector": ".art-modal h2",
+    "size": "41px"
+  },
+  {
+    "selector": ".art-modal p:last-child",
+    "size": "9px"
+  },
+  {
+    "selector": ".hero h1",
+    "size": "23.5vw"
+  },
+  {
+    "selector": ".scene-switch > button",
+    "size": "6px"
+  },
+  {
+    "selector": ".about-copy > .editorial-heading",
+    "size": "44px"
+  },
+  {
+    "selector": ".room-theatre-top .editorial-heading",
+    "size": "43px"
+  },
+  {
+    "selector": ".room-tabs > button",
+    "size": "5.5px"
+  },
+  {
+    "selector": ".room-information h3",
+    "size": "33px"
+  },
+  {
+    "selector": ".section-intro .editorial-heading",
+    "size": "48px"
+  },
+  {
+    "selector": ".mountain-story-copy > .editorial-heading",
+    "size": "44px"
+  },
+  {
+    "selector": ".gallery-filters button",
+    "size": "8px"
+  },
+  {
+    "selector": ".booking-form > .button",
+    "size": "7px"
+  },
+  {
+    "selector": ".closing-copy h2",
+    "size": "70px"
+  },
+  {
+    "selector": ".footer-contact > .footer-email",
+    "size": "22px"
+  },
+  {
+    "selector": ".contact-fields small",
+    "size": "6px"
+  },
+  {
+    "selector": ".booking-form textarea::placeholder,\n.booking-form input::placeholder",
+    "size": "11px"
+  },
+  {
+    "selector": ".booking-form > label:nth-last-of-type(1) > select",
+    "size": "11px"
+  },
+  {
+    "selector": ".contact-fields small",
+    "size": "5px"
+  },
+  {
+    "selector": ".booking-form textarea",
+    "size": "12px"
+  },
+  {
+    "selector": ".booking-form > .button",
+    "size": "9px"
+  },
+  {
+    "selector": ".booking-form > label:nth-last-of-type(1) > select",
+    "size": "9px"
+  },
+  {
+    "selector": ".booking-form textarea::placeholder,\n  .booking-form input::placeholder",
+    "size": "10px"
+  }
+]

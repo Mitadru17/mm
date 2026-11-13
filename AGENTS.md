@@ -1,0 +1,18 @@
+# Hotel Mystic Mountain — React Bits and Motion Design Rules
+
+- `DESIGN.md` is the current visual authority on every route, modal and responsive screen. The user’s November 12, 2026 Jägerhof reference supersedes Bend Club and Capsules: #e9e1d6 cream, #2f4f3e pine, #c66a3c rust, Ronzino, Bon Vivant Serif local licensed-font hook with Cormorant fallback, 10/13.2/6px corners and reference choreography. Earlier references are historical.
+- `DESIGN-EXTENSIONS.md` records compatible glass-card, geographic-map and React Bits instructions. Retain the latest light tokens. Inspect licensed source for requested UI libraries; component availability does not imply access to paid source.
+
+- React Bits is available as an optional component toolkit through the free `@react-bits` registry in `components.json`. Use TypeScript + CSS variants for this React/Vite project; Tailwind is not required.
+- The user-wide `$react-bits` skill and `react-bits` terminal command are installed. Global MCP discovery uses `C:/Users/loser/.codex/integrations/react-bits/catalog`; install selected source into this project with an explicit `--cwd D:/code/MYSTIC`. See `docs/REACT-BITS-SETUP.md` for verification and future-project usage.
+- Discover relevant components autonomously using the shadcn MCP server, the official CLI or verified official registry source. Inspect the actual source before installation. Do not bulk-install the catalog.
+- Base every component selection on the section's design, narrative and interaction requirements. Record selections and rejections in `docs/react-bits-component-map.md`.
+- Genuine hotel photography and the property's identity take precedence over effects. Keep image orientation and aspect ratio intentional; do not substitute unrelated stock hotel images.
+- Preserve existing code, booking paths, data and integrations unless a change is necessary and understood. Reuse Lenis, Motion and Embla rather than adding competing animation engines without a demonstrated benefit.
+- The user's exact reference-motion requests justify the shared GSAP runtime and current `src/jagerhof/motion.ts`: GSAP exclusively owns the editorial timelines/pin; Motion owns retained interactive components. Lenis must run on GSAP's ticker only, with cleanup on teardown. The iart-ai pack is installed under `C:/Users/loser/.agents/skills`; apply its GSAP, performance, accessibility and micro-interaction guidance when relevant.
+- Every new component must justify its runtime, payload and accessibility costs. Pause expensive offscreen work. Prefer prerendered artwork to unnecessary real-time 3D.
+- Prefer custom components when React Bits cannot achieve the intended composition, semantics, mobile behavior or performance.
+- Mobile usability and booking functionality are mandatory. Test representative narrow-phone, tablet and desktop widths. Forms, menus, carousels and dialogs must work with keyboard and touch.
+- Never fabricate hotel details, amenities, inventory categories, room availability, rates, ratings, guest reviews or booking confirmations. Preserve the honest inquiry/external booking flow and verified contact information in `src/data.ts`.
+- Accessibility and `prefers-reduced-motion` behavior are required. Essential text must remain readable; animations must not gate access to content. Maintain focus states, semantic labels and dialog focus restoration.
+- Inspect the actual rendered result, run appropriate project checks, and document verification limits. Keep third-party source provenance and license notices with adapted components.

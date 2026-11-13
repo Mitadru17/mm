@@ -1,0 +1,8 @@
+{
+  "name": "search_items_in_registries",
+  "arguments": {
+    "registries": ["@react-bits"],
+    "query": "BlurText-TS-CSS",
+    "limit": 4
+  }
+}

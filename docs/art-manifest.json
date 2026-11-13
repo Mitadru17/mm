@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bronze-swallows",
+    "source": "blender/bronze-swallows.blend",
+    "script": "blender/create_art.py",
+    "render": "public/art/bronze-swallows.png",
+    "optimized": "public/art/bronze-swallows.webp",
+    "model": "public/art/bronze-swallows.glb",
+    "bytes": 31542,
+    "width": 1200,
+    "height": 650,
+    "kind": "Original Blender artwork; decorative illustration, not hotel photography"
+  },
+  {
+    "name": "mountain-relief",
+    "source": "blender/mountain-relief.blend",
+    "script": "blender/create_art.py",
+    "render": "public/art/mountain-relief.png",
+    "optimized": "public/art/mountain-relief.webp",
+    "model": "public/art/mountain-relief.glb",
+    "bytes": 80052,
+    "width": 1400,
+    "height": 1000,
+    "kind": "Original Blender artwork; decorative illustration, not hotel photography"
+  }
+]

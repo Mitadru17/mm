@@ -1,0 +1,305 @@
+{
+  "home": [
+    {
+      "body": "Lexend, sans-serif",
+      "brokenImages": 0,
+      "h1": "35px",
+      "h2": "28px",
+      "overflow": false,
+      "scrollWidth": 305,
+      "width": 320
+    },
+    {
+      "body": "Lexend, sans-serif",
+      "brokenImages": 0,
+      "h1": "40px",
+      "h2": "28px",
+      "overflow": false,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "body": "Lexend, sans-serif",
+      "brokenImages": 0,
+      "h1": "53.76px",
+      "h2": "28px",
+      "overflow": false,
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "body": "Lexend, sans-serif",
+      "brokenImages": 0,
+      "h1": "71.68px",
+      "h2": "36.864px",
+      "overflow": false,
+      "scrollWidth": 1009,
+      "width": 1024
+    },
+    {
+      "body": "Lexend, sans-serif",
+      "brokenImages": 0,
+      "h1": "100.8px",
+      "h2": "51.84px",
+      "overflow": false,
+      "scrollWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "routes": [
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Discover the Mystic Mountain storyDiscover the Mystic Mountain story",
+      "overflow": false,
+      "path": "/about",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Find your place in the hillsFind your place in the hills",
+      "overflow": false,
+      "path": "/suites",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "01. Timber & mountain light01. Timber & mountain light",
+      "overflow": false,
+      "path": "/suites/timber",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "02. Let the outside in02. Let the outside in",
+      "overflow": false,
+      "path": "/suites/outlook",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "03. A softer place to land03. A softer place to land",
+      "overflow": false,
+      "path": "/suites/unwind",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "A little comfort, a different outlookA little comfort, a different outlook",
+      "overflow": false,
+      "path": "/services",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "A little closer to KumaonA little closer to Kumaon",
+      "overflow": false,
+      "path": "/activities",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Photographs of Hotel Mystic Mountain Kausani",
+      "overflow": false,
+      "path": "/gallery",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Stories & mountain notesStories & mountain notes",
+      "overflow": false,
+      "path": "/news",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "A slower day in KausaniA slower day in Kausani",
+      "overflow": false,
+      "path": "/news/a-slower-day-in-kausani",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Timber & mountain lightTimber & mountain light",
+      "overflow": false,
+      "path": "/news/timber-and-mountain-light",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "The road to Mystic MountainThe road to Mystic Mountain",
+      "overflow": false,
+      "path": "/news/the-road-to-mystic",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Plan a staywith usPlan a staywith us",
+      "overflow": false,
+      "path": "/contact",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "404",
+      "overflow": false,
+      "path": "/not-a-page",
+      "wideWords": [],
+      "width": 320
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Discover the Mystic Mountain storyDiscover the Mystic Mountain story",
+      "overflow": false,
+      "path": "/about",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Find your place in the hillsFind your place in the hills",
+      "overflow": false,
+      "path": "/suites",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "01. Timber & mountain light01. Timber & mountain light",
+      "overflow": false,
+      "path": "/suites/timber",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "02. Let the outside in02. Let the outside in",
+      "overflow": false,
+      "path": "/suites/outlook",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "03. A softer place to land03. A softer place to land",
+      "overflow": false,
+      "path": "/suites/unwind",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "A little comfort, a different outlookA little comfort, a different outlook",
+      "overflow": false,
+      "path": "/services",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "A little closer to KumaonA little closer to Kumaon",
+      "overflow": false,
+      "path": "/activities",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Photographs of Hotel Mystic Mountain Kausani",
+      "overflow": false,
+      "path": "/gallery",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Stories & mountain notesStories & mountain notes",
+      "overflow": false,
+      "path": "/news",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "A slower day in KausaniA slower day in Kausani",
+      "overflow": false,
+      "path": "/news/a-slower-day-in-kausani",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Timber & mountain lightTimber & mountain light",
+      "overflow": false,
+      "path": "/news/timber-and-mountain-light",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "The road to Mystic MountainThe road to Mystic Mountain",
+      "overflow": false,
+      "path": "/news/the-road-to-mystic",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "Plan a staywith usPlan a staywith us",
+      "overflow": false,
+      "path": "/contact",
+      "wideWords": [],
+      "width": 1440
+    },
+    {
+      "font": "writer, Georgia, \"Times New Roman\", serif",
+      "h1": "404",
+      "overflow": false,
+      "path": "/not-a-page",
+      "wideWords": [],
+      "width": 1440
+    }
+  ],
+  "interactions": {
+    "carousel": true,
+    "sectionNavigation": true,
+    "mobileMenu": true,
+    "inquiryReviewAndCopy": true,
+    "stayPlannerNestedReview": true,
+    "lightboxNextAndClose": true,
+    "mapPhoneReady": true,
+    "mapPhoneTrees": 1800,
+    "keyboardCarousel": true,
+    "menuEscape": {
+      "closed": true,
+      "focus": "Open navigation",
+      "inert": false
+    }
+  },
+  "reduced": {
+    "blur": "none",
+    "cursors": 0,
+    "exposedStories": 3,
+    "lenis": "",
+    "preference": "true",
+    "storyPosition": "relative"
+  },
+  "finalMap": {
+    "creditFont": "12px",
+    "overflow": false,
+    "ready": "true",
+    "trees": "2800"
+  }
+}

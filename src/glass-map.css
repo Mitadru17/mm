@@ -1,0 +1,670 @@
+/* User-requested glass extension; original Capsules tokens remain the palette. */
+.glass-surface {
+  position: relative;
+  border: 1px solid
+    color-mix(in srgb, var(--on-surface-variant) 28%, transparent);
+  background: linear-gradient(
+    135deg,
+    rgb(244 239 231 / 0.065),
+    rgb(24 23 23 / 0.86) 50%,
+    rgb(177 166 150 / 0.045)
+  );
+  background-color: rgb(24 23 23 / 0.68);
+  -webkit-backdrop-filter: blur(22.5px);
+  backdrop-filter: blur(22.5px);
+  box-shadow:
+    inset 0 1px 0 rgb(244 239 231 / 0.12),
+    inset 0 -1px 0 rgb(244 239 231 / 0.025);
+}
+.glass-card {
+  overflow: hidden;
+  border-radius: var(--rounded-md);
+  padding: 22.5px;
+  min-width: 0;
+  isolation: isolate;
+}
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.055;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.5' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(
+    450px circle at var(--glass-x, 30%) var(--glass-y, 0%),
+    rgb(244 239 231 / 0.09),
+    transparent 65%
+  );
+  opacity: 0.45;
+  transition: opacity var(--duration) var(--ease);
+}
+.glass-card:is(:hover, :focus-within)::after {
+  opacity: 1;
+}
+.glass-card:focus-within {
+  outline: 1px solid var(--on-surface-variant);
+  outline-offset: 3.75px;
+}
+.glass-card-content {
+  width: 100%;
+  min-width: 0;
+}
+.ts-room-card .glass-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+}
+.ts-room-card .glass-card-content > .ts-arrow-link {
+  margin-top: auto;
+}
+.glass-card .ts-room-large {
+  transform: none !important;
+}
+.ts-activity.glass-card {
+  padding: 15px;
+}
+.ts-activity.glass-card p {
+  padding-inline: 7.5px;
+}
+.ts-activity.glass-card h3 {
+  padding-inline: 7.5px;
+}
+.ts-activity.glass-card .ts-activity-photo {
+  border-radius: 30px;
+}
+.ts-journal-grid .glass-card-content > p {
+  margin-bottom: 22.5px;
+}
+.ts-journal-grid .glass-card .ts-photo {
+  height: 345px;
+}
+.ts-about-story-card.glass-card .ts-photo {
+  border-radius: 30px;
+}
+.location-section {
+  scroll-margin-top: 22.5px;
+}
+.location-intro {
+  max-width: 450px;
+  margin: -15px 0 30px;
+}
+.location-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(285px, 1fr);
+  gap: 22.5px;
+  align-items: start;
+}
+.location-map-shell {
+  height: 660px;
+  border-radius: var(--rounded-md);
+  overflow: hidden;
+}
+.terrain-scene,
+.terrain-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.terrain-scene {
+  background: var(--on-primary);
+}
+.terrain-loading {
+  position: absolute;
+  inset: 0;
+  padding: 37.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22.5px;
+  text-align: center;
+  background: var(--surface);
+  color: var(--on-surface-variant);
+}
+.terrain-loading h3 {
+  font-size: 30px;
+  color: var(--on-surface);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+.terrain-loading .button {
+  color: var(--on-primary);
+}
+.map-location-tag {
+  position: absolute;
+  top: 22.5px;
+  left: 22.5px;
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+  padding: 11.25px 15px;
+  border-radius: var(--rounded-full);
+  pointer-events: none;
+}
+.map-tag-dot {
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: var(--rounded-full);
+  background: var(--primary);
+}
+.map-location-tag small {
+  display: block;
+  font-size: 11.25px;
+  color: var(--on-surface-variant);
+  margin-top: 3.75px;
+}
+.map-camera-controls {
+  position: absolute;
+  top: 22.5px;
+  right: 22.5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded-full);
+  padding: 3.75px;
+  overflow: hidden;
+}
+.map-camera-controls button {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: var(--rounded-full);
+  transition:
+    background var(--duration) var(--ease),
+    color var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+.map-camera-controls button:is(:hover, :focus-visible) {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.map-camera-controls button:active {
+  transform: scale(0.95);
+}
+.map-marker-host {
+  z-index: 2;
+}
+.map-marker-host.is-hotel {
+  z-index: 5;
+}
+.map-marker-host:has([data-place="tea"])::after {
+  content: "";
+  position: absolute;
+  width: 62.65px;
+  height: 1px;
+  left: 50%;
+  top: 100%;
+  transform: rotate(-16.7deg);
+  transform-origin: left;
+  background: var(--on-surface-variant);
+  pointer-events: none;
+}
+.map-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5px;
+  min-height: 45px;
+  border-radius: var(--rounded-full);
+  font: 400 var(--body-md)/1.5 var(--font);
+  white-space: nowrap;
+  border: 1px solid var(--line);
+  background: rgb(24 23 23 / 0.9);
+  color: var(--on-surface-variant);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  transition:
+    color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease);
+  position: relative;
+}
+.map-pin-hotel {
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+  min-height: 48px;
+}
+.map-pin-hotel > span:not(.map-hotel-dot) {
+  position: absolute;
+  bottom: calc(100% + 11.25px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7.5px 15px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border-radius: var(--rounded-full);
+  pointer-events: none;
+}
+.map-pin-hotel::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgb(244 239 231 / 0.35);
+  border-radius: inherit;
+  pointer-events: none;
+}
+.map-hotel-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--rounded-full);
+  left: calc(50% - 3px);
+  bottom: -3px;
+  background: var(--primary);
+}
+.map-pin-nearby {
+  width: 45px;
+  font-weight: 600;
+}
+.map-pin-name {
+  position: absolute;
+  pointer-events: none;
+  top: calc(100% + 7.5px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3.75px 7.5px;
+  border-radius: var(--rounded-full);
+  background: rgb(24 23 23 / 0.88);
+  opacity: 0;
+  transition: opacity var(--duration) var(--ease);
+}
+.map-pin-nearby:is(:hover, :focus-visible, [data-active="true"]) {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.map-pin-nearby[data-active="true"] .map-pin-name {
+  opacity: 1;
+}
+.vui-hover-card {
+  z-index: 210;
+  width: 285px;
+  max-width: min(
+    calc(100vw - 30px),
+    var(--radix-hover-card-content-available-width, 285px)
+  );
+  border-radius: 30px;
+  padding: 22.5px;
+  color: var(--on-surface);
+  transform-origin: var(--radix-hover-card-content-transform-origin);
+}
+.vui-hover-card[data-state="open"] {
+  animation: map-card-in var(--duration) var(--ease);
+}
+.vui-hover-card[data-state="closed"] {
+  animation: map-card-out var(--duration) var(--ease);
+}
+@keyframes map-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(11.25px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes map-card-out {
+  to {
+    opacity: 0;
+    transform: translateY(7.5px) scale(0.98);
+  }
+}
+.map-place-popup .ts-kicker {
+  gap: 7.5px;
+  margin-bottom: 15px;
+}
+.map-place-popup .ts-kicker svg {
+  width: 16px;
+  height: 16px;
+}
+.map-place-popup h3 {
+  font-size: 26.25px;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  margin-bottom: 15px;
+}
+.map-place-popup p {
+  font-size: var(--body-md);
+}
+.map-place-popup a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 22.5px;
+}
+.map-dock-wrap {
+  position: absolute;
+  bottom: 75px;
+  left: 22.5px;
+}
+.vui-glass-dock {
+  display: flex;
+  gap: 7.5px;
+  padding: 7.5px;
+  border-radius: var(--rounded-full);
+}
+.vui-dock-item {
+  position: relative;
+}
+.vui-dock-item button {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--rounded-full);
+  transition:
+    color var(--duration) var(--ease),
+    background var(--duration) var(--ease);
+}
+.vui-dock-item button > span {
+  display: block;
+}
+.vui-dock-item button:is(:hover, :focus-visible, [aria-pressed="true"]) {
+  color: var(--on-primary);
+  background: var(--primary);
+}
+.vui-dock-tooltip {
+  position: absolute;
+  bottom: calc(100% + 22.5px);
+  left: 50%;
+  translate: -50% 0;
+  padding: 7.5px 15px;
+  border: 1px solid var(--line);
+  border-radius: var(--rounded-full);
+  background: var(--surface);
+  color: var(--on-surface);
+  white-space: nowrap;
+  pointer-events: none;
+  font-size: var(--body-md);
+}
+.location-places {
+  display: flex;
+  flex-direction: column;
+  gap: 11.25px;
+}
+.location-place-card {
+  padding: 0;
+  border-radius: 30px;
+}
+.location-place-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 90px;
+  padding: 15px;
+  gap: 15px;
+  text-align: left;
+}
+.location-place-icon {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  flex: 0 0 45px;
+  border: 1px solid var(--line);
+  border-radius: var(--rounded-full);
+}
+.location-place-category {
+  display: block;
+  color: var(--on-surface-variant);
+  font-size: var(--body-md);
+  margin-bottom: 3.75px;
+}
+.location-place-button strong {
+  display: block;
+  font: 400 var(--label-md)/1.2 var(--font);
+  letter-spacing: -0.02em;
+}
+.location-place-number {
+  color: var(--on-surface-variant);
+  margin-left: auto;
+}
+.location-place-card.is-hotel .location-place-icon {
+  color: var(--on-primary);
+  background: var(--primary);
+}
+.location-place-button[aria-pressed="true"] .location-place-category {
+  color: var(--primary);
+}
+.location-detail {
+  padding: 15px 7.5px 0;
+  min-height: 135px;
+}
+.location-detail a {
+  display: flex;
+  gap: 11.25px;
+  align-items: center;
+  width: fit-content;
+  margin-top: 15px;
+}
+.map-caption {
+  margin-top: 22.5px;
+  max-width: 600px;
+}
+.terrain-map .maplibregl-ctrl-attrib {
+  background: rgb(24 23 23 / 0.9);
+  color: var(--on-surface-variant);
+  font: 400 var(--body-md)/1.5 var(--font);
+  border-radius: 15px;
+}
+.terrain-map .maplibregl-ctrl-attrib a {
+  color: var(--on-surface-variant);
+}
+.terrain-map .maplibregl-ctrl-attrib-button {
+  filter: invert(1);
+}
+.terrain-map .maplibregl-cooperative-gesture-screen {
+  font: 400 var(--label-md)/1.5 var(--font);
+  background: rgb(24 23 23 / 0.8);
+  color: var(--primary);
+}
+@media (max-width: 1279px) {
+  .location-grid {
+    grid-template-columns: minmax(0, 1.6fr) minmax(285px, 1fr);
+  }
+  .location-place-button {
+    gap: 11.25px;
+    padding: 15px 11.25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ts-room-card.glass-card {
+    padding: 7.5px;
+  }
+  .ts-activity.glass-card {
+    padding: 11.25px;
+  }
+}
+@media (max-width: 1023px) {
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+  .location-places {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .location-detail {
+    grid-column: 1/-1;
+    min-height: 0;
+  }
+  .location-map-shell {
+    height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .glass-card {
+    padding: 15px;
+  }
+  .location-map-shell {
+    height: 525px;
+  }
+  .ts-activity-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ts-activity.glass-card {
+    padding: 7.5px;
+  }
+  .ts-activity.glass-card h3 {
+    font-size: 22.5px;
+  }
+  .location-place-button {
+    min-height: 90px;
+  }
+  .ts-journal-grid .glass-card .ts-photo {
+    height: 405px;
+  }
+}
+@media (max-width: 639px) {
+  .location-places {
+    grid-template-columns: 1fr;
+  }
+  .location-map-shell {
+    height: 510px;
+  }
+  .map-location-tag {
+    top: 15px;
+    left: 15px;
+    padding: 7.5px 11.25px;
+  }
+  .map-camera-controls {
+    top: 15px;
+    right: 15px;
+  }
+  .map-dock-wrap {
+    left: 15px;
+    bottom: 142.5px;
+  }
+  .vui-dock-tooltip {
+    white-space: normal;
+    width: 150px;
+    text-align: center;
+  }
+  .map-caption {
+    padding-inline: 7.5px;
+  }
+  .ts-activity-grid {
+    grid-template-columns: 1fr;
+  }
+  .ts-activity.glass-card {
+    padding: 15px;
+  }
+  .ts-activity.glass-card .ts-activity-photo {
+    aspect-ratio: 4/3;
+  }
+  .ts-activity.glass-card h3 {
+    font-size: 26.25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glass-card,
+  .vui-dock-item button > span {
+    transform: none !important;
+  }
+  .vui-hover-card {
+    animation: none !important;
+  }
+}
+html[data-motion-reduced="true"]
+  :is(.glass-card, .vui-dock-item button > span) {
+  transform: none !important;
+}
+html[data-motion-reduced="true"] .vui-hover-card {
+  animation: none !important;
+}
+.skiper-css-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7.5px;
+  width: fit-content;
+  max-width: 100%;
+}
+.skiper-link-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+.skiper-css-link::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  bottom: -3.75px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform var(--duration) var(--ease);
+}
+.skiper-css-link:is(:hover, :focus-visible)::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.skiper-link-arrow {
+  width: 11.25px;
+  height: 11.25px;
+  flex: 0 0 11.25px;
+  opacity: 0;
+  transform: translateY(3.75px);
+  transition:
+    transform var(--duration) var(--ease),
+    opacity var(--duration) var(--ease);
+}
+.skiper-css-link:is(:hover, :focus-visible) > .skiper-link-arrow {
+  transform: translateY(0);
+  opacity: 1;
+}
+.ts-ui-credits {
+  margin-top: 22.5px;
+  font-size: var(--body-md);
+  color: var(--on-surface-variant);
+}
+.ts-ui-credits a {
+  text-decoration: underline;
+  text-underline-offset: 3.75px;
+}
+/* Override the lazy map stylesheet without changing the Capsules palette. */
+.location-map-shell .terrain-map .maplibregl-ctrl-attrib {
+  background: rgb(24 23 23 / 0.9);
+  color: var(--on-surface-variant);
+  max-width: calc(100% - 20px);
+  border: 1px solid var(--line);
+}
+.location-map-shell .terrain-map .maplibregl-ctrl-attrib a {
+  color: var(--on-surface-variant);
+}
+.location-map-shell .terrain-map .maplibregl-cooperative-gesture-screen,
+.location-map-shell .terrain-map .maplibregl-marker {
+  transition-duration: var(--duration);
+  transition-timing-function: var(--ease);
+}
+.terrain-map .maplibregl-canvas:focus-visible {
+  outline: 1px solid var(--primary);
+  outline-offset: -3.75px;
+}
+.vui-dock-item:first-child .vui-dock-tooltip {
+  left: 0;
+  translate: 0 0;
+}
+.vui-dock-item:last-child .vui-dock-tooltip {
+  left: auto;
+  right: 0;
+  translate: 0 0;
+}

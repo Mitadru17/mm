@@ -1,0 +1,25 @@
+Kausani building footprints: Overture Maps Foundation, 2026-10-21.0 release.
+© OpenStreetMap contributors, Overture Maps Foundation.
+Includes Microsoft Global ML Building Footprints (ODbL) and Google Open
+Buildings (CC BY 4.0), as recorded in the Overture source records.
+
+Database licence: Open Database License 1.0
+https://opendatacommons.org/licenses/odbl/1-0/
+Attribution: https://docs.overturemaps.org/attribution/
+
+The derived geographic database is freely downloadable at:
+/terrain/detail/buildings.geojson
+The illustrative vegetation placement database is available at:
+/terrain/detail/trees.json
+These derived geographic datasets are provided under ODbL 1.0. This does not
+change the licence of the website's separate application code or photography.
+
+Geographic scope: 79.588,29.835 to 79.62,29.87 (longitude, latitude).
+Original building geometries retained. No measured heights are present in
+these 2,190 records: walls use a stated illustrative 6.4m height with a 0.7m
+roof cap and illustrative colours. This is not a survey or a photogrammetric
+reconstruction. Trees are procedural illustrations constrained to mapped
+woodland, Sentinel forest colour and exclusion buffers around roads/buildings.
+
+Provenance and preparation: scripts/prepare-map-detail.mjs and
+docs/ui-libraries/kausani-detail-build.json.

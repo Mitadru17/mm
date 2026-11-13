@@ -1,0 +1,470 @@
+[
+  {
+    "name": "valley-balcony",
+    "source": "photos/IMG_8072.JPG",
+    "category": "Views",
+    "sizes": [
+      {
+        "output": "public/images/valley-balcony-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 56172
+      },
+      {
+        "output": "public/images/valley-balcony-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 189554
+      },
+      {
+        "output": "public/images/valley-balcony-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 470448
+      }
+    ]
+  },
+  {
+    "name": "balcony",
+    "source": "photos/IMG_8084.JPG",
+    "category": "Views",
+    "sizes": [
+      {
+        "output": "public/images/balcony-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 57548
+      },
+      {
+        "output": "public/images/balcony-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 199192
+      },
+      {
+        "output": "public/images/balcony-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 510818
+      }
+    ]
+  },
+  {
+    "name": "terrace",
+    "source": "photos/IMG_8085.JPG",
+    "category": "Property",
+    "sizes": [
+      {
+        "output": "public/images/terrace-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 77204
+      },
+      {
+        "output": "public/images/terrace-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 301194
+      },
+      {
+        "output": "public/images/terrace-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 819974
+      }
+    ]
+  },
+  {
+    "name": "timber-room",
+    "source": "photos/IMG_8122.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/timber-room-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 63226
+      },
+      {
+        "output": "public/images/timber-room-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 211334
+      },
+      {
+        "output": "public/images/timber-room-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 575122
+      }
+    ]
+  },
+  {
+    "name": "timber-detail",
+    "source": "photos/IMG_8123.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/timber-detail-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 79726
+      },
+      {
+        "output": "public/images/timber-detail-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 305042
+      },
+      {
+        "output": "public/images/timber-detail-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 842982
+      }
+    ]
+  },
+  {
+    "name": "timber-window",
+    "source": "photos/IMG_8125.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/timber-window-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 69172
+      },
+      {
+        "output": "public/images/timber-window-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 219616
+      },
+      {
+        "output": "public/images/timber-window-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 465678
+      }
+    ]
+  },
+  {
+    "name": "room-view",
+    "source": "photos/IMG_8069.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/room-view-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 49336
+      },
+      {
+        "output": "public/images/room-view-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 158036
+      },
+      {
+        "output": "public/images/room-view-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 404638
+      }
+    ]
+  },
+  {
+    "name": "room-blue",
+    "source": "photos/IMG_8076.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/room-blue-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 40048
+      },
+      {
+        "output": "public/images/room-blue-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 123148
+      },
+      {
+        "output": "public/images/room-blue-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 309340
+      }
+    ]
+  },
+  {
+    "name": "room-warm",
+    "source": "photos/IMG_8093.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/room-warm-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 85358
+      },
+      {
+        "output": "public/images/room-warm-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 299762
+      },
+      {
+        "output": "public/images/room-warm-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 712370
+      }
+    ]
+  },
+  {
+    "name": "room-wide",
+    "source": "photos/IMG_8033.JPG",
+    "category": "Rooms",
+    "sizes": [
+      {
+        "output": "public/images/room-wide-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 39112
+      },
+      {
+        "output": "public/images/room-wide-960.webp",
+        "width": 960,
+        "height": 720,
+        "bytes": 129044
+      },
+      {
+        "output": "public/images/room-wide-1600.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 299014
+      }
+    ]
+  },
+  {
+    "name": "dining",
+    "source": "photos/IMG_8101.JPG",
+    "category": "Dining",
+    "sizes": [
+      {
+        "output": "public/images/dining-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 78796
+      },
+      {
+        "output": "public/images/dining-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 252394
+      },
+      {
+        "output": "public/images/dining-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 587462
+      }
+    ]
+  },
+  {
+    "name": "dining-window",
+    "source": "photos/IMG_8105.JPG",
+    "category": "Dining",
+    "sizes": [
+      {
+        "output": "public/images/dining-window-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 70376
+      },
+      {
+        "output": "public/images/dining-window-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 256106
+      },
+      {
+        "output": "public/images/dining-window-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 657918
+      }
+    ]
+  },
+  {
+    "name": "lounge",
+    "source": "photos/IMG_8102.JPG",
+    "category": "Dining",
+    "sizes": [
+      {
+        "output": "public/images/lounge-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 73228
+      },
+      {
+        "output": "public/images/lounge-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 272720
+      },
+      {
+        "output": "public/images/lounge-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 688916
+      }
+    ]
+  },
+  {
+    "name": "surroundings",
+    "source": "photos/IMG_8107.JPG",
+    "category": "Surroundings",
+    "sizes": [
+      {
+        "output": "public/images/surroundings-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 66916
+      },
+      {
+        "output": "public/images/surroundings-960.webp",
+        "width": 960,
+        "height": 720,
+        "bytes": 268280
+      },
+      {
+        "output": "public/images/surroundings-1600.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 697808
+      }
+    ]
+  },
+  {
+    "name": "arrival",
+    "source": "photos/IMG_8109.JPG",
+    "category": "Property",
+    "sizes": [
+      {
+        "output": "public/images/arrival-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 45364
+      },
+      {
+        "output": "public/images/arrival-960.webp",
+        "width": 960,
+        "height": 720,
+        "bytes": 175126
+      },
+      {
+        "output": "public/images/arrival-1600.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 462846
+      }
+    ]
+  },
+  {
+    "name": "doorway",
+    "source": "photos/IMG_8118.JPG",
+    "category": "Property",
+    "sizes": [
+      {
+        "output": "public/images/doorway-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 36924
+      },
+      {
+        "output": "public/images/doorway-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 116948
+      },
+      {
+        "output": "public/images/doorway-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 269468
+      }
+    ]
+  },
+  {
+    "name": "terrace-sign",
+    "source": "photos/IMG_8114.JPG",
+    "category": "Property",
+    "sizes": [
+      {
+        "output": "public/images/terrace-sign-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 61952
+      },
+      {
+        "output": "public/images/terrace-sign-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 204906
+      },
+      {
+        "output": "public/images/terrace-sign-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 491254
+      }
+    ]
+  },
+  {
+    "name": "valley-portrait",
+    "source": "photos/IMG_8088.JPG",
+    "category": "Views",
+    "sizes": [
+      {
+        "output": "public/images/valley-portrait-480.webp",
+        "width": 480,
+        "height": 853,
+        "bytes": 103868
+      },
+      {
+        "output": "public/images/valley-portrait-960.webp",
+        "width": 960,
+        "height": 1707,
+        "bytes": 316888
+      },
+      {
+        "output": "public/images/valley-portrait-1600.webp",
+        "width": 1600,
+        "height": 2845,
+        "bytes": 622698
+      }
+    ]
+  },
+  {
+    "name": "hero",
+    "source": "photos/IMG_8084.JPG",
+    "category": "Views",
+    "treatment": "1920 × 1100 editorial crop; original colours",
+    "sizes": [
+      {
+        "output": "public/images/hero.webp",
+        "format": "webp",
+        "width": 1920,
+        "height": 1100,
+        "channels": 3,
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 422152
+      }
+    ]
+  }
+]

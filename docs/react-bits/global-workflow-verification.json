@@ -1,0 +1,10 @@
+{
+  "checked": "2026-11-11T22:10:10.934Z",
+  "configPreservation": true,
+  "idempotentInit": true,
+  "fixture": "C:\\Users\\loser\\.codex\\integrations\\react-bits\\preserve-test-3iq2mH",
+  "component": "BlurText-TS-CSS",
+  "installed": 14685,
+  "licenceSaved": 2060,
+  "smokeBuild": "passed (TypeScript + Vite; client-only use-client directive warnings)"
+}

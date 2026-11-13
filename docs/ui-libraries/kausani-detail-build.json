@@ -1,0 +1,17 @@
+{
+  "checked": "2026-11-12",
+  "bounds": [
+    79.588,
+    29.835,
+    79.62,
+    29.87
+  ],
+  "buildings": 2190,
+  "trees": 9000,
+  "buildingSource": "Overture Maps 2026-10-21.0 (OSM / Microsoft / Google Open Buildings)",
+  "buildingLicence": "ODbL-1.0",
+  "measuredHeights": 0,
+  "defaultHeightMetres": 6.4,
+  "forestVectorSource": "https://tiles.openfreemap.org/planet/20261101_080013_pt/{z}/{x}/{y}.pbf",
+  "vegetation": "Illustrative positions constrained to mapped woods, green Sentinel pixels and 12m building / 9m road exclusion buffers. Not surveyed trees."
+}

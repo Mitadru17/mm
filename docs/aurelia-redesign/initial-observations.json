@@ -1,0 +1,15 @@
+[
+  {
+    "client": 1425,
+    "lenis": "lenis",
+    "metrics": "{\"lcpMs\":2992,\"cls\":0.0004433895814096646,\"maxInteractionMs\":0}",
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "client": 375,
+    "metrics": "{\"lcpMs\":1964,\"cls\":0.009417950544277772,\"maxInteractionMs\":0}",
+    "scroll": 452,
+    "width": 390
+  }
+]

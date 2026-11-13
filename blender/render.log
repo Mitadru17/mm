@@ -1,0 +1,251 @@
+D:\code\MYSTIC\blender\create_art.py:27: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+D:\code\MYSTIC\blender\create_art.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+Info: Saved as "bronze-swallows.blend"
+INFO Draco is available, use library at D:\bd\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at D:\bd\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+05:57:31 | INFO: Starting glTF 2.0 export
+05:57:31 | INFO: Extracting primitive: BEAK_0
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.013
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.014
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.015
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.016
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.017
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.018
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.019
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.020
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.021
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.022
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.023
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.002
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.003
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.004
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.005
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.006
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.007
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.008
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.009
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.010
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.011
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.012
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.001
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: TAIL_0_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: TAIL_0_-1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: WING_0_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: WING_0_-1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: BEAK_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.024
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.037
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.038
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.039
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.040
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.041
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.042
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.043
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.044
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.045
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.046
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.047
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.026
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.027
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.028
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.029
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.030
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.031
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.032
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.033
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.034
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.035
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.036
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.025
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: TAIL_1_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: TAIL_1_-1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: WING_1_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: WING_1_-1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: BEAK_2
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.048
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.061
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.062
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.063
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.064
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.065
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.066
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.067
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.068
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.069
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.070
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.071
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.050
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.051
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.052
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.053
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.054
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.055
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.056
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.057
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.058
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.059
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.060
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: Sphere.049
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: TAIL_2_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: TAIL_2_-1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: WING_2_1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Extracting primitive: WING_2_-1
+05:57:31 | INFO: Primitives created: 1
+05:57:31 | INFO: Finished glTF 2.0 export in 0.152601957321167 s
+00:03.828  render           | Saved: 'D:\code\MYSTIC\public\art\bronze-swallows.png'
+00:07.031  render           | Saved: 'D:\code\MYSTIC\public\art\bronze-swallows.png'
+
+MYSTIC_ART_READY bronze-swallows {'objects': 90, 'triangles': 27624, 'materials': 1, 'resolution': [1200, 650]}
+D:\code\MYSTIC\blender\create_art.py:27: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+D:\code\MYSTIC\blender\create_art.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+Info: Saved as "mountain-relief.blend"
+05:57:35 | INFO: Starting glTF 2.0 export
+05:57:35 | INFO: Extracting primitive: Contour.003
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.001
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.002
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.004
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.005
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.006
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.008
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.007
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.013
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.009
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.010
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.011
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.012
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.014
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.015
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.018
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.016
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.017
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.019
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.020
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.021
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Contour.022
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: MESH_Abstract_Kumaon_Relief
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Extracting primitive: Cylinder
+05:57:35 | INFO: Primitives created: 1
+05:57:35 | INFO: Finished glTF 2.0 export in 0.11149382591247559 s
+00:08.765  render           | Saved: 'D:\code\MYSTIC\public\art\mountain-relief.png'
+00:17.547  render           | Saved: 'D:\code\MYSTIC\public\art\mountain-relief.png'
+
+MYSTIC_ART_READY mountain-relief {'objects': 25, 'triangles': 28220, 'materials': 2, 'resolution': [1400, 1000]}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

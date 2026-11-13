@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--90r5MITanw77WLQ0Ywc60-->
+<html lang="en" class="writer_dd792493-module__9utSHq__variable lexend_c524fb1e-module__u3fN1q__variable">
+<head>
+<meta charSet="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preload" href="/_next/static/media/PPWriter_Black-s.p.7e8f6a91.woff2" as="font" crossorigin="" type="font/woff2"/>
+<link rel="preload" href="/_next/static/media/PPWriter_Bold-s.p.a00007ac.woff2" as="font" crossorigin="" type="font/woff2"/>
+<link rel="preload" href="/_next/static/media/PPWriter_Book-s.p.d68b7783.woff2" as="font" crossorigin="" type="font/woff2"/>
+<link rel="preload" href="/_next/static/media/PPWriter_Regular-s.p.739e7685.woff2" as="font" crossorigin="" type="font/woff2"/>
+<link rel="preload" href="/_next/static/media/ca31d6821328a4e9-s.p.8036670a.woff2" as="font" crossorigin="" type="font/woff2"/>
+<link rel="preload" as="image" href="/logo/the-bend.svg"/>
+<link rel="preload" as="image" href="/logo/club.svg"/>
+<link rel="preload" as="image" href="/logo/the-bend-club.svg"/>
+<link rel="preload" as="image" href="/logo/star-icon.svg"/>
+<link rel="preload" as="image" href="/images/tbc-rec-03.jpg"/>
+<link rel="preload" as="image" href="/images/tbc-rec-stock-01.webp"/>
+<link rel="preload" as="image" href="/images/tbc-city-02.webp"/>
+<link rel="stylesheet" href="/_next/static/chunks/a919465da44b2dc5.css" data-precedence="next"/>
+<link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/fe05f79d03cc9274.js"/>

@@ -1,0 +1,10 @@
+{
+  "window": "drag and momentum, about 2.5 seconds",
+  "counts": {
+    "PrePaint": 308,
+    "UpdateLayoutTree": 271,
+    "Layout": 5,
+    "Paint": 81
+  },
+  "notes": "Transform-only card perspective and Embla track updates; no layout measurements in per-scroll callback. Headless trace does not certify a physical-device frame rate."
+}

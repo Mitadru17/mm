@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Found 1 items matching \"BlurText-TS-CSS\" in registries @react-bits:\n\nShowing items 1-1 of 1:\n\n- BlurText-TS-CSS (registry:component) - Text starts blurred then crisply resolves for a soft-focus reveal effect. [@react-bits] \n  Add command: `npx shadcn@latest add @react-bits/BlurText-TS-CSS`"
+    }
+  ]
+}

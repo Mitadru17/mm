@@ -1,0 +1,78 @@
+{
+  "valley-balcony": {
+    "width": 960,
+    "height": 1280
+  },
+  "balcony": {
+    "width": 960,
+    "height": 1280
+  },
+  "terrace": {
+    "width": 960,
+    "height": 1280
+  },
+  "timber-room": {
+    "width": 960,
+    "height": 1280
+  },
+  "timber-detail": {
+    "width": 960,
+    "height": 1280
+  },
+  "timber-window": {
+    "width": 960,
+    "height": 1280
+  },
+  "room-view": {
+    "width": 960,
+    "height": 1280
+  },
+  "room-blue": {
+    "width": 960,
+    "height": 1280
+  },
+  "room-warm": {
+    "width": 960,
+    "height": 1280
+  },
+  "room-wide": {
+    "width": 960,
+    "height": 720
+  },
+  "dining": {
+    "width": 960,
+    "height": 1280
+  },
+  "dining-window": {
+    "width": 960,
+    "height": 1280
+  },
+  "lounge": {
+    "width": 960,
+    "height": 1280
+  },
+  "surroundings": {
+    "width": 960,
+    "height": 720
+  },
+  "arrival": {
+    "width": 960,
+    "height": 720
+  },
+  "doorway": {
+    "width": 960,
+    "height": 1280
+  },
+  "terrace-sign": {
+    "width": 960,
+    "height": 1280
+  },
+  "valley-portrait": {
+    "width": 960,
+    "height": 1707
+  },
+  "hero": {
+    "width": 1920,
+    "height": 1100
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "last_release": "2026-10-21.0",
+  "last_run": "2026-11-11T21:22:24.101499+00:00",
+  "theme": "buildings",
+  "type": "building",
+  "bbox": {
+    "xmin": 79.588,
+    "ymin": 29.835,
+    "xmax": 79.62,
+    "ymax": 29.87
+  },
+  "backend": "geojson",
+  "output": "D:\\code\\MYSTIC\\docs\\ui-libraries\\kausani-overture-buildings.geojson"
+}

@@ -1,0 +1,62 @@
+{
+  "checks": {
+    "sharedHeadingAndSkip": true,
+    "escapeAndScrollUnlock": true,
+    "widths": [
+      {
+        "width": 320,
+        "scrollWidth": 320,
+        "titleLeft": 20,
+        "titleRight": 245.375,
+        "headerInert": false,
+        "mainInert": false,
+        "dock": 0
+      },
+      {
+        "width": 390,
+        "scrollWidth": 390,
+        "titleLeft": 24,
+        "titleRight": 267.59375,
+        "headerInert": false,
+        "mainInert": false,
+        "dock": 0
+      },
+      {
+        "width": 768,
+        "scrollWidth": 768,
+        "titleLeft": 27.40625,
+        "titleRight": 362.234375,
+        "headerInert": false,
+        "mainInert": false,
+        "dock": 0
+      },
+      {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "titleLeft": 36.546875,
+        "titleRight": 371.375,
+        "headerInert": false,
+        "mainInert": false,
+        "dock": 0
+      },
+      {
+        "width": 1636,
+        "scrollWidth": 1636,
+        "titleLeft": 51.40625,
+        "titleRight": 430.609375,
+        "headerInert": false,
+        "mainInert": false,
+        "dock": 0
+      }
+    ],
+    "spaReturnDoesNotReplay": true,
+    "enquireAndNestedReview": true,
+    "scrollCue": true,
+    "directSectionLink": true,
+    "reducedMotion": true,
+    "imageFailureDoesNotBlock": true,
+    "stalledAssetDeadlineMs": 5642,
+    "phoneMenu": true
+  },
+  "errors": []
+}

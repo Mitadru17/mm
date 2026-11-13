@@ -1,0 +1,348 @@
+/* User's November 13 experiences reference: portrait photographs and quiet
+   dimensional edges, using the existing Jägerhof palette and hotel assets. */
+.jh-experiences.jh-carousel {
+  --experience-gap: min(3.75vw, 72px);
+  padding: 120px 0 100px;
+  background: var(--background);
+  color: var(--ink);
+  scroll-margin-top: 76px;
+}
+.jh-experiences-heading {
+  max-width: 680px;
+  padding: 0 24px;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+.jh-site .jh-experiences-kicker {
+  font: 500 11px/1.4 var(--font-body);
+  letter-spacing: 0.36em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.jh-experiences-kicker > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--clay);
+  flex: none;
+}
+.jh-experiences-heading h2 {
+  font: 400 clamp(44px, 4.7vw, 80px)/1.02 var(--font-display);
+  letter-spacing: -0.03em;
+  margin: 28px 0 30px;
+  text-wrap: balance;
+}
+.jh-experiences-heading em {
+  font-weight: 400;
+}
+.jh-site .jh-experiences-intro {
+  font: 400 16px/1.8 var(--font-body);
+  color: color-mix(in srgb, var(--foreground) 75%, var(--background));
+  max-width: 515px;
+  margin: auto;
+  text-wrap: pretty;
+}
+.jh-experiences-viewport {
+  overflow: hidden;
+  padding: 42px 0 32px;
+  touch-action: pan-y pinch-zoom;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.jh-experiences-viewport[data-dragging="true"] {
+  cursor: grabbing;
+}
+.jh-experiences-track {
+  display: flex;
+  gap: var(--experience-gap);
+  touch-action: pan-y pinch-zoom;
+}
+.jh-experience-slide {
+  flex: 0 0 30%;
+  min-width: 0;
+  position: relative;
+  touch-action: pan-y pinch-zoom;
+}
+.jh-experience-surface {
+  transform-origin: center;
+}
+.jh-experience-slide:last-child {
+  margin-right: var(--experience-gap);
+}
+.jh-experiences-viewport.is-moving .jh-experience-surface {
+  will-change: transform;
+}
+.jh-experience-card {
+  display: block;
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--pine);
+  color: #faf8f4 !important;
+  touch-action: pan-y pinch-zoom;
+  -webkit-user-drag: none;
+}
+.jh-experience-card:after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 5px;
+  background: #14241d;
+  z-index: 4;
+  pointer-events: none;
+  opacity: 0.55;
+}
+.jh-experience-card .image-shell {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.jh-experience-card .image-shell img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1);
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.jh-experience-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    #14241d33,
+    transparent 35%,
+    #14241d08 55%,
+    #14241dbf
+  );
+}
+.jh-experience-number {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font: 500 10px/1.2 var(--font-body);
+  letter-spacing: 0.35em;
+  color: #faf8f4;
+  text-shadow: 0 1px 5px #14241d80;
+}
+.jh-experience-label {
+  position: absolute;
+  inset: auto 30px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  pointer-events: none;
+}
+.jh-experience-label h3 {
+  font: 400 clamp(25px, 2.5vw, 44px)/1.05 var(--font-display);
+  letter-spacing: -0.025em;
+  max-width: none;
+  text-wrap: balance;
+}
+.jh-experience-open {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border: 1px solid #faf8f45c;
+  border-radius: 50%;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+.jh-experience-card:focus-visible {
+  outline: 2px solid #faf8f4;
+  outline-offset: -8px;
+}
+.jh-experience-card:focus-visible .jh-experience-open {
+  background: #faf8f426;
+  transform: translate(2px, -2px);
+}
+@media (hover: hover) {
+  .jh-experience-card:hover .image-shell img {
+    transform: scale(1.035);
+  }
+  .jh-experience-card:hover .jh-experience-open {
+    background: #faf8f426;
+    transform: translate(2px, -2px);
+  }
+  .jh-experiences-viewport[data-dragging="true"] .image-shell img {
+    transform: none;
+  }
+}
+.jh-experiences-controls {
+  max-width: 1470px;
+  padding: 0 var(--gutter);
+  margin: 12px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--ink);
+}
+.jh-experiences-hint {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.jh-experiences-pagination {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.jh-experiences-pagination > span {
+  font: 400 12px/1 var(--font-body);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+  min-width: 62px;
+  text-align: center;
+}
+.jh-experiences-pagination button {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.jh-experiences-pagination button:hover {
+  background: var(--ink);
+  color: var(--background);
+}
+@media (min-width: 1920px) {
+  .jh-experiences-viewport {
+    max-width: 1920px;
+    margin: auto;
+  }
+}
+@media (max-width: 991px) {
+  .jh-experiences.jh-carousel {
+    --experience-gap: 5vw;
+    padding: 100px 0 80px;
+  }
+  .jh-experiences-heading {
+    margin-bottom: 65px;
+  }
+  .jh-experience-slide {
+    flex-basis: 44%;
+  }
+  .jh-experience-label {
+    inset: auto 24px 26px;
+  }
+  .jh-experience-number {
+    left: 24px;
+    top: 26px;
+  }
+  .jh-experience-label h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 639px) {
+  .jh-experiences.jh-carousel {
+    --experience-gap: 6vw;
+    padding: 76px 0 60px;
+  }
+  .jh-experiences-heading {
+    margin-bottom: 35px;
+    padding-inline: 28px;
+  }
+  .jh-experiences-heading h2 {
+    font-size: 46px;
+    margin: 24px 0;
+  }
+  .jh-site .jh-experiences-intro {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 335px;
+  }
+  .jh-site .jh-experiences-kicker {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+  }
+  .jh-experiences-viewport {
+    padding: 30px 0 22px;
+  }
+  .jh-experience-slide {
+    flex-basis: 80%;
+  }
+  .jh-experience-label {
+    inset: auto 22px 25px;
+  }
+  .jh-experience-label h3 {
+    font-size: 31px;
+    max-width: 9ch;
+  }
+  .jh-experience-number {
+    top: 24px;
+    left: 22px;
+    font-size: 9px;
+  }
+  .jh-experience-card:after {
+    width: 3px;
+  }
+  .jh-experiences-controls {
+    gap: 12px;
+    margin-top: 0;
+    padding-inline: 22px;
+  }
+  .jh-experiences-pagination {
+    gap: 8px;
+  }
+  .jh-experiences-pagination > span {
+    min-width: 50px;
+    font-size: 10px;
+  }
+  .jh-experiences-hint {
+    gap: 7px;
+    font-size: 11px;
+  }
+  .jh-experiences-pagination button {
+    width: 44px;
+    height: 44px;
+  }
+}
+@media (max-width: 359px) {
+  .jh-experiences-heading h2 {
+    font-size: 41px;
+  }
+  .jh-experiences-heading {
+    padding-inline: 22px;
+  }
+  .jh-experience-label {
+    inset-inline: 18px;
+  }
+  .jh-experience-label h3 {
+    font-size: 27px;
+  }
+  .jh-experiences-hint svg {
+    display: none;
+  }
+  .jh-experiences-controls {
+    padding-inline: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jh-experience-surface {
+    transform: none !important;
+  }
+  .jh-experience-card .image-shell img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+html[data-motion-reduced="true"] .jh-experience-surface {
+  transform: none !important;
+}
+html[data-motion-reduced="true"] .jh-experience-card .image-shell img {
+  transition: none !important;
+  transform: none !important;
+}

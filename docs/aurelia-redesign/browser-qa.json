@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-11",
+  "reference": "https://hotelaurelia.online/",
+  "environment": "In-app Chromium; local production preview; browser cache allowed; no network or CPU throttling",
+  "viewports": [
+    {
+      "client": 375,
+      "metrics": "{\"lcpMs\":1204,\"cls\":0.0002661614977576125,\"maxInteractionMs\":0}",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "client": 345,
+      "metrics": "{\"lcpMs\":2000,\"cls\":0.00021065217391304347,\"maxInteractionMs\":0}",
+      "scroll": 345,
+      "width": 360
+    },
+    {
+      "client": 753,
+      "metrics": "{\"lcpMs\":1980,\"cls\":0.00020522995299077128,\"maxInteractionMs\":0}",
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "client": 1265,
+      "height": 800,
+      "metrics": "{\"lcpMs\":1752,\"cls\":0.0007033057607133373,\"maxInteractionMs\":0}",
+      "scroll": 1265,
+      "width": 1280
+    },
+    {
+      "client": 1905,
+      "height": 1080,
+      "metrics": "{\"lcpMs\":1984,\"cls\":0.0002297214226630099,\"maxInteractionMs\":0}",
+      "scroll": 1905,
+      "width": 1920
+    },
+    {
+      "client": 1425,
+      "height": 1000,
+      "metrics": "{\"lcpMs\":2004,\"cls\":0.0004433895814096646,\"maxInteractionMs\":0}",
+      "scroll": 1425,
+      "width": 1440
+    }
+  ],
+  "pageChecks": {
+    "brokenLoadedImages": [],
+    "lenis": "lenis",
+    "missingAltAttributes": 0,
+    "missingAnchors": [],
+    "overflow": false,
+    "stuckSkeletonsOnLoadedImages": 0
+  },
+  "consoleErrors": [],
+  "consoleWarnings": [
+    {
+      "level": "warn",
+      "message": "rAF timed out in updateSource",
+      "timestamp": "2026-11-11T01:30:50.223Z",
+      "url": "http://localhost:4174/assets/ModelCanvas-4PDhdM12.js"
+    },
+    {
+      "level": "warn",
+      "message": "rAF timed out in updateSource",
+      "timestamp": "2026-11-11T01:39:30.413Z",
+      "url": "http://localhost:4174/assets/ModelCanvas-CqxF3UNT.js"
+    },
+    {
+      "level": "warn",
+      "message": "rAF timed out in updateSource",
+      "timestamp": "2026-11-11T01:46:29.553Z",
+      "url": "http://localhost:4174/assets/ModelCanvas-CqxF3UNT.js"
+    },
+    {
+      "level": "warn",
+      "message": "rAF timed out in updateSource",
+      "timestamp": "2026-11-11T01:48:05.044Z",
+      "url": "http://localhost:4174/assets/ModelCanvas-DDb0kgm4.js"
+    }
+  ],
+  "verifiedInteractions": [
+    "Hero image selection and pause",
+    "Mobile navigation",
+    "Room image arrows and tabs",
+    "Room detail to inquiry with focus transfer",
+    "Experience carousel controls",
+    "Dining photograph selection",
+    "Gallery filter and lightbox arrow keys/Escape",
+    "Date and guest validation",
+    "Optional contact details retained in email preview",
+    "Encoded email URL and clipboard copied state",
+    "Original Blender GLB rendering and pointer drag in mobile viewport",
+    "Lenis stops for dialogs and resumes after closing"
+  ]
+}

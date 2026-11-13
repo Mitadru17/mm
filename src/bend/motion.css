@@ -1,0 +1,340 @@
+/* Timing and scroll ranges measured from the live Bend Club reference. */
+.bend-scene-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--background);
+}
+.bend-scene-tint {
+  position: absolute;
+  inset: 0;
+  background: #17231f;
+  opacity: 0;
+}
+.bend-entrance {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bend-entrance.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.bend-hero-photos,
+.bend-hero-photo {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.bend-hero-photo {
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0, 0, 0.2, 1);
+}
+.bend-hero-photo.is-active {
+  opacity: 1;
+}
+.bend-hero-photo > img,
+.bend-hero-photo .image-shell,
+.bend-hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bend-hero-photo:nth-child(2) img {
+  object-position: center 57%;
+}
+.bend-hero-photo:nth-child(3) img {
+  object-position: center 55%;
+}
+.bend-hero-word {
+  display: inline-block;
+}
+.bend-hero-copy > .bend-eyebrow {
+  color: #ffffffb3;
+  margin-bottom: 24px;
+}
+.bend-hero-controls button {
+  transition: color 0.3s var(--ease);
+}
+.bend-hero[data-intro="playing"] .bend-hero-word,
+.bend-hero[data-intro="playing"] [data-hero-fade],
+.bend-hero[data-intro="playing"] .bend-header {
+  visibility: hidden;
+}
+.bend-intro {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--background);
+  pointer-events: none;
+}
+.bend-intro-lockup {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 1.1em;
+  font: 500 clamp(30px, 8vw, 112px)/1.1 var(--font-display);
+  color: var(--ink);
+  letter-spacing: -0.055em;
+}
+.bend-intro-word {
+  position: absolute;
+  top: 0;
+  display: block;
+  overflow: hidden;
+}
+.bend-intro-start {
+  right: 50%;
+}
+.bend-intro-end {
+  left: 50%;
+}
+.bend-intro-word-inner {
+  display: block;
+  transform: translateY(100%);
+}
+.bend-intro-aperture {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  clip-path: inset(var(--aperture-y, 50%) var(--aperture-x, 50%));
+}
+.bend-intro-aperture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bend-intro-photo-shade,
+.bend-intro-extra {
+  position: absolute;
+  inset: 0;
+}
+.bend-intro-photo-shade {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 31, 26, 0.25) 0%,
+    rgba(16, 31, 26, 0.1) 35%,
+    rgba(16, 31, 26, 0.55) 75%,
+    rgba(16, 31, 26, 0.92) 100%
+  );
+}
+.bend-intro-extra {
+  background-size: cover;
+  background-position: center;
+}
+.bend-intro-extra-first {
+  z-index: 3;
+}
+.bend-intro-extra-second {
+  z-index: 2;
+}
+.bend-skip-intro {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px 16px;
+  background: #f4f1eacc;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 12px;
+}
+.bend-statement-star {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 0 0 28px -6px;
+  color: var(--soft-ink);
+}
+.bend-statement-star:disabled {
+  opacity: 1;
+}
+.bend-statement-star svg {
+  width: 32px;
+  height: 32px;
+  animation: bend-star-turn 18s linear infinite;
+}
+@keyframes bend-star-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bend-stories {
+  height: auto;
+  background: transparent;
+}
+.bend-stories-sticky {
+  position: relative;
+  height: 100svh;
+  min-height: 0;
+}
+.bend-story {
+  gap: 40px;
+}
+.bend-story-photo {
+  height: auto;
+  aspect-ratio: 1/1.3;
+  clip-path: inset(50% round 12px);
+  transition: none;
+}
+.bend-story.is-active .bend-story-photo {
+  clip-path: inset(50% round 12px);
+}
+.bend-story-photo img,
+.bend-story.is-active .bend-story-photo img {
+  transform: none;
+  transition: none;
+}
+.bend-story-copy,
+.bend-story.is-active .bend-story-copy {
+  opacity: 1;
+  transform: none;
+  visibility: hidden;
+  transition: none;
+}
+.bend-story:first-child .bend-story-photo {
+  clip-path: inset(0 round 12px);
+}
+.bend-story:first-child .bend-story-copy {
+  visibility: visible;
+}
+.bend-story-progress {
+  z-index: 5;
+  left: 0;
+  right: auto;
+  top: 50%;
+  bottom: auto;
+  margin: 0;
+  max-width: none;
+  display: block;
+  height: 4px;
+  background: #ffffff26;
+}
+.bend-story-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.bend-stories.is-reduced {
+  background: #17231f;
+}
+.bend-stories.is-reduced .bend-story-copy {
+  opacity: 1;
+  visibility: visible;
+}
+.bend-stories.is-reduced .bend-story-photo {
+  clip-path: none;
+}
+.bend-pillar-0,
+.bend-pillar-1 {
+  padding-top: 0;
+}
+.bend-pillar-photo {
+  aspect-ratio: 3/4;
+}
+.bend-pillar .bend-eyebrow {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 1023px) {
+  .bend-story {
+    gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .bend-hero-copy > .bend-eyebrow {
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 300px;
+  }
+  .bend-intro-lockup {
+    font-size: clamp(27px, 8vw, 60px);
+  }
+  .bend-story {
+    gap: 0;
+  }
+  .bend-story-photo {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+  .bend-statement-star svg {
+    width: 24px;
+    height: 24px;
+  }
+  .bend-skip-intro {
+    right: 20px;
+    bottom: 20px;
+    font-size: 11px;
+  }
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .bend-contact-glass {
+    background: var(--ink);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .bend-contact-glass,
+  .modal::backdrop {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--ink);
+  }
+  .bend-contact-glass > .rb-glare {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bend-site .bend-entrance {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.15s ease !important;
+  }
+  .bend-site .bend-hero-photo {
+    transition: opacity 0.15s ease !important;
+  }
+  .bend-site .bend-link,
+  .bend-site .bend-link::after,
+  .bend-site .bend-text-action::after,
+  .bend-site button {
+    transition:
+      color 0.15s ease,
+      opacity 0.15s ease !important;
+  }
+}
+html[data-motion-reduced="true"] .bend-site .bend-entrance {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.15s ease !important;
+}
+html[data-motion-reduced="true"] .bend-site .bend-hero-photo {
+  transition: opacity 0.15s ease !important;
+}
+html[data-motion-reduced="true"] .bend-site .bend-link,
+html[data-motion-reduced="true"] .bend-site .bend-link::after,
+html[data-motion-reduced="true"] .bend-site .bend-text-action::after,
+html[data-motion-reduced="true"] .bend-site button {
+  transition:
+    color 0.15s ease,
+    opacity 0.15s ease !important;
+}

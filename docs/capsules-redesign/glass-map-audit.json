@@ -1,0 +1,287 @@
+{
+  "checked": "2026-11-11",
+  "phoneRoutes": [
+    {
+      "cards": 11,
+      "h1": "MysticMountain",
+      "overflow": 0,
+      "path": "/",
+      "width": 390
+    },
+    {
+      "cards": 3,
+      "h1": "Discover the Mystic Mountain story",
+      "overflow": 0,
+      "path": "/about",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "Find your place in the hills",
+      "overflow": 0,
+      "path": "/suites",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "01. Timber & mountain light",
+      "overflow": 0,
+      "path": "/suites/timber",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "02. Let the outside in",
+      "overflow": 0,
+      "path": "/suites/outlook",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "03. A softer place to land",
+      "overflow": 0,
+      "path": "/suites/unwind",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "A little comfort, a different outlook",
+      "overflow": 0,
+      "path": "/services",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "A little closer to Kumaon",
+      "overflow": 0,
+      "path": "/activities",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "Photographs of Hotel Mystic Mountain Kausani",
+      "overflow": 0,
+      "path": "/gallery",
+      "width": 390
+    },
+    {
+      "cards": 3,
+      "h1": "Stories & mountain notes",
+      "overflow": 0,
+      "path": "/news",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "A slower day in Kausani",
+      "overflow": 0,
+      "path": "/news/a-slower-day-in-kausani",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "Timber & mountain light",
+      "overflow": 0,
+      "path": "/news/timber-and-mountain-light",
+      "width": 390
+    },
+    {
+      "cards": 0,
+      "h1": "The road to Mystic Mountain",
+      "overflow": 0,
+      "path": "/news/the-road-to-mystic",
+      "width": 390
+    },
+    {
+      "cards": 4,
+      "h1": "Plan a staywith us",
+      "overflow": 0,
+      "path": "/contact",
+      "width": 390
+    }
+  ],
+  "desktopRoutes": [
+    {
+      "h1": "MysticMountain",
+      "overflow": 0,
+      "path": "/",
+      "width": 1440
+    },
+    {
+      "h1": "Discover the Mystic Mountain story",
+      "overflow": 0,
+      "path": "/about",
+      "width": 1440
+    },
+    {
+      "h1": "Find your place in the hills",
+      "overflow": 0,
+      "path": "/suites",
+      "width": 1440
+    },
+    {
+      "h1": "01. Timber & mountain light",
+      "overflow": 0,
+      "path": "/suites/timber",
+      "width": 1440
+    },
+    {
+      "h1": "02. Let the outside in",
+      "overflow": 0,
+      "path": "/suites/outlook",
+      "width": 1440
+    },
+    {
+      "h1": "03. A softer place to land",
+      "overflow": 0,
+      "path": "/suites/unwind",
+      "width": 1440
+    },
+    {
+      "h1": "A little comfort, a different outlook",
+      "overflow": 0,
+      "path": "/services",
+      "width": 1440
+    },
+    {
+      "h1": "A little closer to Kumaon",
+      "overflow": 0,
+      "path": "/activities",
+      "width": 1440
+    },
+    {
+      "h1": "Photographs of Hotel Mystic Mountain Kausani",
+      "overflow": 0,
+      "path": "/gallery",
+      "width": 1440
+    },
+    {
+      "h1": "Stories & mountain notes",
+      "overflow": 0,
+      "path": "/news",
+      "width": 1440
+    },
+    {
+      "h1": "A slower day in Kausani",
+      "overflow": 0,
+      "path": "/news/a-slower-day-in-kausani",
+      "width": 1440
+    },
+    {
+      "h1": "Timber & mountain light",
+      "overflow": 0,
+      "path": "/news/timber-and-mountain-light",
+      "width": 1440
+    },
+    {
+      "h1": "The road to Mystic Mountain",
+      "overflow": 0,
+      "path": "/news/the-road-to-mystic",
+      "width": 1440
+    },
+    {
+      "h1": "Plan a staywith us",
+      "overflow": 0,
+      "path": "/contact",
+      "width": 1440
+    }
+  ],
+  "homeBreakpoints": [
+    {
+      "cards": [
+        275,
+        275,
+        275
+      ],
+      "header": [
+        {
+          "left": 22.5,
+          "right": 172.234375
+        },
+        {
+          "left": 189.6875,
+          "right": 282.5
+        }
+      ],
+      "overflow": 0,
+      "tallControls": [],
+      "width": 320
+    },
+    {
+      "cards": [
+        345,
+        345,
+        345
+      ],
+      "header": [
+        {
+          "left": 22.5,
+          "right": 172.234375
+        },
+        {
+          "left": 259.6875,
+          "right": 352.5
+        }
+      ],
+      "overflow": 0,
+      "tallControls": [],
+      "width": 390
+    },
+    {
+      "cards": [
+        216,
+        216,
+        216
+      ],
+      "header": [
+        {
+          "left": 37.5,
+          "right": 232.1875
+        },
+        {
+          "left": 615.1875,
+          "right": 715.5
+        }
+      ],
+      "overflow": 0,
+      "tallControls": [],
+      "width": 768
+    },
+    {
+      "cards": [
+        296.328125,
+        296.328125,
+        296.34375
+      ],
+      "header": [
+        {
+          "left": 37.5,
+          "right": 232.1875
+        },
+        {
+          "left": 264.203125,
+          "right": 792.796875
+        },
+        {
+          "left": 824.796875,
+          "right": 971.5
+        }
+      ],
+      "overflow": 0,
+      "tallControls": [],
+      "width": 1024
+    }
+  ],
+  "interactionChecks": {
+    "pinClickOpensCard": true,
+    "keyboardSelection": true,
+    "escapeDismisses": true,
+    "hoverDoesNotMoveCamera": true,
+    "realTerrainLoaded": true,
+    "markers": 4,
+    "reducedMotionFlattensMap": true,
+    "reducedMotionDisablesCardTransforms": true,
+    "nativeMapTransitions": "150ms normal / 0ms reduced"
+  },
+  "logs": []
+}

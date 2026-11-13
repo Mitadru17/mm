@@ -1,0 +1,44 @@
+{
+  "checked": "2026-11-12",
+  "phone": {
+    "dockCreditGap": 25.25,
+    "overflow": 0,
+    "pins": [
+      {
+        "dockOverlap": false,
+        "label": "Explore Hotel Mystic Mountain"
+      },
+      {
+        "dockOverlap": false,
+        "label": "Explore Kausani Tea Estate"
+      },
+      {
+        "dockOverlap": false,
+        "label": "Explore Anasakti Ashram"
+      },
+      {
+        "dockOverlap": false,
+        "label": "Explore Sumitranandan Pant Museum"
+      }
+    ],
+    "trees": "1800",
+    "width": 320
+  },
+  "visibleInstanceLimits": {
+    "phone": 1800,
+    "desktop": 6000
+  },
+  "data": {
+    "buildings": 2190,
+    "treeCandidates": 9000,
+    "measuredBuildingHeights": 0
+  },
+  "checks": {
+    "closeView": true,
+    "detailToggle": true,
+    "reducedMotionFlatCamera": true,
+    "reducedMotionDetailToggle": true,
+    "pinCards": true
+  },
+  "warnings": []
+}

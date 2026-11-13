@@ -1,0 +1,366 @@
+{
+  "checks": [
+    {
+      "name": "Ambient scenery pause control",
+      "detail": true
+    },
+    {
+      "name": "Hero hover photograph",
+      "detail": true
+    },
+    {
+      "name": "Carousel buttons and keyboard",
+      "detail": true
+    },
+    {
+      "name": "Appearance controls",
+      "detail": true
+    },
+    {
+      "name": "Stay planner, nested review, copy, email draft, Escape and focus restoration",
+      "detail": true
+    },
+    {
+      "name": "FAQ",
+      "detail": true
+    },
+    {
+      "name": "Gallery and keyboard lightbox",
+      "detail": true
+    },
+    {
+      "name": "Terrain map opened",
+      "detail": {
+        "ready": "true",
+        "trees": "6000",
+        "text": "06 / A little perspective\n\nFind your bearings.\nFind your bearings.\nHotel directions\n\nOur little corner of Kumaon. Hover a pin, or choose a place to look around.\n\nUse Ctrl + scroll to zoom the map\nMystic Mountain\n01\nTea Estate\n02\nAnasakti Ashram\n03\nPant Museum\n© Mapterhorn | Overture Maps · ODbL / sources | OpenFreeMap © OpenMapTiles © OpenStreetMap | Contains modified Copernicus Sentinel data 2026 · Element 84 / AWS\nKausani / Kumaon\nSatellite · 2026\n3D\nYour mountain address\nMystic Mountain\n↗\nTea country\nTea Estate\n01\nA quieter discovery\nAnasakti Ashram\n02\nCulture & poetry\nPant Museum\n03\n\nBaijnath Road, opposite the Tea Factory. Your starting point for a slower stay in Kausani.\n\nOpen directions\n\nDrag to explore the hills. Use the controls to zoom or switch views. Landscape imagery captured 6 November 2026. Plan independent visits with local advice. Building heights and individual tree positions are illustrative. Link interaction by Skiper UI."
+      }
+    },
+    {
+      "name": "Mobile menu, Escape, focus and anchor",
+      "detail": true
+    },
+    {
+      "name": "Responsive overflow",
+      "detail": [
+        {
+          "width": 320,
+          "scrollWidth": 320,
+          "linksFit": true
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390,
+          "linksFit": true
+        },
+        {
+          "width": 768,
+          "scrollWidth": 768,
+          "linksFit": true
+        },
+        {
+          "width": 1024,
+          "scrollWidth": 1024,
+          "linksFit": true
+        },
+        {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "linksFit": true
+        }
+      ]
+    },
+    {
+      "name": "Supporting routes",
+      "detail": [
+        {
+          "route": "/about",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "Discover the Mystic Mountain storyDiscover the Mystic Mountain story"
+        },
+        {
+          "route": "/suites",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "Find your place in the hillsFind your place in the hills"
+        },
+        {
+          "route": "/suites/timber",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "01. Timber & mountain light01. Timber & mountain light"
+        },
+        {
+          "route": "/suites/outlook",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "02. Let the outside in02. Let the outside in"
+        },
+        {
+          "route": "/suites/unwind",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "03. A softer place to land03. A softer place to land"
+        },
+        {
+          "route": "/services",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "A little comfort, a different outlookA little comfort, a different outlook"
+        },
+        {
+          "route": "/activities",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "A little closer to KumaonA little closer to Kumaon"
+        },
+        {
+          "route": "/gallery",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "Photographs of Hotel Mystic Mountain Kausani"
+        },
+        {
+          "route": "/news",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "Stories & mountain notesStories & mountain notes"
+        },
+        {
+          "route": "/news/a-slower-day-in-kausani",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "A slower day in KausaniA slower day in Kausani"
+        },
+        {
+          "route": "/news/timber-and-mountain-light",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "Timber & mountain lightTimber & mountain light"
+        },
+        {
+          "route": "/news/the-road-to-mystic",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "The road to Mystic MountainThe road to Mystic Mountain"
+        },
+        {
+          "route": "/contact",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "Plan a staywith usPlan a staywith us"
+        },
+        {
+          "route": "/missing-page",
+          "width": 320,
+          "scrollWidth": 320,
+          "title": "404"
+        },
+        {
+          "route": "/about",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "Discover the Mystic Mountain storyDiscover the Mystic Mountain story"
+        },
+        {
+          "route": "/suites",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "Find your place in the hillsFind your place in the hills"
+        },
+        {
+          "route": "/suites/timber",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "01. Timber & mountain light01. Timber & mountain light"
+        },
+        {
+          "route": "/suites/outlook",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "02. Let the outside in02. Let the outside in"
+        },
+        {
+          "route": "/suites/unwind",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "03. A softer place to land03. A softer place to land"
+        },
+        {
+          "route": "/services",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "A little comfort, a different outlookA little comfort, a different outlook"
+        },
+        {
+          "route": "/activities",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "A little closer to KumaonA little closer to Kumaon"
+        },
+        {
+          "route": "/gallery",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "Photographs of Hotel Mystic Mountain Kausani"
+        },
+        {
+          "route": "/news",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "Stories & mountain notesStories & mountain notes"
+        },
+        {
+          "route": "/news/a-slower-day-in-kausani",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "A slower day in KausaniA slower day in Kausani"
+        },
+        {
+          "route": "/news/timber-and-mountain-light",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "Timber & mountain lightTimber & mountain light"
+        },
+        {
+          "route": "/news/the-road-to-mystic",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "The road to Mystic MountainThe road to Mystic Mountain"
+        },
+        {
+          "route": "/contact",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "Plan a staywith usPlan a staywith us"
+        },
+        {
+          "route": "/missing-page",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "title": "404"
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion: no Lenis/cursor and readable content",
+      "detail": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5906/3384.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5907/3384.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5908/3384.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5906/3384.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5907/3383.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5906/3383.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5908/3383.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5907/3382.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5908/3382.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5906/3382.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11814/6768.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11814/6769.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11815/6768.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11816/6768.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5908/3385.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5907/3384.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5908/3384.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11815/6769.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11816/6769.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11816/6770.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5908/3385.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11814/6767.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5907/3383.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11814/6766.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11815/6766.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11815/6767.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/14/11813/6768.webp"
+    },
+    {
+      "status": 404,
+      "url": "https://tiles.mapterhorn.com/13/5906/3384.webp"
+    }
+  ]
+}

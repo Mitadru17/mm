@@ -1,0 +1,21 @@
+Contains modified Copernicus Sentinel data 2026.
+
+Scene: S2C_44RLU_20261106_0_L2A
+Acquired: 6 November 2026, 05:30:27 UTC
+Sensor: Sentinel-2 MSI; true-colour bands B04/B03/B02, 10m ground resolution.
+Data supplier: Element 84 Earth Search / AWS Open Data (Sentinel-2 L2A COGs).
+
+Legal notice and permitted reproduction/adaptation/distribution:
+https://cds.climate.copernicus.eu/licences/ec-sentinel
+https://dataspace.copernicus.eu/terms-and-conditions
+
+Source record:
+https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_44RLU_20261106_0_L2A
+
+Processing: a local true-colour crop reprojected to Web Mercator XYZ, cubic
+resampling, compressed WebP. In the map it is draped over Mapterhorn elevation
+at 1x vertical scale with subtle contrast and hill relief. No artificial
+scenery is baked into the imagery. The separate 3D buildings and vegetation
+layer is described in overture-buildings.txt. Individual structures are not
+surveyed 3D models. Original scene metadata and the derived-texture manifest
+are retained in docs/ui-libraries. Rebuild with scripts/prepare-terrain-texture.py.

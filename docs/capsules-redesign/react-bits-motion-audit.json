@@ -1,0 +1,290 @@
+{
+  "checked": "2026-11-12",
+  "routes390": [
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/",
+      "titles": 10,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/about",
+      "titles": 4,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites",
+      "titles": 2,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites/timber",
+      "titles": 3,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites/outlook",
+      "titles": 3,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites/unwind",
+      "titles": 3,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/services",
+      "titles": 4,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/activities",
+      "titles": 3,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/gallery",
+      "titles": 4,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news",
+      "titles": 2,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news/a-slower-day-in-kausani",
+      "titles": 2,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news/timber-and-mountain-light",
+      "titles": 2,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news/the-road-to-mystic",
+      "titles": 2,
+      "width": 390
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/contact",
+      "titles": 4,
+      "width": 390
+    }
+  ],
+  "routes1440": [
+    {
+      "h1": "MysticMysticMountainMountain",
+      "overflow": 0,
+      "path": "/"
+    },
+    {
+      "h1": "Discover the Mystic Mountain storyDiscover the Mystic Mountain story",
+      "overflow": 0,
+      "path": "/about"
+    },
+    {
+      "h1": "Find your place in the hillsFind your place in the hills",
+      "overflow": 0,
+      "path": "/suites"
+    },
+    {
+      "h1": "01. Timber & mountain light01. Timber & mountain light",
+      "overflow": 0,
+      "path": "/suites/timber"
+    },
+    {
+      "h1": "02. Let the outside in02. Let the outside in",
+      "overflow": 0,
+      "path": "/suites/outlook"
+    },
+    {
+      "h1": "03. A softer place to land03. A softer place to land",
+      "overflow": 0,
+      "path": "/suites/unwind"
+    },
+    {
+      "h1": "A little comfort, a different outlookA little comfort, a different outlook",
+      "overflow": 0,
+      "path": "/services"
+    },
+    {
+      "h1": "A little closer to KumaonA little closer to Kumaon",
+      "overflow": 0,
+      "path": "/activities"
+    },
+    {
+      "h1": "Photographs of Hotel Mystic Mountain Kausani",
+      "overflow": 0,
+      "path": "/gallery"
+    },
+    {
+      "h1": "Stories & mountain notesStories & mountain notes",
+      "overflow": 0,
+      "path": "/news"
+    },
+    {
+      "h1": "A slower day in KausaniA slower day in Kausani",
+      "overflow": 0,
+      "path": "/news/a-slower-day-in-kausani"
+    },
+    {
+      "h1": "Timber & mountain lightTimber & mountain light",
+      "overflow": 0,
+      "path": "/news/timber-and-mountain-light"
+    },
+    {
+      "h1": "The road to Mystic MountainThe road to Mystic Mountain",
+      "overflow": 0,
+      "path": "/news/the-road-to-mystic"
+    },
+    {
+      "h1": "Plan a staywith usPlan a staywith us",
+      "overflow": 0,
+      "path": "/contact"
+    }
+  ],
+  "routes320": [
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/about",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites/timber",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites/outlook",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/suites/unwind",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/services",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/activities",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/gallery",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news/a-slower-day-in-kausani",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news/timber-and-mountain-light",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/news/the-road-to-mystic",
+      "width": 320
+    },
+    {
+      "overflow": 0,
+      "oversizeWords": [],
+      "path": "/contact",
+      "width": 320
+    }
+  ],
+  "reduced": {
+    "bandReduced": "true",
+    "bandWidth": 305,
+    "cursorNodes": 0,
+    "lenis": false,
+    "magnet": "none",
+    "reduced": "true",
+    "viewport": 320,
+    "wordFilters": [
+      "none",
+      "none",
+      "none",
+      "none"
+    ]
+  },
+  "interactions": {
+    "cursorCornerNodes": 4,
+    "cursorTargetsControls": true,
+    "cardSweepChangedTransform": true,
+    "nativeTyping": true,
+    "nativeMapCursor": true,
+    "carouselNext": true,
+    "carouselDrag": true,
+    "lightboxOpens": true,
+    "dialogRestoresNativeCursor": true,
+    "escapeDismisses": true,
+    "mobileMenuNavigatesAndFocusesHeading": true
+  },
+  "browserLogs": []
+}

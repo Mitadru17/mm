@@ -1,0 +1,10 @@
+Skiper UI / Gxuri — free CssLink component (skiper40), Link001 adaptation.
+Source: https://skiper-ui.com/v1/skiper40
+Registry source: https://skiper-ui.com/registry/skiper40.json
+Verified free in the component page breadcrumb and unlocked source panel on 11 November 2026.
+
+The component page permits use and modification in personal and commercial projects and requires attribution for the free version. The upstream demo credits cursor.com as its inspiration.
+
+Historical source only, as of 13 November 2026: src/components/SkiperLink.tsx is not imported by the active application. All active links now use the original src/components/EditorialLink.tsx. Previous website revisions displayed the required footer attribution. Retain this notice with the archived adaptation; restoring its use requires restoring the applicable attribution.
+
+Adaptation: native React anchor instead of Next.js Link; ordinary CSS instead of Tailwind; Host Grotesk and the Capsules palette; 150ms timing; keyboard focus and reduced-motion support. No paid Skiper component source is included.

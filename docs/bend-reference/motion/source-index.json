@@ -1,0 +1,78 @@
+[
+  {
+    "i": 0,
+    "url": "https://www.thebendclub.com/_next/static/chunks/806bdb8e4a6a9b95.js",
+    "bytes": 38872,
+    "found": []
+  },
+  {
+    "i": 1,
+    "url": "https://www.thebendclub.com/_next/static/chunks/349e72174ed0df63.js",
+    "bytes": 122942,
+    "found": []
+  },
+  {
+    "i": 2,
+    "url": "https://www.thebendclub.com/_next/static/chunks/0afa5e999b6c353a.js",
+    "bytes": 224636,
+    "found": []
+  },
+  {
+    "i": 3,
+    "url": "https://www.thebendclub.com/_next/static/chunks/turbopack-d43652f55b649dea.js",
+    "bytes": 10671,
+    "found": []
+  },
+  {
+    "i": 4,
+    "url": "https://www.thebendclub.com/_next/static/chunks/e1fc1c238b697755.js",
+    "bytes": 18272,
+    "found": []
+  },
+  {
+    "i": 5,
+    "url": "https://www.thebendclub.com/_next/static/chunks/6d3b61bd6c887f10.js",
+    "bytes": 113413,
+    "found": [
+      "stagger:"
+    ]
+  },
+  {
+    "i": 6,
+    "url": "https://www.thebendclub.com/_next/static/chunks/ff1a16fafef87110.js",
+    "bytes": 282,
+    "found": []
+  },
+  {
+    "i": 7,
+    "url": "https://www.thebendclub.com/_next/static/chunks/d2be314c3ece3fbe.js",
+    "bytes": 30679,
+    "found": []
+  },
+  {
+    "i": 8,
+    "url": "https://www.thebendclub.com/_next/static/chunks/5de0df9ecc126e08.js",
+    "bytes": 155633,
+    "found": [
+      "hero-loader",
+      "sticky-features",
+      "statement-word",
+      "hero-fade-word",
+      "scrub:",
+      "stagger:",
+      "reveal-in"
+    ]
+  },
+  {
+    "i": 9,
+    "url": "https://www.thebendclub.com/_next/static/chunks/a6dad97d9634a72d.js",
+    "bytes": 112541,
+    "found": []
+  },
+  {
+    "i": 10,
+    "url": "https://www.thebendclub.com/_next/static/chunks/fe05f79d03cc9274.js",
+    "bytes": 13280,
+    "found": []
+  }
+]

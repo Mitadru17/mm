@@ -1,0 +1,37 @@
+{
+  "shortDrag": true,
+  "dragFree": true,
+  "loop": true,
+  "keyboardLink": true,
+  "touchSwipe": true,
+  "nativeVerticalScroll": true,
+  "reducedMotion": true,
+  "responsive": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "cards": 6
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "cards": 6
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "cards": 6
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "cards": 6
+    },
+    {
+      "width": 1636,
+      "scrollWidth": 1636,
+      "cards": 6
+    }
+  ],
+  "errors": []
+}

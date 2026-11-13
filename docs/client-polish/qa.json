@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-12T22:25:22.007Z",
+  "browser": "Local Chrome via Playwright",
+  "results": [
+    {
+      "name": "Menu opens progressively and the hamburger morphs to a close icon",
+      "pass": true
+    },
+    {
+      "name": "Menu traps focus, exits before closing, and returns focus and scrolling",
+      "pass": true
+    },
+    {
+      "name": "An interrupted opening can close and reopen without stale animation state",
+      "pass": true
+    },
+    {
+      "name": "Menu navigation waits for exit, including cross-route section links",
+      "pass": true
+    },
+    {
+      "name": "Menu Enquire opens the planner; nested review fades and restores its parent",
+      "pass": true
+    },
+    {
+      "name": "FAQ opens and closes with native keyboard operation",
+      "pass": true
+    },
+    {
+      "name": "Footer is clean, without motion settings or UI-library promotion",
+      "pass": true
+    },
+    {
+      "name": "Scroll headings remain visible and reflow without overflow at 320, 390, 768 and 1440px",
+      "pass": true
+    },
+    {
+      "name": "Gallery lightbox retains keyboard navigation and animated dismissal",
+      "pass": true
+    },
+    {
+      "name": "System reduced motion remains automatic, including live preference changes",
+      "pass": true
+    },
+    {
+      "name": "No uncaught browser errors during these flows",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

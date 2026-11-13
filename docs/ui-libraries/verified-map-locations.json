@@ -1,0 +1,93 @@
+[
+  {
+    "path": ".hotelDetail.staticDetail.hotelDetails",
+    "name": "Hotel Mystic Mountain Kausani",
+    "lat": 29.856438,
+    "lng": 79.604065
+  },
+  {
+    "path": ".hotelDetail.staticDetail.hotelDetails.streetViewInfo",
+    "name": "Street View",
+    "location": {
+      "lat": 29.85637664794922,
+      "lng": 79.60401153564453
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.hotelDetails.streetViewInfo.location",
+    "lat": 29.85637664794922,
+    "lng": 79.60401153564453
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.0.subSections.0.places.0",
+    "name": "Sumitranandan Pant Government Museum",
+    "location": {
+      "lat": "29.8435",
+      "lon": "79.60406"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.0",
+    "name": "Green Valley Restaurant",
+    "location": {
+      "lat": "29.8562381",
+      "lon": "79.6040988"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.1",
+    "name": "Live Kitchen Kausani",
+    "location": {
+      "lat": "29.8476299",
+      "lon": "79.6043538"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.2",
+    "name": "Uttarakhand Resort",
+    "location": {
+      "lat": "29.8443559",
+      "lon": "79.6042486"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.3",
+    "name": "Kitchen restaurant",
+    "location": {
+      "lat": "29.8421303",
+      "lon": "79.6038789"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.4",
+    "name": "Hotel Kausani Retreat",
+    "location": {
+      "lat": "29.840716",
+      "lon": "79.6036717"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.5",
+    "name": "Ashoka Restaurant",
+    "location": {
+      "lat": "29.8436271",
+      "lon": "79.6033697"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.6",
+    "name": "Bro's cafe",
+    "location": {
+      "lat": "29.8437597",
+      "lon": "79.6031713"
+    }
+  },
+  {
+    "path": ".hotelDetail.staticDetail.placesResponseV3.sections.1.subSections.0.places.7",
+    "name": "Hotel Amit, Gujarati Restaurant Kausani",
+    "location": {
+      "lat": "29.8436305",
+      "lon": "79.6033728"
+    }
+  }
+]
